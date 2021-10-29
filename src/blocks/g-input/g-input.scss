@@ -14,11 +14,10 @@
 	border: 1px solid #CFD8DC;
 	border-radius: 6px;
 	outline-offset: 0px;
-	&:hover { border-color: #191C21; }
+	&:hover { border-color: #01A54E; }
 	&:focus
 	{
-		border: 1px solid #191C21;
-		outline: 1px solid #191C21;
+		border: 1px solid #01A54E;
 	}
 	&::placeholder{color: #7B8E98;}
 }
@@ -26,8 +25,7 @@
 {
 	.g-input__input
 	{
-		border: 1px solid #D01246;
-		outline: 1px solid #D01246;
+		border: 1px solid #F44336;
 	}
 	.g-input__sub
 	{
@@ -42,5 +40,5 @@
 	font-size: rem(10);
 	line-height: rem(13);
 	font-weight: $regular;
-	color: #D01246;
+	color: #F44336;
 }

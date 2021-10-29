@@ -630,6 +630,11 @@ li.L9 {
 
 /* blocks */
 
+header {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
 .header__top-wr {
   background: #01A54E;
 }
@@ -706,7 +711,7 @@ li.L9 {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 16px 0;
 }
 
 .header__bottom a {
@@ -817,7 +822,7 @@ input.g-button {
 
 .g-button:hover,
 input.g-button:hover {
-  background-color: rgba(103, 115, 135, 0.7);
+  background: #00833D;
 }
 
 .g-button svg,
@@ -981,12 +986,11 @@ input.g-button svg {
 }
 
 .g-input__input:hover {
-  border-color: #191C21;
+  border-color: #01A54E;
 }
 
 .g-input__input:focus {
-  border: 1px solid #191C21;
-  outline: 1px solid #191C21;
+  border: 1px solid #01A54E;
 }
 
 .g-input__input::-webkit-input-placeholder {
@@ -1006,8 +1010,7 @@ input.g-button svg {
 }
 
 .g-input.error .g-input__input {
-  border: 1px solid #D01246;
-  outline: 1px solid #D01246;
+  border: 1px solid #F44336;
 }
 
 .g-input.error .g-input__sub {
@@ -1021,7 +1024,7 @@ input.g-button svg {
   font-size: 0.76923rem;
   line-height: 1rem;
   font-weight: 400;
-  color: #D01246;
+  color: #F44336;
 }
 
 /* Пример подключения*/

@@ -45,56 +45,70 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="header__middle">
-			<ul class="header__middle-list">
-				<li class="header__middle-item">
-					<a href="#">Как сделать заказ?</a>
-				</li>
-				<li class="header__middle-item">
-					<a href="#">Оплата</a>
-				</li>
-				<li class="header__middle-item">
-					<a href="#">Возврат</a>
-				</li>
-				<li class="header__middle-item">
-					<a href="#">Оптовикам</a>
-				</li>
-				<li class="header__middle-item">
-					<a href="#">Поставщикам</a>
-				</li>
-				<li class="header__middle-item">
-					<a href="#">Правовая информация</a>
-				</li>
-				<li class="header__middle-item">
-					<a href="#">Помощь</a>
-				</li>
-			</ul>
-		</div>
-		<div class="header__bottom">
-			<a class="header__bottom-logo" href="#">
-				{% include "../../assets/svg/header-logo.svg" %}
-			</a>
-			<button class="g-button g-button--header__bottom">
-				<span>Каталог</span>
-				{% include "../../assets/svg/header-arrow.svg" %}
-			</button>
-			<label class="g-input g-input--header__bottom">
-				<input name="name" type="text" class="g-input__input" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">
-				<div class="g-input-icon">
-					{% include "../../assets/svg/header-search.svg" %}
-				</div>
-			</label>
-			<a class="header__bottom-favorit" href="#">
-				{% include "../../assets/svg/header-favorit.svg" %}
-				Избранное
-				<span>1</span>
-			</a>
-			<a class="header__bottom-basket" href="#">
-				{% include "../../assets/svg/header-basket.svg" %}
-				Корзина
-				<span>1</span>
-			</a>
+	<div class="header__wrapper">
+		<div class="container">
+			<div class="header__middle">
+				<ul class="header__middle-list">
+					<li class="header__middle-item">
+						<a href="#">Как сделать заказ?</a>
+					</li>
+					<li class="header__middle-item">
+						<a href="#">Оплата</a>
+					</li>
+					<li class="header__middle-item">
+						<a href="#">Возврат</a>
+					</li>
+					<li class="header__middle-item">
+						<a href="#">Оптовикам</a>
+					</li>
+					<li class="header__middle-item">
+						<a href="#">Поставщикам</a>
+					</li>
+					<li class="header__middle-item">
+						<a href="#">Правовая информация</a>
+					</li>
+					<li class="header__middle-item">
+						<a href="#">Помощь</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__bottom">
+				<a class="header__bottom-logo" href="#">
+					{% include "../../assets/svg/header-logo.svg" %}
+				</a>
+				<button class="g-button g-button--header__bottom">
+					<span>Каталог</span>
+					{% include "../../assets/svg/header-arrow.svg" %}
+				</button>
+				<label class="g-input g-input--header__bottom">
+					<input name="name" type="text" class="g-input__input" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">
+					<div class="g-input-icon">
+						{% include "../../assets/svg/header-search.svg" %}
+					</div>
+				</label>
+				<a class="header__bottom-favorit" href="#">
+					{% include "../../assets/svg/header-favorit.svg" %}
+					Избранное
+					<span>1</span>
+				</a>
+				<a class="header__bottom-basket" href="#">
+					{% include "../../assets/svg/header-basket.svg" %}
+					Корзина
+					<span>1</span>
+				</a>
+			</div>
 		</div>
 	</div>
 </header>
+
+
+
+
+
+
+
+
+
+
+
+
