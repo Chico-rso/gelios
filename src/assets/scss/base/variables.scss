@@ -1,0 +1,26 @@
+/*  Переменные со шрифтами  */
+$accent-font: 'Rubic', sans-serif;
+
+/*  Переменные с гарнитурами шрифтов  */
+$thin:					100;
+$light:					300;
+$regular:				400;
+$medium:				500;
+$bold:					700;
+
+/* Настройки оснвоно шрифта */
+$mainFontSize: 			13px;
+$mainLineHeight:		17px;
+$mainFontColor:			#000;
+$mainFontWeight:		$regular;
+
+/* Основные цвета */
+$accent-color:			#f4b600;
+$secondary-color: 		#6a7678;
+
+/* Разрешения */
+$mobile:				768px;
+$tablet:				769px;
+$desktop:				1024px;
+$widescreen:			1200px;
+$fullhd:				1408px;

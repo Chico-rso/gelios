@@ -1,0 +1,94 @@
+<!-- @format -->
+
+<header>
+	<div class="header__top-wr">
+		<div class="container">
+			<div class="header__top">
+				<ul class="header__top-list">
+					<li class="header__top-item">
+						<a href="#">
+							{% include "../../assets/svg/header-adres.svg" %}
+							Адреса аптек 24/7
+						</a>
+					</li>
+					<li class="header__top-item">
+						<a href="#">
+							{% include "../../assets/svg/header-promotions.svg"
+							%}
+							Акции
+						</a>
+					</li>
+					<li class="header__top-item">
+						<a href="#">
+							{% include "../../assets/svg/header-news.svg" %}
+							Новости
+						</a>
+					</li>
+					<li class="header__top-item">
+						<a href="#">
+							{% include "../../assets/svg/header-delivery.svg" %}
+							Доставка и самовывоз
+						</a>
+					</li>
+					<li class="header__top-item header__top-item--phone">
+						<a href="#">
+							{% include "../../assets/svg/header-phone.svg" %}
+							28–98–98
+						</a>
+					</li>
+					<li class="header__top-item">
+						<a href="#">
+							{% include "../../assets/svg/header-user.svg" %}
+							eugene-petrov@mail.com
+							{% include "../../assets/svg/header-mail-arrow.svg" %}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="header__middle">
+			<ul class="header__middle-list">
+				<li class="header__middle-item">
+					<a href="#">Как сделать заказ?</a>
+				</li>
+				<li class="header__middle-item">
+					<a href="#">Оплата</a>
+				</li>
+				<li class="header__middle-item">
+					<a href="#">Возврат</a>
+				</li>
+				<li class="header__middle-item">
+					<a href="#">Оптовикам</a>
+				</li>
+				<li class="header__middle-item">
+					<a href="#">Поставщикам</a>
+				</li>
+				<li class="header__middle-item">
+					<a href="#">Правовая информация</a>
+				</li>
+				<li class="header__middle-item">
+					<a href="#">Помощь</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header__bottom">
+			<a class="header__bottom-logo" href="#">
+				{% include "../../assets/svg/header-logo.svg" %}
+			</a>
+			<button class="g-button g-button--header__bottom">
+				<span>Каталог</span>
+				{% include "../../assets/svg/header-arrow.svg" %}
+			</button>
+			<label class="g-input g-input--header__bottom">
+				<input name="name" type="text" class="g-input__input" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">
+				<div class="g-input-icon">
+				{% include "../../assets/svg/header-search.svg" %}
+				</div>
+			</label>
+			<a class="header__bottom-favorit" href="#">{% include "../../assets/svg/header-favorit.svg" %} Избранное</a>
+			<a class="header__bottom-basket" href="#">{% include "../../assets/svg/header-basket.svg" %} Корзина</a>
+		</div>
+	</div>
+</header>

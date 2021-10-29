@@ -1,0 +1,16 @@
+.g-button, input.g-button
+{
+	display: inline-block;
+	padding: 0 10px 0 14px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 32px;
+	color: #fff;
+	background-color: #01A54E;
+	cursor: pointer;
+	border-radius: 6px;
+	border:0px;
+
+	&:hover{background-color: rgba(103, 115, 135, 0.7);}
+	svg{vertical-align: middle;}
+}
