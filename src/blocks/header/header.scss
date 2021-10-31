@@ -58,7 +58,28 @@ header{box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);}
 			border-radius: 50%;
 		}
 	}
+	&:hover
+	{
+		svg path{fill: #01A54E;}
+	}
 }
+.header__mob-input
+{
+	.g-input
+	{
+		height: 40px;
+		width: 100%;
+		max-width: none;
+	}
+	svg
+	{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+}
+//!Desctop
 .header__top-wr{background: #01A54E;}
 .header__top
 {
@@ -200,7 +221,19 @@ header{box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);}
 		border-radius: 50%;
 	}
 }
-
+@media (min-width: 768px)
+{
+	.container{padding: 0 80px;}
+	.header__mob-nav{justify-content:space-evenly;}
+}
+@media (min-width: 1024px)
+{
+	.header__mob{display: none;}
+	.container{padding: 0 100px;}
+	.header__top{display: block}
+	.header__middle{display: block;}
+	.header__bottom{display: flex;}
+}
 
 
 

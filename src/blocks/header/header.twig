@@ -3,11 +3,17 @@
 		<div class="header__mob">
 			<nav class="header__mob-nav">
 				<a class="header__mob-nav-link" href="#">{% include "../../assets/svg/header-mob-burger.svg" %}</a>
-				<a class="header__mob-nav-link" href="#">{% include "../../assets/svg/header-mob-search.svg" %}</a>
+				<a class="header__mob-nav-link" onclick="o2.header.activeSearch()" href="#">{% include "../../assets/svg/header-mob-search.svg" %}</a>
 				<a class="header__mob-nav-link header__mob-nav-link--logo" href="#">{% include "../../assets/svg/header-mob-logo.svg" %}</a>
 				<a class="header__mob-nav-link header__mob-nav-link--favorit" href="#">{% include "../../assets/svg/header-favorit.svg" %}</a>
 				<a class="header__mob-nav-link header__mob-nav-link--basket" href="#">{% include "../../assets/svg/header-basket.svg" %}</a>
 			</nav>
+			<div class="header__mob-input _header__mob-input">
+				<label class="g-input">
+					<input name="name" type="text" class="g-input__input" placeholder="Placeholder" data-call="emty" data-msg="Заполните это поле">
+					<div class="g-input__sub">Error: invalid name</div> {% include "../../assets/svg/header-mob-serarch-input.svg" %}
+				</label>
+			</div>
 		</div>
 	</div>
 	<div class="header__top-wr">
