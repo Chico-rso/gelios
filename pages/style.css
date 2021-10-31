@@ -1271,6 +1271,10 @@ input.g-button svg {
   left: -17px;
 }
 
+.promo-slider {
+  margin-bottom: 24px;
+}
+
 .promo-slider__wrapper .slick-dots {
   display: inline-block;
   position: absolute;
