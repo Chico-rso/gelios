@@ -1,4 +1,8 @@
-header{box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);}
+header
+{
+	margin-bottom: 16px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
 .header__mob-nav
 {
 	display: flex;
@@ -65,12 +69,14 @@ header{box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);}
 }
 .header__mob-input
 {
+	display: none;
 	.g-input
 	{
 		height: 40px;
 		width: 100%;
 		max-width: none;
 	}
+	.g-input__input{height: 100%;}
 	svg
 	{
 		position: absolute;

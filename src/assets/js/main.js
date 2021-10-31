@@ -2,7 +2,7 @@
 /**
  * инициализация всех инициализаций
  */
-$(document).ready(function()
+$(document).ready(function ()
 {
 	o2.init();
 });
@@ -17,6 +17,7 @@ const o2 =
 	 */
 	init()
 	{
+		this.promoSlider.initSlider();
 	},
 	/**
 	* отслеживание клика вне блока
