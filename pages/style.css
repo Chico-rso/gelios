@@ -1693,6 +1693,21 @@ input.g-button svg {
   text-align: center;
 }
 
+.sale__card-price--red {
+  font-size: 18px;
+  line-height: 22px;
+  color: #F44336;
+}
+
+.sale__card-price--old {
+  -webkit-text-decoration: line-through #263238;
+  text-decoration: line-through #263238;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7B8E98;
+}
+
 /* Пример подключения*/
 
 /* @import 'blocks/component/component'; */
