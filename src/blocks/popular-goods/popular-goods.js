@@ -6,13 +6,13 @@ o2.popularGoods =
 			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			autoplay: true,
+			// autoplay: true,
 			autoplaySpeed: 2000,
-			arrows: false,
+			arrows: true,
 			mobileFirst: true,
 			variableWidth: true,
-			prevArrow: '<button class="popular-goods__arrow-prev"></button>',
-			nextArrow: '<button class="popular-goods__arrow-next"></button>',
+			prevArrow: '<button class="prev-arrow"></button>',
+			nextArrow: '<button class="next-arrow"></button>',
 			responsive: [
 			{
 				breakpoint: 769,

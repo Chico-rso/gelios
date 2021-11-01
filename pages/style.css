@@ -1259,16 +1259,22 @@ input.g-button svg {
 
 .next-arrow,
 .prev-arrow {
-  width: 40px;
-  height: 40px;
-  background: rgba(103, 115, 135, 0.4);
+  width: 32px;
+  height: 32px;
+  background-color: #ECEFF150;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  right: 18px;
 }
 
 .prev-arrow {
-  left: -17px;
+  background-image: url("/svg/popular-goods-slider-prev.svg");
+}
+
+.next-arrow {
+  background-image: url("/svg/popular-goods-slider-next.svg");
 }
 
 .promo-slider {
@@ -1348,6 +1354,7 @@ input.g-button svg {
 }
 
 .popular-goods h2 {
+  width: 50%;
   margin-bottom: 16px;
   font-weight: bold;
   font-size: 20px;
@@ -1355,42 +1362,26 @@ input.g-button svg {
 }
 
 .popular-goods .slick-arrow {
-  top: -58px;
+  top: -56px;
   right: 0px;
 }
 
-.popular-goods .popular-goods__arrow-prev {
-  width: 32px;
-  height: 32px;
+.popular-goods .prev-arrow {
   right: 40px;
-  background-image: url("/svg/popular-goods-slider-prev.svg");
-  background-color: #ECEFF150;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.popular-goods .popular-goods__arrow-next {
-  width: 32px;
-  height: 32px;
-  background-image: url("/svg/popular-goods-slider-next.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ECEFF150;
-  border: none;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
 }
 
 .popular-goods__card {
   max-width: 212px;
+  margin-right: 20px;
+}
+
+.popular-goods__card:last-child {
+  margin-right: 0;
 }
 
 .popular-goods__image {
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .popular-goods__image svg {
@@ -1401,7 +1392,7 @@ input.g-button svg {
 
 .popular-goods__statuses {
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 0;
 }
 
@@ -1435,7 +1426,7 @@ input.g-button svg {
 }
 
 .popular-goods__title {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 14px;
   line-height: 18px;
   color: #263238;
@@ -1450,6 +1441,7 @@ input.g-button svg {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 3px;
 }
 
 .popular-goods__rait span {
@@ -1535,7 +1527,7 @@ input.g-button svg {
 }
 
 .popular-goods__price {
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   font-weight: 500;
 }
 
@@ -1636,6 +1628,10 @@ html {
     margin-bottom: 24px;
     font-size: 28px;
     line-height: 34px;
+  }
+
+  .popular-goods .slick-arrow {
+    top: -58px;
   }
 
   .popular-goods__wrapper {

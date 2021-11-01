@@ -18,10 +18,13 @@
 }
 .next-arrow,.prev-arrow
 {
-	width:40px;
-	height:40px;
-	background: rgba(103, 115, 135, 0.4);
+	width: 32px;
+	height: 32px;
+	background-color: #ECEFF150;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
 	border-radius: 50%;
-	right: 18px;
 }
-.prev-arrow{left: -17px;}
+.prev-arrow{background-image: url('/svg/popular-goods-slider-prev.svg');}
+.next-arrow{background-image: url('/svg/popular-goods-slider-next.svg');}
