@@ -229,6 +229,7 @@ header
 }
 @media (min-width: 768px)
 {
+	header{margin-bottom: 24px;}
 	.container{padding: 0 80px;}
 	.header__mob-nav{justify-content:space-evenly;}
 }
