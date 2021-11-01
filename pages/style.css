@@ -1276,19 +1276,30 @@ input.g-button svg {
 }
 
 .promo-slider__wrapper .slick-dots {
-  display: inline-block;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 20px;
   bottom: 12px;
-  right: 50%;
+  left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
+.promo-slider__wrapper .slick-dots .promo-slider__slider-dot {
+  height: 6px;
+  width: 6px;
+  margin-right: 4px;
+  background: #FFFFFF;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
 .promo-slider__wrapper .slick-dots .slick-active .promo-slider__slider-dot {
   background: #263238;
-  border: 2px solid #fff;
 }
 
 .promo-slider__content img {
