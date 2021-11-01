@@ -1,12 +1,15 @@
 <section class="popular-goods">
 	<div class="container">
 		<h2>Популярные товары</h2>
-		<div class="popular-goods__wrapper">
+		<div class="popular-goods__wrapper _popular-goods__wrapper">
 			{% for item in 1..4 %}
 			<div class="popular-goods__card">
 				<div class="popular-goods__image">
 					<div class="popular-goods__statuses">
-						<div class="popular-goods__status">Экономия 20%</div>
+						<div class="popular-goods__status popular-goods__status--sale">Экономия 20%</div>
+						<div class="popular-goods__status popular-goods__status--none">Нет в наличии</div>
+						<div class="popular-goods__status popular-goods__status--new">Новинка</div>
+						<div class="popular-goods__status popular-goods__status--balance">2 штуки</div>
 					</div>
 					<a href="#">
 						<picture>
@@ -19,8 +22,12 @@
 				<div class="popular-goods__title">
 					<span>Вимакс Супер Форте капс. №30</span>
 				</div>
-				<div class="popular-goods__rait">
-					{% include "../../assets/svg/popular-goods-rait.svg" %}
+				<div class="popular-goods__rait" data-rating="2.5">
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
 					<span>12</span>
 				</div>
 				<div class="popular-goods__price">
@@ -30,6 +37,8 @@
 				</div>
 				<div class="popular-goods__btn">
 					<button class="g-button">В корзину</button>
+					<button class="g-button g-button--basket">В корзине</button>
+					<button class="g-button g-button--disable">В корзину</button>
 				</div>
 			</div>
 			{% endfor %}

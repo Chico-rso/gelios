@@ -200,11 +200,14 @@
 		<section class="popular-goods">
 			<div class="container">
 				<h2>Популярные товары</h2>
-				<div class="popular-goods__wrapper">
+				<div class="popular-goods__wrapper _popular-goods__wrapper">
 					<div class="popular-goods__card">
 						<div class="popular-goods__image">
 							<div class="popular-goods__statuses">
-								<div class="popular-goods__status">Экономия 20%</div>
+								<div class="popular-goods__status popular-goods__status--sale">Экономия 20%</div>
+								<div class="popular-goods__status popular-goods__status--none">Нет в наличии</div>
+								<div class="popular-goods__status popular-goods__status--new">Новинка</div>
+								<div class="popular-goods__status popular-goods__status--balance">2 штуки</div>
 							</div>
 							<a href="#">
 						<picture>
@@ -219,10 +222,12 @@
 						<div class="popular-goods__title">
 							<span>Вимакс Супер Форте капс. №30</span>
 						</div>
-						<div class="popular-goods__rait">
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.1108 14.2238C12.357 14.0388 12.411 13.7344 12.2609 13.3047L11.0061 9.58651L14.2121 7.30068C14.5844 7.03808 14.7345 6.75758 14.6384 6.46513C14.5424 6.17269 14.2602 6.02945 13.7979 6.03542L9.86538 6.06526L8.67062 2.32916C8.52652 1.89348 8.31039 1.66669 7.99819 1.66669C7.69199 1.66669 7.47586 1.89348 7.33177 2.32916L6.13701 6.06526L2.2045 6.03542C1.74221 6.02945 1.46003 6.17269 1.36397 6.46513C1.26191 6.75758 1.418 7.03808 1.79024 7.30068L4.99628 9.58651L3.74148 13.3047C3.59139 13.7344 3.64542 14.0388 3.89158 14.2238C4.13773 14.4148 4.44993 14.3491 4.82217 14.0806L7.99819 11.7589L11.1802 14.0806C11.5524 14.3491 11.8586 14.4148 12.1108 14.2238Z" fill="#F44336" />
-							</svg>
+						<div class="popular-goods__rait" data-rating="2.5">
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
 							<span>12</span>
 						</div>
 						<div class="popular-goods__price">
@@ -232,12 +237,17 @@
 						</div>
 						<div class="popular-goods__btn">
 							<button class="g-button">В корзину</button>
+							<button class="g-button g-button--basket">В корзине</button>
+							<button class="g-button g-button--disable">В корзину</button>
 						</div>
 					</div>
 					<div class="popular-goods__card">
 						<div class="popular-goods__image">
 							<div class="popular-goods__statuses">
-								<div class="popular-goods__status">Экономия 20%</div>
+								<div class="popular-goods__status popular-goods__status--sale">Экономия 20%</div>
+								<div class="popular-goods__status popular-goods__status--none">Нет в наличии</div>
+								<div class="popular-goods__status popular-goods__status--new">Новинка</div>
+								<div class="popular-goods__status popular-goods__status--balance">2 штуки</div>
 							</div>
 							<a href="#">
 						<picture>
@@ -252,10 +262,12 @@
 						<div class="popular-goods__title">
 							<span>Вимакс Супер Форте капс. №30</span>
 						</div>
-						<div class="popular-goods__rait">
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.1108 14.2238C12.357 14.0388 12.411 13.7344 12.2609 13.3047L11.0061 9.58651L14.2121 7.30068C14.5844 7.03808 14.7345 6.75758 14.6384 6.46513C14.5424 6.17269 14.2602 6.02945 13.7979 6.03542L9.86538 6.06526L8.67062 2.32916C8.52652 1.89348 8.31039 1.66669 7.99819 1.66669C7.69199 1.66669 7.47586 1.89348 7.33177 2.32916L6.13701 6.06526L2.2045 6.03542C1.74221 6.02945 1.46003 6.17269 1.36397 6.46513C1.26191 6.75758 1.418 7.03808 1.79024 7.30068L4.99628 9.58651L3.74148 13.3047C3.59139 13.7344 3.64542 14.0388 3.89158 14.2238C4.13773 14.4148 4.44993 14.3491 4.82217 14.0806L7.99819 11.7589L11.1802 14.0806C11.5524 14.3491 11.8586 14.4148 12.1108 14.2238Z" fill="#F44336" />
-							</svg>
+						<div class="popular-goods__rait" data-rating="2.5">
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
 							<span>12</span>
 						</div>
 						<div class="popular-goods__price">
@@ -265,12 +277,17 @@
 						</div>
 						<div class="popular-goods__btn">
 							<button class="g-button">В корзину</button>
+							<button class="g-button g-button--basket">В корзине</button>
+							<button class="g-button g-button--disable">В корзину</button>
 						</div>
 					</div>
 					<div class="popular-goods__card">
 						<div class="popular-goods__image">
 							<div class="popular-goods__statuses">
-								<div class="popular-goods__status">Экономия 20%</div>
+								<div class="popular-goods__status popular-goods__status--sale">Экономия 20%</div>
+								<div class="popular-goods__status popular-goods__status--none">Нет в наличии</div>
+								<div class="popular-goods__status popular-goods__status--new">Новинка</div>
+								<div class="popular-goods__status popular-goods__status--balance">2 штуки</div>
 							</div>
 							<a href="#">
 						<picture>
@@ -285,10 +302,12 @@
 						<div class="popular-goods__title">
 							<span>Вимакс Супер Форте капс. №30</span>
 						</div>
-						<div class="popular-goods__rait">
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.1108 14.2238C12.357 14.0388 12.411 13.7344 12.2609 13.3047L11.0061 9.58651L14.2121 7.30068C14.5844 7.03808 14.7345 6.75758 14.6384 6.46513C14.5424 6.17269 14.2602 6.02945 13.7979 6.03542L9.86538 6.06526L8.67062 2.32916C8.52652 1.89348 8.31039 1.66669 7.99819 1.66669C7.69199 1.66669 7.47586 1.89348 7.33177 2.32916L6.13701 6.06526L2.2045 6.03542C1.74221 6.02945 1.46003 6.17269 1.36397 6.46513C1.26191 6.75758 1.418 7.03808 1.79024 7.30068L4.99628 9.58651L3.74148 13.3047C3.59139 13.7344 3.64542 14.0388 3.89158 14.2238C4.13773 14.4148 4.44993 14.3491 4.82217 14.0806L7.99819 11.7589L11.1802 14.0806C11.5524 14.3491 11.8586 14.4148 12.1108 14.2238Z" fill="#F44336" />
-							</svg>
+						<div class="popular-goods__rait" data-rating="2.5">
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
 							<span>12</span>
 						</div>
 						<div class="popular-goods__price">
@@ -298,12 +317,17 @@
 						</div>
 						<div class="popular-goods__btn">
 							<button class="g-button">В корзину</button>
+							<button class="g-button g-button--basket">В корзине</button>
+							<button class="g-button g-button--disable">В корзину</button>
 						</div>
 					</div>
 					<div class="popular-goods__card">
 						<div class="popular-goods__image">
 							<div class="popular-goods__statuses">
-								<div class="popular-goods__status">Экономия 20%</div>
+								<div class="popular-goods__status popular-goods__status--sale">Экономия 20%</div>
+								<div class="popular-goods__status popular-goods__status--none">Нет в наличии</div>
+								<div class="popular-goods__status popular-goods__status--new">Новинка</div>
+								<div class="popular-goods__status popular-goods__status--balance">2 штуки</div>
 							</div>
 							<a href="#">
 						<picture>
@@ -318,10 +342,12 @@
 						<div class="popular-goods__title">
 							<span>Вимакс Супер Форте капс. №30</span>
 						</div>
-						<div class="popular-goods__rait">
-							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.1108 14.2238C12.357 14.0388 12.411 13.7344 12.2609 13.3047L11.0061 9.58651L14.2121 7.30068C14.5844 7.03808 14.7345 6.75758 14.6384 6.46513C14.5424 6.17269 14.2602 6.02945 13.7979 6.03542L9.86538 6.06526L8.67062 2.32916C8.52652 1.89348 8.31039 1.66669 7.99819 1.66669C7.69199 1.66669 7.47586 1.89348 7.33177 2.32916L6.13701 6.06526L2.2045 6.03542C1.74221 6.02945 1.46003 6.17269 1.36397 6.46513C1.26191 6.75758 1.418 7.03808 1.79024 7.30068L4.99628 9.58651L3.74148 13.3047C3.59139 13.7344 3.64542 14.0388 3.89158 14.2238C4.13773 14.4148 4.44993 14.3491 4.82217 14.0806L7.99819 11.7589L11.1802 14.0806C11.5524 14.3491 11.8586 14.4148 12.1108 14.2238Z" fill="#F44336" />
-							</svg>
+						<div class="popular-goods__rait" data-rating="2.5">
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
 							<span>12</span>
 						</div>
 						<div class="popular-goods__price">
@@ -331,6 +357,8 @@
 						</div>
 						<div class="popular-goods__btn">
 							<button class="g-button">В корзину</button>
+							<button class="g-button g-button--basket">В корзине</button>
+							<button class="g-button g-button--disable">В корзину</button>
 						</div>
 					</div>
 				</div>
