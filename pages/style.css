@@ -1600,6 +1600,8 @@ input.g-button svg {
   position: relative;
   max-width: 288px;
   margin-bottom: 12px;
+  padding: 12px 38px;
+  text-align: center;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 12px;
@@ -1610,6 +1612,10 @@ input.g-button svg {
   margin-bottom: 0;
 }
 
+.sale__card--hidden {
+  display: none;
+}
+
 .sale__card--big {
   padding: 24px 24px 23px 24px;
   text-align: center;
@@ -1617,6 +1623,17 @@ input.g-button svg {
 
 .sale__card--big .sale__card-img {
   margin-bottom: 8px;
+}
+
+.sale__card--big .sale__card-img img {
+  width: 240px;
+  height: 240px;
+}
+
+.sale__card--big .sale__card-status {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .sale__card--big .sale__card-title {
@@ -1660,17 +1677,10 @@ input.g-button svg {
   background: #F44336;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 26px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
   color: #fff;
-}
-
-.sale__card-img img {
-  width: 240px;
-  height: 240px;
-  -o-object-fit: scale-down;
-  object-fit: scale-down;
 }
 
 .sale__btn-more .g-button {
