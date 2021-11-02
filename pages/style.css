@@ -1983,7 +1983,7 @@ input.g-button svg {
 }
 
 .see {
-  margin-bottom: 24px;
+  margin-bottom: 13px;
 }
 
 .see h2 {
@@ -2062,6 +2062,9 @@ input.g-button svg {
   margin-bottom: 6px;
   font-size: 14px;
   line-height: 18px;
+}
+
+.see__title a {
   color: #263238;
 }
 
@@ -2409,16 +2412,20 @@ html {
     margin-right: 0;
   }
 
+  .relevance__price {
+    margin-bottom: 11px;
+  }
+
   .relevance__title {
     margin-bottom: 5px;
   }
 
   .see {
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 
   .see h2 {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 28px;
     line-height: 34px;
   }
