@@ -22,8 +22,10 @@
 			font-size: 16px;
 			line-height: 22px;
 		}
+		&--desktop{display: none;}
 	}
 }
+.sale__cards{margin-bottom: 16px;}
 .sale__card
 {
 	position: relative;
@@ -110,12 +112,20 @@
 		text-align: center;
 	}
 }
+.sale__card-img{margin-bottom: 7px;}
+.sale__card-title
+{
+	margin-bottom: 9px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #263238;
+}
 .sale__card-price
 {
 	&--red
 	{
-		font-size: 18px;
-		line-height: 22px;
+		font-size: 14px;
+		line-height: 18px;
 		color: #F44336;
 	}
 	&--old
@@ -127,14 +137,83 @@
 		color: #7B8E98;
 	}
 }
+@media (min-width: 768px)
+{
+	.sale
+	{
+		.g-button
+		{
+			&--more{display: none;}
+			&--desktop
+			{
+				display: inline-block;
+				font-size: 18px;
+			}
+		}
+		h2
+		{
+			margin-right: 8px;
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 34px;
+		}
+	}
+	.sale__cards
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+	.sale__btn-more{display: none;}
+}
 
-
-
-
-
-
-
-
+@media (min-width: 1024px)
+{
+	.sale
+	{
+		h2{margin-bottom: 24px;}
+	}
+	.sale__cards{justify-content: start;}
+	.sale__card
+	{
+		&--big
+		{
+			max-width: 490px;
+			width: 50%;
+			margin-bottom: 0;
+			margin-right: 20px;
+			padding: 32px 0 31px 0;
+			.sale__card-img
+			{
+				img
+				{
+					width: 277px;
+					height: 277px;
+				}
+			}
+			.g-button
+			{
+				padding: 0 18px;
+				line-height: 40px;
+				font-size: 14px;
+			}
+		}
+	}
+	.sale__card-min
+	{
+		display: flex;
+		flex-wrap: wrap;
+		width: 50%;
+		gap: 20px;
+		.sale__card
+		{
+			flex: 1;
+			padding: 12px;
+			max-width: 235px;
+			margin-bottom: 0;
+		}
+	}
+	.sale__card--hidden{display: block;}
+}
 
 
 
