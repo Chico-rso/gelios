@@ -1381,7 +1381,7 @@ input.g-button svg {
 
 .popular-goods__image {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .popular-goods__image svg {
@@ -1426,7 +1426,8 @@ input.g-button svg {
 }
 
 .popular-goods__title {
-  margin-bottom: 6px;
+  height: 34px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 18px;
   color: #263238;
@@ -1441,7 +1442,7 @@ input.g-button svg {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 
 .popular-goods__raits .popular-goods__rait-star span {
@@ -2329,13 +2330,13 @@ html {
   }
 
   .popular-goods h2 {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 28px;
     line-height: 34px;
   }
 
   .popular-goods .slick-arrow {
-    top: -58px;
+    top: -56px;
   }
 
   .popular-goods__wrapper {
@@ -2360,10 +2361,6 @@ html {
 
   .popular-goods__card:last-child {
     margin-right: 0;
-  }
-
-  .popular-goods__title {
-    margin-bottom: 22px;
   }
 
   .relevance {

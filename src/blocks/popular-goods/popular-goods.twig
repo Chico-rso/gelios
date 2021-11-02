@@ -3,17 +3,17 @@
 		<h2>Популярные товары</h2>
 		<div class="popular-goods__wrapper _popular-goods__wrapper">
 			{% for item in 1..4 %}
-			<div class="popular-goods__card">
-				<div class="popular-goods__image">
-					<div class="popular-goods__statuses">
-						<div class="popular-goods__status popular-goods__status--sale">Экономия 20%</div>
-						<div class="popular-goods__status popular-goods__status--none">Нет в наличии</div>
-						<div class="popular-goods__status popular-goods__status--new">Новинка</div>
-						<div class="popular-goods__status popular-goods__status--balance">2 штуки</div>
-					</div>
-					<a href="#">
-						<picture>
-							<source srcset="./img/popular-goods-desktop.png" media="(min-width: 769px)">
+				<div class="popular-goods__card">
+					<div class="popular-goods__image">
+						<div class="popular-goods__statuses">
+							<div class="popular-goods__status popular-goods__status--sale">Экономия 20%</div>
+							<div class="popular-goods__status popular-goods__status--none">Нет в наличии</div>
+							<div class="popular-goods__status popular-goods__status--new">Новинка</div>
+							<div class="popular-goods__status popular-goods__status--balance">2 штуки</div>
+						</div>
+						<a href="#">
+							<picture>
+								<source srcset="./img/popular-goods-desktop.png" media="(min-width: 769px)">
 								<img src="./img/popular-goods.png" alt="product image">
 								{% include "../../assets/svg/popular-goods-favorit.svg" %}
 							</picture>
@@ -23,7 +23,7 @@
 						<span>Вимакс Супер Форте капс. №30</span>
 					</div>
 					<div class="popular-goods__raits" data-rating="2.5">
-						<div class="popular-goods__rait-star" >
+						<div class="popular-goods__rait-star">
 							<i></i>
 							<i></i>
 							<i></i>
@@ -46,7 +46,7 @@
 						<button class="g-button g-button--disable">В корзину</button>
 					</div>
 				</div>
-				{% endfor %}
-			</div>
+			{% endfor %}
 		</div>
-	</section>
+	</div>
+</section>
