@@ -2215,8 +2215,31 @@ input.g-button svg {
   margin-bottom: 24px;
 }
 
-.banners__img {
-  line-height: 0;
+.banners__img .slick-dots {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  bottom: 12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.banners__img .slick-dots .slick-active .banners__slider-dot {
+  background: #263238;
+}
+
+.banners__img .banners__slider-dot {
+  height: 6px;
+  width: 6px;
+  margin-right: 4px;
+  background: #FFFFFF;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* Пример подключения*/

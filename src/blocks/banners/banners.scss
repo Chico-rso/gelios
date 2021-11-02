@@ -1,2 +1,28 @@
 .banners{margin-bottom: 24px;}
-.banners__img{line-height: 0;}
+.banners__img
+{
+	.slick-dots
+	{
+		position: absolute;
+		display: flex;
+		margin-right: 20px;
+		bottom: 12px;
+		left: 50%;
+		transform: translateX(-50%);
+		.slick-active
+		{
+			.banners__slider-dot
+			{
+				background: #263238;
+			}
+		}
+	}
+	.banners__slider-dot
+	{
+		height: 6px;
+		width: 6px;
+		margin-right: 4px;
+		background: #FFFFFF;
+		border-radius: 50%;
+	}
+}
