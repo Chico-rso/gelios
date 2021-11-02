@@ -21,6 +21,7 @@ const o2 =
 		this.popularGoods.initSlider();
 		this.relevance.initSlider();
 		this.see.initSlider();
+		this.banners.initSlider();
 	},
 	/**
 	* отслеживание клика вне блока
