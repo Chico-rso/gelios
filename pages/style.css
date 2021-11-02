@@ -1743,6 +1743,240 @@ input.g-button svg {
   color: #7B8E98;
 }
 
+.relevance {
+  margin-bottom: 24px;
+}
+
+.relevance h2 {
+  width: 50%;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.relevance .slick-arrow {
+  top: -56px;
+  right: 0px;
+}
+
+.relevance .prev-arrow {
+  right: 40px;
+}
+
+.relevance__card {
+  max-width: 212px;
+  margin-right: 20px;
+}
+
+.relevance__card:last-child {
+  margin-right: 0;
+}
+
+.relevance__image {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.relevance__image svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.relevance__statuses {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.relevance__status {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 8px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.relevance__status--sale {
+  background: #F44336;
+}
+
+.relevance__status--none {
+  background: #7B8E98;
+}
+
+.relevance__status--new {
+  background: #03A9F4;
+}
+
+.relevance__status--balance {
+  background: #F44336;
+}
+
+.relevance__title {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #263238;
+}
+
+.relevance__raits .relevance__rait-star {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.relevance__raits .relevance__rait-star span {
+  margin-left: 9px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7B8E98;
+}
+
+.relevance__raits .relevance__rait-star i {
+  background-image: url("/svg/popular-goods-rait.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  height: 18px;
+  width: 16px;
+}
+
+.relevance__raits .relevance__rait-notstar {
+  display: none;
+}
+
+.relevance__raits .relevance__rait-notstar span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #7B8E98;
+}
+
+.relevance__raits[data-rating="0"] i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating="1"] i:nth-child(1) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating="2"] i:nth-child(2) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating="3"] i:nth-child(3) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating="4"] i:nth-child(4) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating="5"] i:nth-child(5) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating=".5"] i:nth-child(1) {
+  background-image: url("/svg/popular-goods-rait-half.svg");
+}
+
+.relevance__raits[data-rating=".5"] i:nth-child(1) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating="1.5"] i:nth-child(2) {
+  background-image: url("/svg/popular-goods-rait-half.svg");
+}
+
+.relevance__raits[data-rating="1.5"] i:nth-child(2) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating="2.5"] i:nth-child(3) {
+  background-image: url("/svg/popular-goods-rait-half.svg");
+}
+
+.relevance__raits[data-rating="2.5"] i:nth-child(3) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating="3.5"] i:nth-child(4) {
+  background-image: url("/svg/popular-goods-rait-half.svg");
+}
+
+.relevance__raits[data-rating="3.5"] i:nth-child(4) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__raits[data-rating="4.5"] i:nth-child(5) {
+  background-image: url("/svg/popular-goods-rait-half.svg");
+}
+
+.relevance__raits[data-rating="4.5"] i:nth-child(5) ~ i {
+  background-image: url("/svg/popular-goods-rait-empty.svg");
+}
+
+.relevance__price {
+  margin-bottom: 9px;
+  font-weight: 500;
+}
+
+.relevance__price-sale {
+  font-size: 14px;
+  line-height: 18px;
+  color: #F44336;
+}
+
+.relevance__price-none {
+  font-size: 10px;
+  line-height: 12px;
+  color: #7B8E98;
+  -webkit-text-decoration: line-through #263238;
+  text-decoration: line-through #263238;
+}
+
+.relevance__price-default {
+  display: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #263238;
+}
+
+.relevance__btn .g-button {
+  padding: 0 14px;
+}
+
+.relevance__btn .g-button--basket {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #01A54E;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  color: #01A54E;
+}
+
+.relevance__btn .g-button--disable {
+  display: none;
+  background: #CFD8DC;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  color: #fff;
+}
+
 /* Пример подключения*/
 
 /* @import 'blocks/component/component'; */
@@ -1866,6 +2100,48 @@ html {
   .popular-goods__title {
     margin-bottom: 22px;
   }
+
+  .relevance {
+    margin-bottom: 40px;
+  }
+
+  .relevance h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .relevance .slick-arrow {
+    top: -58px;
+  }
+
+  .relevance__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .relevance__card {
+    width: 50%;
+    max-width: 235px;
+    margin-right: 20px;
+  }
+
+  .relevance__card:last-child {
+    margin-right: 0;
+  }
+
+  .relevance__title {
+    margin-bottom: 22px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1890,6 +2166,10 @@ html {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .sale {
+    margin-bottom: 40px;
   }
 
   .sale h2 {

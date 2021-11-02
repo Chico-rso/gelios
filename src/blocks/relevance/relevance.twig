@@ -1,0 +1,52 @@
+<section class="relevance">
+	<div class="container">
+		<h2>Актуально в эту погоду</h2>
+		<div class="relevance__wrapper _relevance__wrapper">
+			{% for item in 1..4 %}
+			<div class="relevance__card">
+				<div class="relevance__image">
+					<div class="relevance__statuses">
+						<div class="relevance__status relevance__status--sale">Экономия 20%</div>
+						<div class="relevance__status relevance__status--none">Нет в наличии</div>
+						<div class="relevance__status relevance__status--new">Новинка</div>
+						<div class="relevance__status relevance__status--balance">2 штуки</div>
+					</div>
+					<a href="#">
+						<picture>
+							<source srcset="./img/relevance-desktop.png" media="(min-width: 769px)">
+								<img src="./img/relevance-1.png" alt="product image">
+								{% include "../../assets/svg/popular-goods-favorit.svg" %}
+							</picture>
+						</a>
+					</div>
+					<div class="relevance__title">
+						<span>AQA baby Спрей для очищения всех поверхностей в детской…</span>
+					</div>
+					<div class="relevance__raits" data-rating="2.5">
+						<div class="relevance__rait-star" >
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<i></i>
+							<span>12</span>
+						</div>
+						<div class="relevance__rait-notstar">
+							<span>Нет отзывов</span>
+						</div>
+					</div>
+					<div class="relevance__price">
+						<span class="relevance__price-sale">258.20 ₽</span>
+						<span class="relevance__price-none">335,66 ₽</span>
+						<span class="relevance__price-default">335 ₽</span>
+					</div>
+					<div class="relevance__btn">
+						<button class="g-button">В корзину</button>
+						<button class="g-button g-button--basket">В корзине</button>
+						<button class="g-button g-button--disable">В корзину</button>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
