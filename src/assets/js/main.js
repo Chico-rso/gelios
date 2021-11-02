@@ -20,6 +20,7 @@ const o2 =
 		this.promoSlider.initSlider();
 		this.popularGoods.initSlider();
 		this.relevance.initSlider();
+		this.see.initSlider();
 	},
 	/**
 	* отслеживание клика вне блока
