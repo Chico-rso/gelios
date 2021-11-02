@@ -60,87 +60,102 @@
 	line-height: 18px;
 	color: #263238;
 }
-.popular-goods__rait
+.popular-goods__raits
 {
-	display: flex;
-	align-items: center;
-	margin-bottom: 3px;
-	span
+	.popular-goods__rait-star
 	{
-		margin-left: 9px;
-		font-size: 12px;
-		line-height: 14px;
-		color: #7B8E98;
+
+		display: flex;
+		align-items: center;
+		margin-bottom: 3px;
+		span
+		{
+			margin-left: 9px;
+			font-size: 12px;
+			line-height: 14px;
+			color: #7B8E98;
+		}
+		i
+		{
+			background-image: url('/svg/popular-goods-rait.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: inline-block;
+			height: 18px;
+			width: 16px;
+		}
 	}
-	i
+	.popular-goods__rait-notstar
 	{
-		background-image: url('/svg/popular-goods-rait.svg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
-		display: inline-block;
-		height: 18px;
-		width: 16px;
+		display: none;
+		span
+		{
+			font-size: 12px;
+			line-height: 14px;
+			color: #7B8E98;
+		}
 	}
-	&[data-rating="0"] i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating="1"] i:nth-child(1) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating="2"] i:nth-child(2) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating="3"] i:nth-child(3) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating="4"] i:nth-child(4) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating="5"] i:nth-child(5) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating=".5"] i:nth-child(1) {
-		background-image: url('/svg/popular-goods-rait-half.svg');
-	}
-	&[data-rating=".5"] i:nth-child(1) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating="1.5"] i:nth-child(2) {
-		background-image: url('/svg/popular-goods-rait-half.svg');
-	}
-	&[data-rating="1.5"] i:nth-child(2) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating="2.5"] i:nth-child(3) {
-		background-image: url('/svg/popular-goods-rait-half.svg');
-	}
-	&[data-rating="2.5"] i:nth-child(3) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating="3.5"] i:nth-child(4) {
-		background-image: url('/svg/popular-goods-rait-half.svg');
-	}
-	&[data-rating="3.5"] i:nth-child(4) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
-	&[data-rating="4.5"] i:nth-child(5) {
-		background-image: url('/svg/popular-goods-rait-half.svg');
-	}
-	&[data-rating="4.5"] i:nth-child(5) ~ i
-	{
-		background-image: url('/svg/popular-goods-rait-empty.svg');
-	}
+&[data-rating="0"] i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating="1"] i:nth-child(1) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating="2"] i:nth-child(2) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating="3"] i:nth-child(3) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating="4"] i:nth-child(4) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating="5"] i:nth-child(5) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating=".5"] i:nth-child(1) {
+	background-image: url('/svg/popular-goods-rait-half.svg');
+}
+&[data-rating=".5"] i:nth-child(1) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating="1.5"] i:nth-child(2) {
+	background-image: url('/svg/popular-goods-rait-half.svg');
+}
+&[data-rating="1.5"] i:nth-child(2) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating="2.5"] i:nth-child(3) {
+	background-image: url('/svg/popular-goods-rait-half.svg');
+}
+&[data-rating="2.5"] i:nth-child(3) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating="3.5"] i:nth-child(4) {
+	background-image: url('/svg/popular-goods-rait-half.svg');
+}
+&[data-rating="3.5"] i:nth-child(4) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+&[data-rating="4.5"] i:nth-child(5) {
+	background-image: url('/svg/popular-goods-rait-half.svg');
+}
+&[data-rating="4.5"] i:nth-child(5) ~ i
+{
+	background-image: url('/svg/popular-goods-rait-empty.svg');
+}
+
 }
 .popular-goods__price
 {
