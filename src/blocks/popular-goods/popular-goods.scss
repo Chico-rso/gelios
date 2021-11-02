@@ -63,12 +63,12 @@
 }
 .popular-goods__raits
 {
+	margin-bottom: 4px;
 	.popular-goods__rait-star
 	{
 
 		display: flex;
 		align-items: center;
-		margin-bottom: 6px;
 		span
 		{
 			margin-left: 9px;
@@ -229,6 +229,7 @@
 		margin-right: 20px;
 		&:last-child{margin-right: 0;}
 	}
+	.popular-goods__raits{margin-bottom: 6px;}
 }
 
 

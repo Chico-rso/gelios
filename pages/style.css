@@ -1433,6 +1433,10 @@ input.g-button svg {
   color: #263238;
 }
 
+.popular-goods__raits {
+  margin-bottom: 4px;
+}
+
 .popular-goods__raits .popular-goods__rait-star {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1442,7 +1446,6 @@ input.g-button svg {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 6px;
 }
 
 .popular-goods__raits .popular-goods__rait-star span {
@@ -1615,6 +1618,13 @@ input.g-button svg {
   margin-bottom: 16px;
 }
 
+.sale__cards .sale__card--big .sale__card-status {
+  padding: 0 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+}
+
 .sale__card {
   position: relative;
   max-width: 288px;
@@ -1653,14 +1663,8 @@ input.g-button svg {
   height: 240px;
 }
 
-.sale__card--big .sale__card-status {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 26px;
-}
-
 .sale__card--big .sale__card-title {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   font-size: 18px;
   line-height: 22px;
   color: #263238;
@@ -1723,7 +1727,7 @@ input.g-button svg {
 }
 
 .sale__card-title {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 18px;
   color: #263238;
@@ -2363,6 +2367,10 @@ html {
     margin-right: 0;
   }
 
+  .popular-goods__raits {
+    margin-bottom: 6px;
+  }
+
   .relevance {
     margin-bottom: 40px;
   }
@@ -2497,6 +2505,10 @@ html {
   .sale__card--big .sale__card-img img {
     width: 277px;
     height: 277px;
+  }
+
+  .sale__card--big .sale__card-price {
+    margin-bottom: 15px;
   }
 
   .sale__card--big .g-button {
