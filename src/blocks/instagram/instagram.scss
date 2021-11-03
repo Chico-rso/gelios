@@ -1,0 +1,53 @@
+.instagram
+{
+	margin-bottom: 24px;
+	a
+	{
+		line-height: 0;
+		color: #263238;
+	}
+}
+.instagram__title
+{
+	margin-bottom: 12px;
+	svg
+	{
+		margin-left: 2px;
+		vertical-align: middle;
+	}
+}
+.instagram__content-list
+{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px
+}
+.instagram__content{margin-bottom: 16px;}
+.instagram__content-item
+{
+	display: flex;
+	a
+	{
+		img
+		{
+			width: 139px;
+			height: 139px;
+
+		}
+	}
+}
+.instagram__btn-more
+{
+	.g-button
+	{
+		padding: 0 14px 0 14px;
+		width: 100%;
+		max-width: 288px;
+		background: none;
+		color: #263238;
+		border: 1px solid #CFD8DC;
+		line-height: 40px;
+		font-size: 14px;
+		text-align: center;
+	}
+}
