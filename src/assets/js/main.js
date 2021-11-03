@@ -20,6 +20,7 @@ const o2 =
 		this.promoSlider.initSlider();
 		this.productsSlider.initSlider();
 		this.banners.initSlider();
+		this.instagram.initSlider();
 	},
 	/**
 	* отслеживание клика вне блока
