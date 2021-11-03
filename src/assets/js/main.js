@@ -18,9 +18,7 @@ const o2 =
 	init()
 	{
 		this.promoSlider.initSlider();
-		this.popularGoods.initSlider();
-		this.relevance.initSlider();
-		this.see.initSlider();
+		this.productsSlider.initSlider();
 		this.banners.initSlider();
 	},
 	/**

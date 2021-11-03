@@ -1349,27 +1349,6 @@ input.g-button svg {
   object-fit: cover;
 }
 
-.popular-goods {
-  margin-bottom: 24px;
-}
-
-.popular-goods h2 {
-  width: 50%;
-  margin-bottom: 16px;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.popular-goods .slick-arrow {
-  top: -56px;
-  right: 0px;
-}
-
-.popular-goods .prev-arrow {
-  right: 40px;
-}
-
 .sale {
   margin-bottom: 24px;
 }
@@ -1529,27 +1508,6 @@ input.g-button svg {
   font-size: 12px;
   line-height: 14px;
   color: #7B8E98;
-}
-
-.relevance {
-  margin-bottom: 27px;
-}
-
-.relevance h2 {
-  width: 50%;
-  margin-bottom: 16px;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.relevance .slick-arrow {
-  top: -56px;
-  right: 0px;
-}
-
-.relevance .prev-arrow {
-  right: 40px;
 }
 
 .see {
@@ -2094,6 +2052,27 @@ input.g-button svg {
   text-align: center;
 }
 
+.products-slider {
+  margin-bottom: 24px;
+}
+
+.products-slider h2 {
+  width: 50%;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.products-slider .slick-arrow {
+  top: -56px;
+  right: 0px;
+}
+
+.products-slider .prev-arrow {
+  right: 40px;
+}
+
 /* Пример подключения*/
 
 /* @import 'blocks/component/component'; */
@@ -2180,48 +2159,6 @@ html {
 }
 
 @media (min-width: 769px) {
-  .popular-goods {
-    margin-bottom: 40px;
-  }
-
-  .popular-goods h2 {
-    margin-bottom: 25px;
-    font-size: 28px;
-    line-height: 34px;
-  }
-
-  .popular-goods .slick-arrow {
-    top: -56px;
-  }
-
-  .relevance {
-    margin-bottom: 40px;
-  }
-
-  .relevance h2 {
-    margin-bottom: 24px;
-    font-size: 28px;
-    line-height: 34px;
-  }
-
-  .relevance .slick-arrow {
-    top: -58px;
-  }
-
-  .relevance__wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
   .see {
     margin-bottom: 31px;
   }
@@ -2289,6 +2226,20 @@ html {
 
   .product-card__raits {
     margin-bottom: 6px;
+  }
+
+  .products-slider {
+    margin-bottom: 40px;
+  }
+
+  .products-slider h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .products-slider .slick-arrow {
+    top: -56px;
   }
 }
 
