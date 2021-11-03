@@ -11,6 +11,7 @@
 	}
 	p
 	{
+		display: inline-block;
 		margin: 0;
 		margin-bottom: 22px;
 		font-weight: bold;
@@ -18,8 +19,8 @@
 		line-height: 18px;
 		color: #FFFFFF;
 	}
-	ul{margin-bottom: 27px;}
 }
+.footer__content-item{margin-bottom: 27px;}
 .footer__content{border-bottom: 1px solid #87D4AB40;}
 .footer__contacts
 {
@@ -56,3 +57,51 @@
 	color: #87D4AB;
 }
 .footer__bottom-date{margin-bottom: 8px;}
+
+@media (min-width: 1024px)
+{
+	.footer__content
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer__bottom
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2194,6 +2194,7 @@ input.g-button svg {
 }
 
 .footer p {
+  display: inline-block;
   margin: 0;
   margin-bottom: 22px;
   font-weight: bold;
@@ -2202,7 +2203,7 @@ input.g-button svg {
   color: #FFFFFF;
 }
 
-.footer ul {
+.footer__content-item {
   margin-bottom: 27px;
 }
 
@@ -2570,6 +2571,28 @@ html {
 
   .sale__card--hidden {
     display: block;
+  }
+
+  .footer__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .footer__bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
