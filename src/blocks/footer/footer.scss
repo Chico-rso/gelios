@@ -2,4 +2,57 @@
 {
 	padding: 32px 0 24px 0;
 	background: #01A54E;
+	a
+	{
+		font-size: 14px;
+		line-height: 18px;
+		color: #FFFFFF;
+		&:hover{color: #87D4AB;}
+	}
+	p
+	{
+		margin: 0;
+		margin-bottom: 22px;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+		color: #FFFFFF;
+	}
+	ul{margin-bottom: 27px;}
 }
+.footer__content{border-bottom: 1px solid #87D4AB40;}
+.footer__contacts
+{
+	.footer__item
+	{
+		margin-bottom: 10px;
+		a
+		{
+			font-weight: bold;
+			svg
+			{
+				margin-right: 13px;
+				vertical-align: middle;
+			}
+		}
+		&:last-child{margin-bottom: 0;}
+	}
+}
+.footer__payment
+{
+	display: flex;
+	.footer__item:not(:last-child){margin-right: 8px;}
+}
+.footer__social
+{
+	display: flex;
+	.footer__item:not(:last-child){margin-right: 24px;}
+}
+.footer__bottom
+{
+	padding-top: 24px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #87D4AB;
+}
+.footer__bottom-date{margin-bottom: 8px;}

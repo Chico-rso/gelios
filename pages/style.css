@@ -2183,6 +2183,83 @@ input.g-button svg {
   background: #01A54E;
 }
 
+.footer a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.footer a:hover {
+  color: #87D4AB;
+}
+
+.footer p {
+  margin: 0;
+  margin-bottom: 22px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.footer ul {
+  margin-bottom: 27px;
+}
+
+.footer__content {
+  border-bottom: 1px solid #87D4AB40;
+}
+
+.footer__contacts .footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__contacts .footer__item a {
+  font-weight: bold;
+}
+
+.footer__contacts .footer__item a svg {
+  margin-right: 13px;
+  vertical-align: middle;
+}
+
+.footer__contacts .footer__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__payment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__payment .footer__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social .footer__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer__bottom {
+  padding-top: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #87D4AB;
+}
+
+.footer__bottom-date {
+  margin-bottom: 8px;
+}
+
 /* Пример подключения*/
 
 /* @import 'blocks/component/component'; */
