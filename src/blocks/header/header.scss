@@ -84,6 +84,7 @@ header
 		right: 0;
 		transform: translateY(-50%);
 	}
+	&.active{display: block;}
 }
 //!Desctop
 .header__top-wr{background: #01A54E;}

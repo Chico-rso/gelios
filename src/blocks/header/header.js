@@ -4,6 +4,6 @@ o2.header =
 	{
 		const el = document.querySelector('._header__mob-input');
 		console.log(el);
-		el.toggleClass('active');
+		el.classList.toggle('active');
 	}
 };
