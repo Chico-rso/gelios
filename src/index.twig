@@ -6,10 +6,10 @@
 		<div class="container">
 			<h2>Популярные товары</h2>
 			<div class="products-slider__wr _products-slider">
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
+				{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], 'salePrice':[salePrice],'review':[review]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], 'review': 13} %}
+				{% include 'blocks/product-card/product-card.twig' with {'end':[end], 'usualPrice':[usualPrice]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice]} %}
 			</div>
 		</div>
 	</div>
@@ -18,10 +18,10 @@
 		<div class="container">
 			<h2>Актуально в эту погоду</h2>
 			<div class="products-slider__wr _products-slider">
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
+				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], 'notReview':[notReview]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], 'salePrice':[salePrice]} %}
 			</div>
 		</div>
 	</div>
@@ -29,12 +29,12 @@
 		<div class="container">
 			<h2>Вы смотрели</h2>
 			<div class="products-slider__wr _products-slider">
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
-				{% include 'blocks/product-card/product-card.twig' with {} %}
+				{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], 'salePrice':[salePrice]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'end':[end],'usualPrice':[usualPrice]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'balance':[balance],'usualPrice':[usualPrice]} %}
 			</div>
 		</div>
 	</div>

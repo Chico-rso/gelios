@@ -1,43 +1,57 @@
-<div class="product-card">
+<div class="product-card _product-card">
 	<div class="product-card__image">
 		<div class="product-card__statuses">
-			<div class="product-card__status product-card__status--sale">Экономия 20%</div>
-			<div class="product-card__status product-card__status--none">Нет в наличии</div>
-			<div class="product-card__status product-card__status--new">Новинка</div>
-			<div class="product-card__status product-card__status--balance">2 штуки</div>
+			{% if sale is defined %}
+				<div class="product-card__status product-card__status--sale">Экономия 20%</div>
+			{% endif %}
+			{% if end is defined %}
+				<div class="product-card__status product-card__status--end">Нет в наличии</div>
+			{% endif %}
+			{% if new is defined %}
+				<div class="product-card__status product-card__status--new">Новинка</div>
+			{% endif %}
+			{% if balance is defined %}
+				<div class="product-card__status product-card__status--balance">2 штуки</div>
+			{% endif %}
 		</div>
 		<a href="#">
 			<picture>
 				<source srcset="./img/popular-goods-desktop.png" media="(min-width: 769px)">
-					<img src="./img/popular-goods.png" alt="product image">
-					{% include "../../assets/svg/popular-goods-favorit.svg" %}
-				</picture>
-			</a>
+				<img src="./img/popular-goods.png" alt="product image">
+				<div class="_favorit" onclick="o2.productCard.addFavorit(event)">{% include "../../assets/svg/popular-goods-favorit.svg" %}</div>
+			</picture>
+		</a>
+	</div>
+	<div class="product-card__title">
+		<span>Вимакс Супер Форте капс. №30</span>
+	</div>
+	<div class="product-card__raits" data-rating="2.5">
+		<div class="product-card__rait-star">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<span>12</span>
 		</div>
-		<div class="product-card__title">
-			<span>Вимакс Супер Форте капс. №30</span>
-		</div>
-		<div class="product-card__raits" data-rating="2.5">
-			<div class="product-card__rait-star">
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<span>12</span>
-			</div>
+		{% if notReview is defined %}
 			<div class="product-card__rait-notstar">
 				<span>Нет отзывов</span>
 			</div>
-		</div>
-		<div class="product-card__price">
+		{% endif %}
+	</div>
+	<div class="product-card__price">
+		{% if salePrice is defined %}
 			<span class="product-card__price-sale">258.20 ₽</span>
 			<span class="product-card__price-none">335,66 ₽</span>
+		{% endif %}
+		{% if usualPrice is defined %}
 			<span class="product-card__price-default">335 ₽</span>
-		</div>
-		<div class="product-card__btn">
-			<button class="g-button">В корзину</button>
-			<button class="g-button g-button--basket">В корзине</button>
-			<button class="g-button g-button--disable">В корзину</button>
-		</div>
+		{% endif %}
 	</div>
+	<div class="product-card__btn">
+		<button class="g-button" onclick="o2.productCard.changeBasket(event)">В корзину</button>
+		<button class="g-button g-button--basket" onclick="o2.productCard.changeBasket(event)">В корзине</button>
+		<button class="g-button g-button--disable">В корзину</button>
+	</div>
+</div>

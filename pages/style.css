@@ -1791,6 +1791,18 @@ input.g-button svg {
   margin-right: 0;
 }
 
+.product-card.in-basket .g-button {
+  display: none;
+}
+
+.product-card.in-basket .g-button--basket {
+  display: block;
+}
+
+.product-card.in-favorites .favorit svg path {
+  fill: #F44336;
+}
+
 .product-card__image {
   position: relative;
   margin-bottom: 9px;
@@ -1825,7 +1837,7 @@ input.g-button svg {
   background: #F44336;
 }
 
-.product-card__status--none {
+.product-card__status--end {
   background: #7B8E98;
 }
 
@@ -1972,7 +1984,6 @@ input.g-button svg {
 }
 
 .product-card__price-default {
-  display: none;
   font-size: 14px;
   line-height: 18px;
   color: #263238;
@@ -1988,6 +1999,7 @@ input.g-button svg {
   border: 1px solid #01A54E;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+  line-height: 29px;
   color: #01A54E;
 }
 
