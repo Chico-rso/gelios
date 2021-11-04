@@ -17,10 +17,13 @@
 		<a href="#">
 			<picture>
 				<source srcset="./img/popular-goods-desktop.png" media="(min-width: 769px)">
+				{% for item in items %}
+					{{ img }}
+				{% endfor %}
 				<img src="./img/popular-goods.png" alt="product image">
-				<div class="_favorit" onclick="o2.productCard.addFavorit(event)">{% include "../../assets/svg/popular-goods-favorit.svg" %}</div>
 			</picture>
 		</a>
+		<div class="product-card__favorit" onclick="o2.productCard.addFavorit(event)">{% include "../../assets/svg/popular-goods-favorit.svg" %}</div>
 	</div>
 	<div class="product-card__title">
 		<span>Вимакс Супер Форте капс. №30</span>

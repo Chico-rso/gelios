@@ -1799,7 +1799,7 @@ input.g-button svg {
   display: block;
 }
 
-.product-card.in-favorites .favorit svg path {
+.product-card.in-favorites .product-card__image svg path {
   fill: #F44336;
 }
 
@@ -1812,6 +1812,7 @@ input.g-button svg {
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
 }
 
 .product-card__statuses {

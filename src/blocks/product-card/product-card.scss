@@ -13,15 +13,13 @@
 	}
 	&.in-favorites
 	{
-		.favorit
+		.product-card__image
 		{
-			svg path
-			{
-				fill: #F44336;
-			}
+			svg path{fill: #F44336;}
 		}
 	}
 }
+
 .product-card__image
 {
 	position: relative;
@@ -31,6 +29,7 @@
 		position: absolute;
 		top: 0;
 		right: 0;
+		cursor: pointer;
 	}
 }
 .product-card__statuses
