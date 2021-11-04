@@ -11,7 +11,8 @@
 			<div class="header__mob-input _header__mob-input">
 				<label class="g-input">
 					<input name="name" type="text" class="g-input__input" placeholder="Поиск по названию" data-call="emty" data-msg="Заполните это поле">
-					<div class="g-input__sub">Error: invalid name</div> {% include "../../assets/svg/header-mob-serarch-input.svg" %}
+					<div class="g-input__sub">Error: invalid name</div>
+					{% include "../../assets/svg/header-mob-serarch-input.svg" %}
 				</label>
 			</div>
 		</div>
@@ -21,22 +22,41 @@
 			<div class="header__top">
 				<ul class="header__top-list">
 					<li class="header__top-item">
-						<a href="#"> {% include "../../assets/svg/header-adres.svg" %} Адреса аптек 24/7 </a>
+						<a href="#">
+							{% include "../../assets/svg/header-adres.svg" %}
+							Адреса аптек 24/7
+						</a>
 					</li>
 					<li class="header__top-item">
-						<a href="#"> {% include "../../assets/svg/header-promotions.svg" %} Акции </a>
+						<a href="#">
+							{% include "../../assets/svg/header-promotions.svg" %}
+							Акции
+						</a>
 					</li>
 					<li class="header__top-item">
-						<a href="#"> {% include "../../assets/svg/header-news.svg" %} Новости </a>
+						<a href="#">
+							{% include "../../assets/svg/header-news.svg" %}
+							Новости
+						</a>
 					</li>
 					<li class="header__top-item">
-						<a href="#"> {% include "../../assets/svg/header-delivery.svg" %} Доставка и самовывоз </a>
+						<a href="#">
+							{% include "../../assets/svg/header-delivery.svg" %}
+							Доставка и самовывоз
+						</a>
 					</li>
 					<li class="header__top-item header__top-item--phone">
-						<a href="#"> {% include "../../assets/svg/header-phone.svg" %} 28–98–98 </a>
+						<a href="#">
+							{% include "../../assets/svg/header-phone.svg" %}
+							28–98–98
+						</a>
 					</li>
 					<li class="header__top-item">
-						<a href="#"> {% include "../../assets/svg/header-user.svg" %} eugene-petrov@mail.com {% include "../../assets/svg/header-mail-arrow.svg" %} </a>
+						<a href="#">
+							{% include "../../assets/svg/header-user.svg" %}
+							eugene-petrov@mail.com
+							{% include "../../assets/svg/header-mail-arrow.svg" %}
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -70,16 +90,28 @@
 				</ul>
 			</div>
 			<div class="header__bottom">
-				<a class="header__bottom-logo" href="#"> {% include "../../assets/svg/header-logo.svg" %} </a>
+				<a class="header__bottom-logo" href="#">
+					{% include "../../assets/svg/header-logo.svg" %}
+				</a>
 				<button class="g-button g-button--header__bottom">
-					<span>Каталог</span> {% include "../../assets/svg/header-arrow.svg" %} </button>
+					<span>Каталог</span>
+					{% include "../../assets/svg/header-arrow.svg" %}
+				</button>
 				<label class="g-input g-input--header__bottom">
 					<input name="name" type="text" class="g-input__input" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">
-					<div class="g-input-icon"> {% include "../../assets/svg/header-search.svg" %} </div>
+					<div class="g-input-icon">
+						{% include "../../assets/svg/header-search.svg" %}
+					</div>
 				</label>
-				<a class="header__bottom-favorit" href="#"> {% include "../../assets/svg/header-favorit.svg" %} Избранное <span>1</span>
+				<a class="header__bottom-favorit" href="#">
+					{% include "../../assets/svg/header-favorit.svg" %}
+					Избранное
+					<span>1</span>
 				</a>
-				<a class="header__bottom-basket" href="#"> {% include "../../assets/svg/header-basket.svg" %} Корзина <span>1</span>
+				<a class="header__bottom-basket" href="#">
+					{% include "../../assets/svg/header-basket.svg" %}
+					Корзина
+					<span>1</span>
 				</a>
 			</div>
 		</div>

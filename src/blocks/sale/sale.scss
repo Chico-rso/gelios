@@ -23,6 +23,16 @@
 			line-height: 22px;
 		}
 		&--desktop{display: none;}
+		&--basket
+		{
+			display: none;
+			width: fit-content;
+			background-color: #fff;
+			border: 1px solid #01A54E;
+			border-radius: 6px;
+			line-height: 29px;
+			color: #01A54E;
+		}
 	}
 }
 .sale__cards
@@ -92,7 +102,24 @@
 				color: #7B8E98;
 			}
 		}
+		.sale__card-button
+		{
+			display: flex;
+			align-items: center;
+		}
 		.g-button{padding: 0 14px;}
+		&.in-basket
+		{
+			.g-button
+			{
+				display: none;
+				&--basket
+				{
+					display: block;
+					line-height: 38px;
+				}
+			}
+		}
 	}
 	.sale__card-status
 	{

@@ -99,6 +99,8 @@ header
 		font-size: 14px;
 		line-height: 18px;
 		color: #FFFFFF;
+		&:hover{color: #87D4AB;}
+		svg:hover path{fill: #87D4AB}
 	}
 }
 .header__top-list
@@ -132,6 +134,7 @@ header
 		font-size: 14px;
 		line-height: 18px;
 		color: #7B8E98;
+		&:hover{color: #01A54E;}
 	}
 }
 .header__middle-list
@@ -151,6 +154,7 @@ header
 		font-size: 14px;
 		line-height: 17px;
 		color: #263238;
+		&:hover{color: #01A54E;}
 	}
 }
 .header__bottom-logo
