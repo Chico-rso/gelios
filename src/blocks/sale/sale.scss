@@ -102,10 +102,11 @@
 				color: #7B8E98;
 			}
 		}
-		.sale__card-button
+		.sale__card-btn
 		{
 			display: flex;
 			align-items: center;
+			justify-content: center;
 		}
 		.g-button{padding: 0 14px;}
 		&.in-basket

@@ -17,9 +17,6 @@
 		<a href="#">
 			<picture>
 				<source srcset="./img/popular-goods-desktop.png" media="(min-width: 769px)">
-				{% for item in items %}
-					{{ img }}
-				{% endfor %}
 				<img src="./img/popular-goods.png" alt="product image">
 			</picture>
 		</a>
@@ -53,8 +50,8 @@
 		{% endif %}
 	</div>
 	<div class="product-card__btn">
-		<button class="g-button" onclick="o2.productCard.changeBasket(event)">В корзину</button>
-		<button class="g-button g-button--basket" onclick="o2.productCard.changeBasket(event)">В корзине</button>
-		<button class="g-button g-button--disable">В корзину</button>
+		<button class="g-button g-button--product-basket" onclick="o2.productCard.changeBasket(event)">В корзину</button>
+		<button class="g-button g-button--product-inbasket" onclick="o2.productCard.changeBasket(event)">В корзине</button>
+		<button class="g-button g-button--product-disable">В корзину</button>
 	</div>
 </div>

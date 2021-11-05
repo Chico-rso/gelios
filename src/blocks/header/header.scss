@@ -148,7 +148,7 @@ header
 	display: none;
 	align-items: center;
 	width: 100%;
-	padding: 10px 0 16px 0;
+	padding: 12px 0 15px 0;
 	a
 	{
 		font-size: 14px;
@@ -162,10 +162,16 @@ header
 	height: 32px;
 	margin-right: 32px;
 }
-.g-button--header__bottom
+.g-button
 {
-	margin-right: 8px;
-	span{margin-right: 4px;}
+	&--header__bottom
+	{
+		padding: 0 6px 0 14px;
+		margin-right: 8px;
+		font-size: 12px;
+		line-height: 32px;
+		span{margin-right: 4px;}
+	}
 }
 .g-input-icon
 {

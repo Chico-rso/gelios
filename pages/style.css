@@ -832,7 +832,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 0 16px 0;
+  padding: 12px 0 15px 0;
 }
 
 .header__bottom a {
@@ -851,7 +851,10 @@ header {
 }
 
 .g-button--header__bottom {
+  padding: 0 6px 0 14px;
   margin-right: 8px;
+  font-size: 12px;
+  line-height: 32px;
 }
 
 .g-button--header__bottom span {
@@ -933,10 +936,7 @@ header {
 .g-button,
 input.g-button {
   display: inline-block;
-  padding: 0 5px 0 14px;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 32px;
   color: #fff;
   background-color: #01A54E;
   cursor: pointer;
@@ -1484,7 +1484,7 @@ input.g-button svg {
   color: #7B8E98;
 }
 
-.sale__card--big .sale__card-button {
+.sale__card--big .sale__card-btn {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1493,6 +1493,10 @@ input.g-button svg {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .sale__card--big .g-button {
@@ -1840,11 +1844,11 @@ input.g-button svg {
   margin-right: 0;
 }
 
-.product-card.in-basket .g-button {
+.product-card.in-basket .g-button--product-basket {
   display: none;
 }
 
-.product-card.in-basket .g-button--basket {
+.product-card.in-basket .g-button--product-inbasket {
   display: block;
 }
 
@@ -1854,7 +1858,7 @@ input.g-button svg {
 
 .product-card__image {
   position: relative;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .product-card__image svg {
@@ -2039,21 +2043,25 @@ input.g-button svg {
   color: #263238;
 }
 
-.product-card__btn .g-button {
+.g-button--product-basket {
   padding: 0 14px;
+  font-size: 12px;
+  line-height: 32px;
 }
 
-.product-card__btn .g-button--basket {
+.g-button--product-inbasket {
   display: none;
+  padding: 0 14px;
   background-color: #fff;
   border: 1px solid #01A54E;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+  font-size: 12px;
   line-height: 29px;
   color: #01A54E;
 }
 
-.product-card__btn .g-button--disable {
+.g-button--product-disable {
   display: none;
   background: #CFD8DC;
   -webkit-border-radius: 6px;
