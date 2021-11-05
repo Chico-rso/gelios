@@ -21,6 +21,10 @@
 	}
 }
 .footer__content-item{margin-bottom: 27px;}
+.footer__questions
+{
+	&--desktop{display: none;}
+}
 .footer__content{border-bottom: 1px solid #87D4AB40;}
 .footer__contacts
 {
@@ -64,6 +68,52 @@
 	{
 		display: flex;
 		justify-content: space-between;
+	}
+	.footer__questions
+	{
+		margin-bottom: 39px;
+		&--desktop{display: block;}
+		.g-button
+		{
+			&--questions
+			{
+				padding: 0 14px;
+				border: 1px solid #fff;
+				font-size: 12px;
+				line-height: 32px;
+				color: #fff;
+				&:hover
+				{
+					color: #87D4AB;
+					background: none;
+				}
+			}
+		}
+	}
+	.footer__questions-head
+	{
+		display: block;
+		position: relative;
+		margin-bottom: 4px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		color: #fff;
+		svg
+		{
+			position: absolute;
+			top: 0;
+			left: -35px;
+		}
+	}
+	.footer__questions-descr
+	{
+		display: block;
+		width: 160px;
+		margin-bottom: 16px;
+		font-size: 12px;
+		line-height: 14px;
+		color: #fff;
 	}
 	.footer__bottom
 	{
