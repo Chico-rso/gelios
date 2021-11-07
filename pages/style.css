@@ -767,6 +767,13 @@ header {
   fill: #87D4AB;
 }
 
+.header__top .g-popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 .header__top-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -793,6 +800,10 @@ header {
 
 .header__top-item--phone a {
   font-weight: 700;
+}
+
+.header__top-item--user {
+  position: relative;
 }
 
 .header__middle {
@@ -859,6 +870,10 @@ header {
 
 .g-button--header__bottom span {
   margin-right: 4px;
+}
+
+.g-button--header__bottom:hover {
+  background: #00833D;
 }
 
 .g-input-icon {
@@ -943,11 +958,6 @@ input.g-button {
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: 0px;
-}
-
-.g-button:hover,
-input.g-button:hover {
-  background: #00833D;
 }
 
 .g-button svg,
@@ -1297,6 +1307,72 @@ input.g-button svg {
   background-image: url("/svg/popular-goods-slider-next.svg");
 }
 
+.ui-kit__section .ui-kit__title--popup {
+  margin-bottom: 30px;
+}
+
+.g-popup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(124, 119, 145, 0.1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  transition: -webkit-transform 0.1s ease-out;
+  -o-transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+}
+
+.g-popup.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.g-popup__content {
+  width: 600px;
+  max-height: calc(100% - 20px);
+  background: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: auto;
+  position: relative;
+}
+
+.g-popup__clsoe {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  cursor: pointer;
+}
+
 .promo-slider {
   margin-bottom: 24px;
 }
@@ -1499,8 +1575,12 @@ input.g-button svg {
   justify-content: center;
 }
 
-.sale__card--big .g-button {
+.sale__card--big .sale__card-btn .g-button {
   padding: 0 14px;
+}
+
+.sale__card--big .sale__card-btn .g-button:hover {
+  background: #00833D;
 }
 
 .sale__card--big.in-basket .g-button {
@@ -1509,7 +1589,7 @@ input.g-button svg {
 
 .sale__card--big.in-basket .g-button--basket {
   display: block;
-  line-height: 38px;
+  line-height: 40px;
 }
 
 .sale__card .sale__card-status {
@@ -2047,6 +2127,10 @@ input.g-button svg {
   padding: 0 14px;
   font-size: 12px;
   line-height: 32px;
+}
+
+.g-button--product-basket:hover {
+  background: #00833D;
 }
 
 .g-button--product-inbasket {
@@ -2615,7 +2699,7 @@ html {
     margin-bottom: 15px;
   }
 
-  .sale__card--big .g-button {
+  .sale__card--big .sale__card-btn .g-button {
     padding: 0 18px;
     line-height: 40px;
     font-size: 14px;

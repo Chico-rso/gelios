@@ -107,8 +107,12 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			.g-button
+			{
+				padding: 0 14px;
+				&:hover{background: #00833D;}
+			}
 		}
-		.g-button{padding: 0 14px;}
 		&.in-basket
 		{
 			.g-button
@@ -117,7 +121,7 @@
 				&--basket
 				{
 					display: block;
-					line-height: 38px;
+					line-height: 40px;
 				}
 			}
 		}
@@ -234,11 +238,14 @@
 				}
 			}
 			.sale__card-price{margin-bottom: 15px;}
-			.g-button
+			.sale__card-btn
 			{
-				padding: 0 18px;
-				line-height: 40px;
-				font-size: 14px;
+				.g-button
+				{
+					padding: 0 18px;
+					line-height: 40px;
+					font-size: 14px;
+				}
 			}
 		}
 	}

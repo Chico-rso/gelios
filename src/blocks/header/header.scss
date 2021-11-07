@@ -102,6 +102,13 @@ header
 		&:hover{color: #87D4AB;}
 		svg:hover path{fill: #87D4AB}
 	}
+	.g-popup
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+	}
 }
 .header__top-list
 {
@@ -124,6 +131,7 @@ header
 	{
 		a{font-weight: 700;}
 	}
+	&--user{position: relative;}
 }
 .header__middle
 {
@@ -171,6 +179,7 @@ header
 		font-size: 12px;
 		line-height: 32px;
 		span{margin-right: 4px;}
+		&:hover{background: #00833D;}
 	}
 }
 .g-input-icon
