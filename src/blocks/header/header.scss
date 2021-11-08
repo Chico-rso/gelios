@@ -168,7 +168,11 @@ header
 		font-size: 14px;
 		line-height: 17px;
 		color: #263238;
-		&:hover{color: #01A54E;}
+		&:hover
+		{
+			color: #01A54E;
+			svg path {fill: #01A54E;}
+		}
 	}
 }
 .header__bottom-logo

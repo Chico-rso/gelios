@@ -856,6 +856,10 @@ header {
   color: #01A54E;
 }
 
+.header__bottom a:hover svg path {
+  fill: #01A54E;
+}
+
 .header__bottom-logo {
   height: 32px;
   margin-right: 32px;
@@ -1281,30 +1285,63 @@ input.g-button svg {
 }
 
 .slick-arrow {
+  display: block;
   position: absolute;
   top: 81px;
-  display: block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ECEFF1;
+  border: none;
   z-index: 2;
 }
 
-.next-arrow,
-.prev-arrow {
-  width: 32px;
-  height: 32px;
-  background-color: #ECEFF150;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+.slick-arrow:hover {
+  background-color: #01A54E;
 }
 
-.prev-arrow {
-  background-image: url("/svg/popular-goods-slider-prev.svg");
+.slick-arrow:hover:after {
+  background-color: #fff;
 }
 
-.next-arrow {
-  background-image: url("/svg/popular-goods-slider-next.svg");
+.prev-arrow:after {
+  -webkit-mask: url("/svg/popular-goods-slider-prev.svg");
+  mask: url("/svg/popular-goods-slider-prev.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: top;
+  content: '';
+  background-color: #263238;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 19px;
+}
+
+.next-arrow:after {
+  -webkit-mask: url("/svg/popular-goods-slider-next.svg");
+  mask: url("/svg/popular-goods-slider-next.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: top;
+  content: '';
+  background-color: #263238;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 19px;
 }
 
 .ui-kit__section .ui-kit__title--popup {
@@ -1780,6 +1817,10 @@ input.g-button svg {
 
 .product-card__title a:hover {
   color: #01A54E;
+}
+
+.product-card__favorit svg:hover path {
+  fill: #F44336;
 }
 
 .product-card__raits {
@@ -2403,10 +2444,6 @@ html {
     margin-bottom: 25px;
     font-size: 28px;
     line-height: 34px;
-  }
-
-  .products-slider .slick-arrow {
-    top: -56px;
   }
 
   .products-slider--see img {

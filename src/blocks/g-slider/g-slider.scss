@@ -2,7 +2,6 @@
 .g-slider{margin-right: -35px; width:1200px;}
 .g-slider__item
 {
-	//width: 190px;
 	height: 190px;
 	border-radius: 4px;
 	background: rgba(103, 115, 135, 0.4);
@@ -11,20 +10,57 @@
 
 .slick-arrow
 {
+	display: block;
 	position: absolute;
 	top: 81px;
-	display: block;
-	z-index: 2;
-}
-.next-arrow,.prev-arrow
-{
 	width: 32px;
 	height: 32px;
-	background-color: #ECEFF150;
 	background-repeat: no-repeat;
-	background-position: center;
-	border: none;
 	border-radius: 50%;
+	background: #ECEFF1;
+	border: none;
+	z-index: 2;
+	&:hover
+	{
+		background-color: #01A54E;
+		&:after{background-color: #fff;}
+	}
 }
-.prev-arrow{background-image: url('/svg/popular-goods-slider-prev.svg');}
-.next-arrow{background-image: url('/svg/popular-goods-slider-next.svg');}
+.prev-arrow:after
+{
+	mask: url('/svg/popular-goods-slider-prev.svg');
+	mask-repeat: no-repeat;
+	-webkit-mask-position: top;
+	content: '';
+	background-color: #263238;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 6px;
+	height: 19px;
+}
+.next-arrow:after
+{
+	mask: url('/svg/popular-goods-slider-next.svg');
+	mask-repeat: no-repeat;
+	-webkit-mask-position: top;
+	content: '';
+	background-color: #263238;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 6px;
+	height: 19px;
+}
+
+
+
+
+
+
+
+
