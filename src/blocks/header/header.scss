@@ -99,8 +99,6 @@ header
 		font-size: 14px;
 		line-height: 18px;
 		color: #FFFFFF;
-		&:hover{color: #87D4AB;}
-		svg:hover path{fill: #87D4AB}
 	}
 	.g-popup
 	{
@@ -132,6 +130,14 @@ header
 		a{font-weight: 700;}
 	}
 	&--user{position: relative;}
+	&:hover
+	{
+		a
+		{
+			color: #87D4AB;
+			svg path{fill: #87D4AB}
+		}
+	}
 }
 .header__middle
 {

@@ -2,7 +2,8 @@
 	<div class="container">
 		<h2>Вы смотрели</h2>
 		<div class="see__wrapper _see__wrapper">
-			{% for item in 1..6 %}
+			{% for item in ["./img/see-1.png", "./img/see-2.png", "./img/see-3.png", "./img/see-4.png", "./img/see-5.png","./img/see-6.png"] %}
+				{{ item }}
 			<div class="see__card">
 				<div class="see__image">
 					<div class="see__statuses">
@@ -14,7 +15,7 @@
 					<a href="#">
 						<picture>
 							<source srcset="./img/see-1.png" media="(min-width: 769px)">
-								<img src="./img/see-1.png" alt="product image">
+								<img src="{{ item }}" alt="product image">
 								{% include "../../assets/svg/popular-goods-favorit.svg" %}
 							</picture>
 						</a>

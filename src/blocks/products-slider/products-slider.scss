@@ -15,6 +15,11 @@
 		right: 0px;
 	}
 	.prev-arrow{right: 40px;}
+	&--see
+	{
+		.product-card{max-width: 150px;}
+		img{width: 150px;}
+	}
 }
 @media (min-width: 769px)
 {
@@ -28,5 +33,9 @@
 			line-height: 34px;
 		}
 		.slick-arrow{top: -56px;}
+		&--see
+		{
+			img{width: 150px;}
+		}
 	}
 }
