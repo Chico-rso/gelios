@@ -2309,6 +2309,34 @@ input.g-button svg {
   margin-bottom: 8px;
 }
 
+.header-menu a {
+  color: #263238;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.header-menu svg {
+  vertical-align: middle;
+}
+
+.header-menu .g-button--questions {
+  padding: 0 14px;
+  border: 1px solid #01A54E;
+  font-size: 12px;
+  line-height: 32px;
+  background: #FFFFFF;
+  color: #01A54E;
+}
+
+.header-menu .g-button--questions:hover {
+  color: #87D4AB;
+  background: none;
+}
+
+.header-menu__mob-info a {
+  color: #7B8E98;
+}
+
 /* Пример подключения*/
 
 /* @import 'blocks/component/component'; */
