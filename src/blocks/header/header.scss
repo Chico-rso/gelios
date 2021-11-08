@@ -100,12 +100,46 @@ header
 		line-height: 18px;
 		color: #FFFFFF;
 	}
-	.g-popup
+	&.active
+	{
+		.header__top-item--user-popup
+		{
+			svg:last-child
+			{
+				transform: rotate(180deg);
+				transition: transform .3s;
+			}
+		}
+		.header__popup
+		{
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	.header__popup
 	{
 		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
+		top: 33px;
+		right: 100px;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+		visibility: hidden;
+		opacity: 0;
+		z-index: 10;
+		transition: opacity .3s;
+	}
+	.header__popup-item
+	{
+		width: 212px;
+		padding: 16px 0 8px 16px;
+		font-size: 14px;
+		line-height: 18px;
+		a
+		{
+			color: #7B8E98;
+			&:hover{color: #01A54E;}
+		}
+		&:not(:first-child){border-top: 1px solid #ECEFF1};
 	}
 }
 .header__top-list
@@ -129,7 +163,7 @@ header
 	{
 		a{font-weight: 700;}
 	}
-	&--user{position: relative;}
+	&--user-popup{position: relative;}
 	&:hover
 	{
 		a

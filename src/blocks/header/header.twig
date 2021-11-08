@@ -19,7 +19,7 @@
 	</div>
 	<div class="header__top-wr">
 		<div class="container">
-			<div class="header__top">
+			<div class="header__top _header__top">
 				<ul class="header__top-list">
 					<li class="header__top-item">
 						<a href="#">
@@ -51,26 +51,26 @@
 							28–98–98
 						</a>
 					</li>
-					<li class="header__top-item header__top-item--user-popup">
-						<a href="#" onclick="o2.gPopup.open('_g-popup__content')">
+					<li class="header__top-item header__top-item--user-popup" onclick="o2.header.openPopup(event)">
+						<a href="#">
 							{% include "../../assets/svg/header-user.svg" %}
 							eugene-petrov@mail.com
 							{% include "../../assets/svg/header-mail-arrow.svg" %}
 						</a>
 					</li>
 				</ul>
-				<div class="g-popup _overlay">
-					<ul class="g-popup__content _g-popup__content">
-						<li class="header__top-user-popup-item">
+				<div class="header__popup">
+					<ul class="header__popup-list">
+						<li class="header__popup-item">
 							<a href="#">Мои данные</a>
 						</li>
-						<li class="header__top-user-popup-item">
+						<li class="header__popup-item">
 							<a href="#">Мои заказы</a>
 						</li>
-						<li class="header__top-user-popup-item">
+						<li class="header__popup-item">
 							<a href="#">Безопасность</a>
 						</li>
-						<li class="header__top-user-popup-item">
+						<li class="header__popup-item">
 							<a href="#">Выйти</a>
 						</li>
 					</ul>
