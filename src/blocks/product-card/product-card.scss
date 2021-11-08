@@ -94,13 +94,9 @@
 	}
 	.product-card__rait-notstar
 	{
-		display: none;
-		span
-		{
-			font-size: 12px;
-			line-height: 14px;
-			color: #7B8E98;
-		}
+		font-size: 12px;
+		line-height: 14px;
+		span{color: #7B8E98;}
 	}
 	&[data-rating="0"] i
 	{

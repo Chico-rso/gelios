@@ -1857,12 +1857,11 @@ input.g-button svg {
 }
 
 .product-card__raits .product-card__rait-notstar {
-  display: none;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .product-card__raits .product-card__rait-notstar span {
-  font-size: 12px;
-  line-height: 14px;
   color: #7B8E98;
 }
 
@@ -2097,6 +2096,10 @@ input.g-button svg {
 
 .products-slider--see img {
   width: 150px;
+}
+
+.products-slider--see .g-button {
+  display: none;
 }
 
 .news {
