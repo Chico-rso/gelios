@@ -1539,7 +1539,14 @@ input.g-button svg {
   margin-bottom: 14px;
   font-size: 18px;
   line-height: 22px;
+}
+
+.sale__card--big .sale__card-title a {
   color: #263238;
+}
+
+.sale__card--big .sale__card-title a:hover {
+  color: #01A54E;
 }
 
 .sale__card--big .sale__card-price {
@@ -1632,7 +1639,14 @@ input.g-button svg {
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 18px;
+}
+
+.sale__card-title a {
   color: #263238;
+}
+
+.sale__card-title a:hover {
+  color: #01A54E;
 }
 
 .sale__card-price--red {
@@ -1991,7 +2005,14 @@ input.g-button svg {
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 18px;
+}
+
+.product-card__title a {
   color: #263238;
+}
+
+.product-card__title a:hover {
+  color: #01A54E;
 }
 
 .product-card__raits {
