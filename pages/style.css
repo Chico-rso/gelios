@@ -2187,6 +2187,10 @@ input.g-button svg {
   color: #87D4AB;
 }
 
+.footer a:hover svg:hover path {
+  fill: #87D4AB;
+}
+
 .footer p {
   display: inline-block;
   margin: 0;
