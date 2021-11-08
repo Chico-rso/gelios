@@ -1481,6 +1481,7 @@ input.g-button svg {
   border: 1px solid #01A54E;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+  font-size: 16px;
   line-height: 29px;
   color: #01A54E;
 }
@@ -1577,6 +1578,8 @@ input.g-button svg {
 
 .sale__card--big .sale__card-btn .g-button {
   padding: 0 14px;
+  line-height: 32px;
+  font-size: 12px;
 }
 
 .sale__card--big .sale__card-btn .g-button:hover {
@@ -1589,7 +1592,7 @@ input.g-button svg {
 
 .sale__card--big.in-basket .g-button--basket {
   display: block;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .sale__card .sale__card-status {
@@ -2702,6 +2705,12 @@ html {
   .sale__card--big .sale__card-btn .g-button {
     padding: 0 18px;
     line-height: 40px;
+    font-size: 14px;
+  }
+
+  .sale__card--big.in-basket .g-button {
+    padding: 0 18px;
+    line-height: 38px;
     font-size: 14px;
   }
 
