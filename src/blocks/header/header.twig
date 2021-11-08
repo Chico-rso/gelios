@@ -1,8 +1,8 @@
 <header>
 	<div class="container">
-		<div class="header__mob">
+		<div class="header__mob _header__mob">
 			<nav class="header__mob-nav">
-				<a class="header__mob-nav-link" href="#">{% include "../../assets/svg/header-mob-burger.svg" %}</a>
+				<a class="header__mob-nav-link" onclick="o2.header.activeBurger(event)" href="#">{% include "../../assets/svg/header-mob-burger.svg" %}</a>
 				<a class="header__mob-nav-link" onclick="o2.header.activeSearch()" href="#">{% include "../../assets/svg/header-mob-search.svg" %}</a>
 				<a class="header__mob-nav-link header__mob-nav-link--logo" href="#">{% include "../../assets/svg/header-mob-logo.svg" %}</a>
 				<a class="header__mob-nav-link header__mob-nav-link--favorit" href="#">{% include "../../assets/svg/header-favorit.svg" %}</a>
@@ -15,6 +15,7 @@
 					{% include "../../assets/svg/header-mob-serarch-input.svg" %}
 				</label>
 			</div>
+				{% include 'blocks/header-menu/header-menu.twig' %}
 		</div>
 	</div>
 	<div class="header__top-wr">
@@ -132,5 +133,4 @@
 			</div>
 		</div>
 	</div>
-	{% include 'blocks/header-menu/header-menu.twig' %}
 </header>

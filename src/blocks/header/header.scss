@@ -3,6 +3,13 @@ header
 	margin-bottom: 16px;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
+.header__mob
+{
+	&.active
+	{
+		.header__menu{display: block;}
+	}
+}
 .header__mob-nav
 {
 	display: flex;
