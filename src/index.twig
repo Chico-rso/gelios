@@ -6,7 +6,7 @@
 		<div class="container">
 			<h2>Популярные товары</h2>
 			<div class="products-slider__wr _products-slider">
-				{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], 'salePrice':[salePrice],'review':[review]} %}
+				{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
 				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], 'review': 13} %}
 				{% include 'blocks/product-card/product-card.twig' with {'end':[end], 'usualPrice':[usualPrice]} %}
 				{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice]} %}

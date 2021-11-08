@@ -1965,6 +1965,10 @@ input.g-button svg {
   cursor: pointer;
 }
 
+.product-card__image img {
+  width: 212px;
+}
+
 .product-card__statuses {
   position: absolute;
   top: 3px;
@@ -2650,6 +2654,10 @@ html {
 
   .product-card__raits {
     margin-bottom: 6px;
+  }
+
+  .product-card__image img {
+    width: 235px;
   }
 
   .products-slider {
