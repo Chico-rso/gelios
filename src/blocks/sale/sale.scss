@@ -58,7 +58,7 @@
 {
 	position: relative;
 	margin-bottom: 12px;
-	padding: 9.5px 38px;
+	padding: 10px 38px 10px 38px;
 	text-align: center;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 	border-radius: 12px;
@@ -71,16 +71,17 @@
 		text-align: center;
 		.sale__card-img
 		{
-			margin-bottom: 8px;
+			margin-bottom: 16px;
 			img
 			{
+				display: block;
 				width: 240px;
 				height: 240px;
 			}
 		}
 		.sale__card-title
 		{
-			margin-bottom: 14px;
+			margin-bottom: 12px;
 			font-size: 18px;
 			line-height: 22px;
 			a{color: #263238;}
@@ -89,6 +90,7 @@
 		.sale__card-price
 		{
 			margin-bottom: 14px;
+			line-height: 16px;
 			&--red
 			{
 				font-size: 18px;
@@ -145,6 +147,14 @@
 		color: #fff;
 	}
 }
+.sale__card-min
+{
+	.sale__card:nth-child(2)
+	{
+		padding: 10px 38px 11px 38px;
+		.sale__card-img{margin-bottom: 6px;}
+	}
+}
 
 .sale__btn-more
 {
@@ -172,6 +182,7 @@
 }
 .sale__card-price
 {
+	line-height: 16px;
 	&--red
 	{
 		font-size: 14px;

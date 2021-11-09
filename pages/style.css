@@ -1588,7 +1588,7 @@ input.g-button svg {
 .sale__card {
   position: relative;
   margin-bottom: 12px;
-  padding: 9.5px 38px;
+  padding: 10px 38px 10px 38px;
   text-align: center;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -1614,16 +1614,17 @@ input.g-button svg {
 }
 
 .sale__card--big .sale__card-img {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .sale__card--big .sale__card-img img {
+  display: block;
   width: 240px;
   height: 240px;
 }
 
 .sale__card--big .sale__card-title {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 22px;
 }
@@ -1638,6 +1639,7 @@ input.g-button svg {
 
 .sale__card--big .sale__card-price {
   margin-bottom: 14px;
+  line-height: 16px;
 }
 
 .sale__card--big .sale__card-price--red {
@@ -1706,6 +1708,14 @@ input.g-button svg {
   color: #fff;
 }
 
+.sale__card-min .sale__card:nth-child(2) {
+  padding: 10px 38px 11px 38px;
+}
+
+.sale__card-min .sale__card:nth-child(2) .sale__card-img {
+  margin-bottom: 6px;
+}
+
 .sale__btn-more .g-button {
   padding: 0 14px 0 14px;
   width: 100%;
@@ -1734,6 +1744,10 @@ input.g-button svg {
 
 .sale__card-title a:hover {
   color: #01A54E;
+}
+
+.sale__card-price {
+  line-height: 16px;
 }
 
 .sale__card-price--red {
