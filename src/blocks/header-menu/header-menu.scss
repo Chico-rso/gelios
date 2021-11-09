@@ -1,5 +1,7 @@
 .header-menu
 {
+	visibility: hidden;
+	opacity: 0;
 	position: fixed;
 	padding-bottom: 48px;
 	width: 100%;
@@ -31,6 +33,12 @@
 				background: none;
 			}
 		}
+	}
+	&.open
+	{
+		visibility: visible;
+		opacity: 1;
+		transition: opacity .3s;
 	}
 }
 .header-menu__mob-info

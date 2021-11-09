@@ -2318,6 +2318,8 @@ input.g-button svg {
 }
 
 .header-menu {
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   padding-bottom: 48px;
   width: 100%;
@@ -2350,6 +2352,14 @@ input.g-button svg {
 .header-menu .g-button--questions:hover {
   color: #87D4AB;
   background: none;
+}
+
+.header-menu.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
 }
 
 .header-menu__mob-info a {

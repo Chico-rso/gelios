@@ -9,8 +9,4 @@ o2.header =
 	{
 		e.target.closest('._header__top').classList.toggle('active');
 	},
-	activeBurger()
-	{
-		const el = document.querySelector('._header-menu').classList.toggle('active');
-	},
 };
