@@ -56,7 +56,7 @@
 .product-card__title
 {
 	height: 34px;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: 18px;
 	a{color: #263238;}
@@ -68,7 +68,7 @@
 }
 .product-card__raits
 {
-	margin-bottom: 4px;
+	margin-bottom: 8px;
 	.product-card__rait-star
 	{
 
@@ -88,7 +88,7 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 			display: inline-block;
-			height: 18px;
+			height: 16px;
 			width: 16px;
 		}
 	}
@@ -161,11 +161,14 @@
 }
 .product-card__price
 {
-	margin-bottom: 9px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
 	font-weight: 500;
 }
 .product-card__price-sale
 {
+	margin-right: 5px;
 	font-size: 14px;
 	line-height: 18px;
 	color: #F44336;
@@ -226,7 +229,6 @@
 		margin-right: 20px;
 		&:last-child{margin-right: 0;}
 	}
-	.product-card__raits{margin-bottom: 6px;}
 	.product-card__image
 	{
 		img{width: 235px;}

@@ -29,7 +29,7 @@
 		margin-bottom: 40px;
 		h2
 		{
-			margin-bottom: 25px;
+			margin-bottom: 24px;
 			font-size: 28px;
 			line-height: 34px;
 		}
@@ -37,5 +37,11 @@
 		{
 			img{width: 150px;}
 		}
+		.slick-arrow
+		{
+			top: -59px;
+			right: 0px;
+		}
+		.prev-arrow{right: 40px;}
 	}
 }
