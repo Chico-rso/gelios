@@ -4,6 +4,7 @@
 	background: #01A54E;
 	a
 	{
+		display: block;
 		font-size: 14px;
 		line-height: 18px;
 		color: #FFFFFF;
@@ -17,14 +18,23 @@
 	{
 		display: inline-block;
 		margin: 0;
-		margin-bottom: 22px;
+		margin-bottom: 24px;
 		font-weight: bold;
 		font-size: 14px;
 		line-height: 18px;
 		color: #FFFFFF;
 	}
 }
-.footer__content-item{margin-bottom: 27px;}
+
+.footer__content-item{margin-bottom: 26px;}
+.footer__menu
+{
+	.footer__item{margin-bottom: 6px;}
+}
+.footer__help
+{
+	.footer__item{margin-bottom: 6px;}
+}
 .footer__questions
 {
 	&--desktop{display: none;}
