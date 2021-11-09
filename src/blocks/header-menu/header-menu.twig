@@ -5,7 +5,7 @@
 	</div>
 	<div class="header-menu__mob-list">
 		<div class="header-menu__mob-catalog">
-			<a href="#"> {% include '../../assets/svg/header-menu-mob-catalog.svg' %} Каталог товаров {% include '../../assets/svg/header-menu-mob-catalog-arrow-right.svg' %}</a>
+			<a onclick="o2.headerMenu.openCatalog()" href="#"> {% include '../../assets/svg/header-menu-mob-catalog.svg' %} Каталог товаров {% include '../../assets/svg/header-menu-mob-catalog-arrow-right.svg' %}</a>
 		</div>
 		<div class="header-menu__mob-user">
 			<ul class="header-menu__mob-user-list">
@@ -44,6 +44,28 @@
 				<button class="g-button g-button--questions">Перейти</button>
 			</div>
 		</div>
+	</div>
+	<div class="header-menu__catalog _header-menu__catalog">
+		<div class="header-menu__catalog-title">
+			<a href="#" onclick="o2.headerMenu.openCatalog()">{% include '../../assets/svg/header-menu-arrow-left.svg' %}</a>
+			<span>Каталог товаров</span>
+		</div>
+		<ul class="header-menu__catalog-list">
+		{% for item in 0..14 %}
+			<li class="header-menu__catalog-item"><a onclick="o2.headerMenu.openCatalogInner()" href="#">{{'title'}} {% include '../../assets/svg/header-menu-mob-catalog-arrow-right.svg' %}</a></li>
+		{% endfor %}
+		</ul>
+	</div>
+	<div class="header-menu__catalog-inner _header-menu__catalog-inner">
+		<div class="header-menu__catalog-title">
+			<a href="#" onclick="o2.headerMenu.openCatalogInner()">{% include '../../assets/svg/header-menu-arrow-left.svg' %}</a>
+			<span>Лекарственные средства</span>
+		</div>
+		<ul class="header-menu__catalog-list">
+		{% for item in 0..14 %}
+			<li class="header-menu__catalog-item"><a href="#">{{'title'}}</a></li>
+		{% endfor %}
+		</ul>
 	</div>
 </div>
 
