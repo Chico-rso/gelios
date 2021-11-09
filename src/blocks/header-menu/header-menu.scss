@@ -1,5 +1,13 @@
 .header-menu
 {
+	position: fixed;
+	padding-bottom: 48px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: #ffffff;
+	overflow: auto;
+	z-index: 10;
 	a
 	{
 		color: #263238;
@@ -29,3 +37,106 @@
 {
 	a{color: #7B8E98;}
 }
+.header-menu__close
+{
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 15px 12px 21px;
+	border-bottom: 1px solid #ECEFF1;
+	button
+	{
+		border: none;
+		font-size: 14px;
+		line-height: 17px;
+		color: #263238;
+	}
+}
+.header-menu__mob-catalog
+{
+	padding: 12px 16px;
+	a
+	{
+		svg:first-child{margin-right: 16px;}
+		svg:last-child{margin-left: 104px;}
+	}
+}
+.header-menu__mob-user
+{
+	border-top: 1px solid #ECEFF1;
+	border-bottom: 1px solid #ECEFF1;
+}
+.header-menu__mob-user-list
+{
+	padding: 4px 0;
+	li
+	{
+		padding: 11px 16px;
+		svg{margin-right: 16px;}
+	}
+}
+.header-menu__mob-menu{border-bottom: 1px solid #ECEFF1;}
+.header-menu__mob-menu-list
+{
+	padding: 4px 0;
+	li
+	{
+		padding: 11px 16px;
+		svg{margin-right: 16px;}
+	}
+}
+.header-menu__mob-info
+{
+	padding: 16px;
+	border-bottom: 1px solid #ECEFF1;
+}
+.header-menu__mob-info-list
+{
+	li
+	{
+		margin-bottom: 16px;
+		a{display: block;}
+	}
+}
+.header-menu__mob-questions
+{
+	display: flex;
+	padding: 16px;
+}
+.header-menu__mob-questions-svg{margin-right: 16px;}
+.header-menu__mob-questions-text
+{
+	span{display: block;}
+	span:first-of-type
+	{
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		color: #263238;
+	}
+	span:last-of-type
+	{
+		margin-bottom: 12px;
+		font-size: 12px;
+		line-height: 14px;
+		color: #7B8E98;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
