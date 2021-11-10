@@ -130,6 +130,7 @@ header
 		right: 100px;
 		background: #FFFFFF;
 		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+		border-radius: 0px 0px 6px 6px;
 		visibility: hidden;
 		opacity: 0;
 		z-index: 10;
@@ -203,7 +204,7 @@ header
 	display: none;
 	align-items: center;
 	width: 100%;
-	padding: 11px 0 15px 0;
+	padding: 10px 0 15px 0;
 	a
 	{
 		font-size: 14px;
