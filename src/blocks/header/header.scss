@@ -242,10 +242,17 @@ header
 	right: 15px;
 	transform: translateY(-50%);
 }
-.g-input--header__bottom
+.g-input
 {
-	flex-grow: 1;
-	margin-right: 32px;
+	&--header__bottom
+	{
+		flex-grow: 1;
+		margin-right: 32px;
+		.search-input-items
+		{
+			display: none;
+		}
+	}
 }
 .header__bottom-favorit
 {

@@ -9,4 +9,39 @@
 	border:0px;
 
 	svg{vertical-align: middle;}
+	&--more
+	{
+		padding: 0;
+		background: none;
+		color: #00CA5F;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 22px;
+		&:hover{color: #00833D}
+	}
+	&--product-basket
+	{
+		padding: 0 14px;
+		font-size: 12px;
+		line-height: 32px;
+		&:hover{background: #00833D;}
+	}
+	&--product-inbasket
+	{
+		display: none;
+		padding: 0 14px;
+		background-color: #fff;
+		border: 1px solid #01A54E;
+		border-radius: 6px;
+		font-size: 12px;
+		line-height: 29px;
+		color: #01A54E;
+	}
+	&--product-disable
+	{
+		display: none;
+		background: #CFD8DC;
+		border-radius: 6px;
+		color: #fff;
+	}
 }

@@ -10,9 +10,10 @@
 			</nav>
 			<div class="header__mob-input _header__mob-input">
 				<label class="g-input">
-					<input name="name" type="text" class="g-input__input" placeholder="Поиск по названию" data-call="emty" data-msg="Заполните это поле">
+					<input name="name" type="text" class="g-input__input" autocomplete="off" placeholder="Поиск по названию" data-call="emty" data-msg="Заполните это поле">
 					<div class="g-input__sub">Error: invalid name</div>
 					{% include "../../assets/svg/header-mob-serarch-input.svg" %}
+					{% include "blocks/search-input-items/search-input-items.twig" %}
 				</label>
 			</div>
 		</div>
@@ -114,10 +115,11 @@
 					{% include "../../assets/svg/header-arrow.svg" %}
 				</button>
 				<label class="g-input g-input--header__bottom">
-					<input name="name" type="text" class="g-input__input" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">
+					<input name="name" type="text" class="g-input__input" autocomplete="off" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">
 					<div class="g-input-icon">
 						{% include "../../assets/svg/header-search.svg" %}
 					</div>
+					{% include "blocks/search-input-items/search-input-items.twig" %}
 				</label>
 				<a class="header__bottom-favorit" href="#">
 					{% include "../../assets/svg/header-favorit.svg" %}

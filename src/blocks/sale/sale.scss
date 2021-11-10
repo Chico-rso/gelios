@@ -13,16 +13,6 @@
 	}
 	.g-button
 	{
-		&--more
-		{
-			padding: 0;
-			background: none;
-			color: #00CA5F;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 22px;
-			&:hover{color: #00833D}
-		}
 		&--desktop{display: none;}
 		&--basket
 		{
@@ -58,7 +48,7 @@
 {
 	position: relative;
 	margin-bottom: 12px;
-	padding: 10px 38px 10px 38px;
+	padding: 12px 38px 12px 38px;
 	text-align: center;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 	border-radius: 12px;
@@ -71,6 +61,8 @@
 		text-align: center;
 		.sale__card-img
 		{
+			display: flex;
+			justify-content: center;
 			margin-bottom: 16px;
 			img
 			{
@@ -89,7 +81,7 @@
 		}
 		.sale__card-price
 		{
-			margin-bottom: 14px;
+			margin-bottom: 16px;
 			line-height: 16px;
 			&--red
 			{
@@ -151,8 +143,9 @@
 {
 	.sale__card:nth-child(2)
 	{
-		padding: 10px 38px 11px 38px;
+		padding: 12px 38px 12px 38px;
 		.sale__card-img{margin-bottom: 6px;}
+		.sale__card-title{margin-bottom: 9px;}
 	}
 }
 
@@ -174,7 +167,7 @@
 .sale__card-img{margin-bottom: 7px;}
 .sale__card-title
 {
-	margin-bottom: 8px;
+	margin-bottom: 11px;
 	font-size: 14px;
 	line-height: 18px;
 	a{color: #263238;}
@@ -287,7 +280,9 @@
 			padding: 12px;
 			max-width: 235px;
 			margin-bottom: 0;
+			&:nth-child(2){padding: 12px;}
 		}
+
 	}
 	.sale__card--hidden{display: block;}
 }

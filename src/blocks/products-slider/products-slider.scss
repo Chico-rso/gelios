@@ -20,6 +20,12 @@
 		.product-card{max-width: 150px;}
 		img{width: 150px;}
 		.g-button{display: none;}
+		.slick-arrow
+		{
+			top: -59px;
+			right: 0px;
+		}
+		.prev-arrow{right: 40px;}
 	}
 }
 @media (min-width: 769px)
@@ -36,12 +42,12 @@
 		&--see
 		{
 			img{width: 150px;}
-		}
 		.slick-arrow
 		{
 			top: -59px;
 			right: 0px;
 		}
 		.prev-arrow{right: 40px;}
+		}
 	}
 }

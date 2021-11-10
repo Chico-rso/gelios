@@ -1,0 +1,25 @@
+.search-input-items
+{
+	padding: 16px 0 0 0;
+	position: absolute;
+	z-index: 20;
+	background-color: #fff;
+	span
+	{
+		font-size: 14px;
+		line-height: 18px;
+		color: #263238;
+	}
+	.g-button{margin-bottom: 16px;}
+}
+.search-input__item
+{
+	a
+	{
+		display: flex;
+		align-items: center;
+	}
+	&:not(:last-child){margin-bottom: 8px;}
+	&:last-child{margin-bottom: 16px;}
+	img{margin-right: 16px;}
+}
