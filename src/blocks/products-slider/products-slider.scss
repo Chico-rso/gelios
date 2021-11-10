@@ -48,12 +48,21 @@
 		&--see
 		{
 			img{width: 150px;}
-		.slick-arrow
-		{
-			top: -59px;
-			right: 0px;
+			.slick-arrow
+			{
+				top: -59px;
+				right: 0px;
+			}
+			.prev-arrow{right: 40px;}
 		}
-		.prev-arrow{right: 40px;}
+		&--relevance
+		{
+			.slick-arrow
+			{
+				top: -59px;
+				right: 0px;
+			}
+			.prev-arrow{right: 40px;}
 		}
 	}
 }
