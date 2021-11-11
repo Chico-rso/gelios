@@ -2693,6 +2693,10 @@ input.g-button--product-disable {
 
 /* pages */
 
+.catalog {
+  padding-bottom: 40px;
+}
+
 .catalog__wr {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2701,14 +2705,33 @@ input.g-button--product-disable {
 }
 
 .catalog__left {
+  display: none;
   max-width: 240px;
   min-width: 240px;
   margin-right: 20px;
 }
 
 .catalog__right {
-  max-width: 80%;
+  max-width: 100%;
   overflow: hidden;
+}
+
+.catalog__right .products-slider h2 {
+  width: 80%;
+  font-size: 19px;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+.catalog__btn-more .g-button {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #CFD8DC;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 38px;
+  color: #263238;
 }
 
 * {

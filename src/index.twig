@@ -1,7 +1,11 @@
 {% extends "layouts/layout.twig" %}
 
 {% block page %}
-{% include "blocks/promo-slider/promo-slider.twig" %}
+	<div class="promo-slider">
+		<div class="container">
+			{% include "blocks/promo-slider/promo-slider.twig" %}
+		</div>
+	</div>
 <div class="products-slider">
 	<div class="container">
 		<h2>Популярные товары</h2>
