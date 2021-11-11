@@ -1,6 +1,36 @@
 {% extends "layouts/layout.twig" %}
 
 {% block page %}
-{% include 'blocks/products-slider/products-slider.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30
-			", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
+<div class="catalog">
+	<div class="container">
+		<div class="catalog__wr">
+			<div class="catalog__left">
+				{% include 'blocks/sidebar/sidebar.twig' %}
+			</div>
+			<div class="catalog__right">
+			{% include 'blocks/promo-slider/promo-slider.twig' %}
+				<div class="products-slider">
+					<h2>Популярные товары</h2>
+					<div class="products-slider__wr _products-slider">
+						{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30
+						", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
+						{% include 'blocks/product-card/product-card.twig' with {'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
+					</div>
+				</div>
+				<div class="products-slider">
+					<h2>Популярные товары</h2>
+					<div class="products-slider__wr _products-slider">
+						{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30
+						", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
+						{% include 'blocks/product-card/product-card.twig' with {'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}

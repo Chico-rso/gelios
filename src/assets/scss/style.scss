@@ -26,10 +26,11 @@
 @import 'blocks/footer/footer';
 @import 'blocks/header-menu/header-menu';
 @import 'blocks/search-input-items/search-input-items';
+@import 'blocks/sidebar/sidebar';
 /* Пример подключения*/
 /* @import 'blocks/component/component'; */
 /* pages */
-
+@import 'src/pages/catalog/catalog';
 
 * {
 	-webkit-box-sizing: border-box;
