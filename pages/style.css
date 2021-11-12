@@ -2687,6 +2687,36 @@ input.g-button--product-disable {
   margin-right: 16px;
 }
 
+.sidebar__title {
+  margin-bottom: 16px;
+}
+
+.sidebar__title h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color: #263238;
+}
+
+.catalog-menu__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-menu__title a {
+  color: #263238;
+}
+
+.catalog-menu__item {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-menu__item a {
+  color: #7B8E98;
+}
+
 /* Пример подключения*/
 
 /* @import 'blocks/component/component'; */
@@ -2721,6 +2751,13 @@ input.g-button--product-disable {
   font-size: 19px;
   line-height: 24px;
   margin-bottom: 28px;
+}
+
+.catalog__right-title h2 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .catalog__btn-more .g-button {
@@ -3069,8 +3106,8 @@ html {
   }
 
   .footer__questions .g-button--questions:hover {
-    color: #87D4AB;
-    background: none;
+    color: #01A54E;
+    background: #fff;
   }
 
   .footer__questions-head {
@@ -3107,6 +3144,14 @@ html {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .catalog__left {
+    display: block;
+  }
+
+  .catalog__right-title {
+    display: none;
   }
 }
 

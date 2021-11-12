@@ -19,7 +19,7 @@ o2.banners =
 			},
 			responsive: [
 				{
-					breakpoint: 769,
+					breakpoint: 1024,
 					settings:
 					{
 						slidesToShow: 2,
