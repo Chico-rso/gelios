@@ -106,13 +106,16 @@
 					</li>
 				</ul>
 			</div>
+		</div>
+		<div class="container">
 			<div class="header__bottom">
 				<a class="header__bottom-logo" href="#">
 					{% include "../../assets/svg/header-logo.svg" %}
 				</a>
-				<button class="g-button g-button--header__bottom">
+				<button class="g-button g-button--header__bottom" onclick="o2.header.openHeaderCatalogMenu()" onclick="o2.header.animationSvg()">
 					<span>Каталог</span>
-					{% include "../../assets/svg/header-arrow.svg" %}
+					<span class="header-arrow">{% include "../../assets/svg/header-arrow.svg" %}</span>
+					{# <span class="header-tic">{% include "../../assets/svg/header-tic.svg" %}</span> #}
 				</button>
 				<label class="g-input g-input--header__bottom">
 					<input name="name" type="text" class="g-input__input" autocomplete="off" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">
@@ -135,7 +138,5 @@
 		</div>
 	</div>
 	{% include 'blocks/header-menu/header-menu.twig' %}
-	<div class="container">
 	{% include 'blocks/header-catalog-menu/header-catalog-menu.twig' %}
-	</div>
 </header>
