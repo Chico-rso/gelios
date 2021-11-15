@@ -940,6 +940,16 @@ header {
   transform: translateY(-50%);
 }
 
+.header__svg-x,
+.header__svg-arrow {
+  display: none;
+}
+
+.header__svg-x.active,
+.header__svg-arrow.active {
+  display: inline-block;
+}
+
 .g-input--header__bottom {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;

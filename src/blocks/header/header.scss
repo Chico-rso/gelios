@@ -243,6 +243,12 @@ header
 	right: 15px;
 	transform: translateY(-50%);
 }
+.header__svg-x,
+.header__svg-arrow
+{
+	display: none;
+	&.active{display: inline-block;}
+}
 .g-input
 {
 	&--header__bottom

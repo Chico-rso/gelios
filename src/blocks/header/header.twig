@@ -112,10 +112,10 @@
 				<a class="header__bottom-logo" href="#">
 					{% include "../../assets/svg/header-logo.svg" %}
 				</a>
-				<button class="g-button g-button--header__bottom" onclick="o2.header.openHeaderCatalogMenu()" onclick="o2.header.animationSvg()">
+				<button class="g-button g-button--header__bottom" onclick="o2.header.openHeaderCatalogMenu(this)">
 					<span>Каталог</span>
-					<span class="header-arrow">{% include "../../assets/svg/header-arrow.svg" %}</span>
-					{# <span class="header-tic">{% include "../../assets/svg/header-tic.svg" %}</span> #}
+					<span class="header__svg-arrow active">{% include "../../assets/svg/header-arrow.svg" %}</span>
+					<span class="header__svg-x">{% include "../../assets/svg/header-tic.svg" %}</span>
 				</button>
 				<label class="g-input g-input--header__bottom">
 					<input name="name" type="text" class="g-input__input" autocomplete="off" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">

@@ -9,9 +9,11 @@ o2.header =
 	{
 		e.target.closest('._header__top').classList.toggle('active');
 	},
-	openHeaderCatalogMenu()
+	openHeaderCatalogMenu(_this)
 	{
 		const el = document.querySelector('._header-catalog-menu__wr');
 		el.classList.toggle('active');
+		_this.querySelector('.header__svg-arrow').classList.toggle('active');
+		_this.querySelector('.header__svg-x').classList.toggle('active');
 	},
 };
