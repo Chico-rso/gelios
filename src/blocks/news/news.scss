@@ -46,18 +46,18 @@
 }
 .news__block-title
 {
+	line-height: 22px;
 	a
 	{
 		font-weight: 500;
 		font-size: 16px;
-		line-height: 22px;
 	}
 }
 @media (min-width: 768px)
 {
 	.news
 	{
-		margin-bottom: 54px;
+		margin-bottom: 58px;
 		img{object-fit: cover;}
 		.slick-slider
 		{

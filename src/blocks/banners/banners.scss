@@ -28,5 +28,16 @@
 }
 @media (min-width: 768px)
 {
-	.banners{margin-bottom: 40px;}
+	.banners
+	{
+		margin-bottom: 40px;
+		.slick-slider
+		{
+			.slick-track{display: flex;}
+		}
+	}
+	.banners__img
+	{
+		a{margin-right: 20px;}
+	}
 }

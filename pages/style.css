@@ -2283,10 +2283,13 @@ input.g-button--product-disable {
   border-radius: 6px;
 }
 
+.news__block-title {
+  line-height: 22px;
+}
+
 .news__block-title a {
   font-weight: 500;
   font-size: 16px;
-  line-height: 22px;
 }
 
 .footer {
@@ -2956,6 +2959,17 @@ html {
     margin-bottom: 40px;
   }
 
+  .banners .slick-slider .slick-track {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .banners__img a {
+    margin-right: 20px;
+  }
+
   .instagram {
     margin-bottom: 40px;
   }
@@ -3005,7 +3019,7 @@ html {
   }
 
   .news {
-    margin-bottom: 54px;
+    margin-bottom: 58px;
   }
 
   .news img {
