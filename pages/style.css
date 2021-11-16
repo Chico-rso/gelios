@@ -2967,6 +2967,8 @@ html {
   }
 
   .banners__img a {
+    width: 0;
+    width: 100%;
     margin-right: 20px;
   }
 

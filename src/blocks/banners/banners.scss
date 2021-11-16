@@ -38,6 +38,11 @@
 	}
 	.banners__img
 	{
-		a{margin-right: 20px;}
+		a
+		{
+			width: 0;
+			width: 100%;
+			margin-right: 20px;
+		}
 	}
 }
