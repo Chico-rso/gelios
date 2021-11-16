@@ -9,16 +9,31 @@
 		color: #263238;
 	}
 }
-.catalog-menu__title
+.sidebar__list
 {
+	padding: 16px 0 12px 0;
+	button{padding-top: 12px;}
+	&:not(:last-child){border-bottom: 1px solid #ECEFF1;}
+}
+.sidebar__list-title
+{
+	margin-bottom: 12px;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 18px;
-	a{color: #263238;}
+	a
+	{
+		color: #263238;
+		&:hover{color: #4c6572;}
+	}
 }
-.catalog-menu__item
+.sidebar__item
 {
 	font-size: 14px;
 	line-height: 18px;
-	a{color: #7B8E98;}
+	a
+	{
+		color: #7B8E98;
+		&:hover{color: #5d6c74;}
+	}
 }

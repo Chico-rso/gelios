@@ -753,7 +753,7 @@ header {
 .header__top {
   display: none;
   padding: 4px 0;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .header__top a {
@@ -892,7 +892,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 10px 0 15px 0;
+  padding: 12px 0 15px 0;
 }
 
 .header__bottom a {
@@ -915,7 +915,7 @@ header {
 }
 
 .g-button--header__bottom {
-  padding: 0 6px 0 14px;
+  padding: 0 3px 0 14px;
   margin-right: 8px;
   font-size: 12px;
   line-height: 32px;
@@ -968,7 +968,7 @@ header {
 }
 
 .header__bottom-favorit svg {
-  margin-right: 9px;
+  margin-right: 7px;
   vertical-align: middle;
 }
 
@@ -1423,7 +1423,7 @@ input.g-button--product-disable {
   mask: url("/svg/popular-goods-slider-prev.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-position: top;
+  -webkit-mask-position: center;
   content: '';
   background-color: #263238;
   display: block;
@@ -1433,8 +1433,8 @@ input.g-button--product-disable {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 6px;
-  height: 19px;
+  width: 100%;
+  height: 100%;
 }
 
 .next-arrow:after {
@@ -1442,7 +1442,7 @@ input.g-button--product-disable {
   mask: url("/svg/popular-goods-slider-next.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-position: top;
+  -webkit-mask-position: center;
   content: '';
   background-color: #263238;
   display: block;
@@ -2081,7 +2081,7 @@ input.g-button--product-disable {
 }
 
 .instagram {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .instagram a {
@@ -2107,7 +2107,7 @@ input.g-button--product-disable {
 }
 
 .instagram__title {
-  margin-bottom: 12px;
+  margin-bottom: -4px;
 }
 
 .instagram__title h2 {
@@ -2175,6 +2175,7 @@ input.g-button--product-disable {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
+  color: #263238;
 }
 
 .products-slider .slick-arrow {
@@ -2220,7 +2221,7 @@ input.g-button--product-disable {
 }
 
 .news {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .news a {
@@ -2237,7 +2238,7 @@ input.g-button--product-disable {
 }
 
 .news .slick-arrow {
-  top: -56px;
+  top: -54px;
   right: 0px;
 }
 
@@ -2255,14 +2256,14 @@ input.g-button--product-disable {
 }
 
 .news__title {
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
 }
 
 .news__block-image {
-  margin-bottom: 16px;
+  margin-bottom: 21px;
 }
 
 .news__block-text {
@@ -2289,7 +2290,7 @@ input.g-button--product-disable {
 }
 
 .footer {
-  padding: 32px 0 24px 0;
+  padding: 29px 0 24px 0;
   background: #01A54E;
 }
 
@@ -2323,11 +2324,11 @@ input.g-button--product-disable {
 }
 
 .footer__menu .footer__item {
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .footer__help .footer__item {
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .footer__questions--desktop {
@@ -2708,23 +2709,44 @@ input.g-button--product-disable {
   color: #263238;
 }
 
-.catalog-menu__title {
+.sidebar__list {
+  padding: 16px 0 12px 0;
+}
+
+.sidebar__list button {
+  padding-top: 12px;
+}
+
+.sidebar__list:not(:last-child) {
+  border-bottom: 1px solid #ECEFF1;
+}
+
+.sidebar__list-title {
+  margin-bottom: 12px;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
 }
 
-.catalog-menu__title a {
+.sidebar__list-title a {
   color: #263238;
 }
 
-.catalog-menu__item {
+.sidebar__list-title a:hover {
+  color: #4c6572;
+}
+
+.sidebar__item {
   font-size: 14px;
   line-height: 18px;
 }
 
-.catalog-menu__item a {
+.sidebar__item a {
   color: #7B8E98;
+}
+
+.sidebar__item a:hover {
+  color: #5d6c74;
 }
 
 .header-catalog-menu__wr {
@@ -2788,6 +2810,10 @@ input.g-button--product-disable {
   color: inherit;
 }
 
+.header-catalog__item a:hover {
+  color: #01A54E;
+}
+
 .header-catalog__item:not(:last-child) {
   margin-bottom: 6px;
 }
@@ -2844,6 +2870,12 @@ input.g-button--product-disable {
   font-size: 14px;
   line-height: 38px;
   color: #263238;
+}
+
+.catalog__btn-more .g-button:hover {
+  background: #01A54E;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 * {
@@ -2973,12 +3005,16 @@ html {
   }
 
   .news {
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
 
   .news img {
     -o-object-fit: cover;
     object-fit: cover;
+  }
+
+  .news .slick-slider .slick-track {
+    padding-bottom: 5px;
   }
 
   .news__block {
@@ -3023,7 +3059,7 @@ html {
   }
 
   .products-slider {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 
   .products-slider h2 {

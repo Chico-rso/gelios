@@ -93,13 +93,13 @@ header
 	}
 	&.active{display: block;}
 }
-//!Desctop
+//!Desktop
 .header__top-wr{background: #01A54E;}
 .header__top
 {
 	display: none;
 	padding: 4px 0;
-	margin-bottom: 12px;
+	margin-bottom: 11px;
 	a
 	{
 		font-weight: normal;
@@ -204,7 +204,7 @@ header
 	display: none;
 	align-items: center;
 	width: 100%;
-	padding: 10px 0 15px 0;
+	padding: 12px 0 15px 0;
 	a
 	{
 		font-size: 14px;
@@ -226,7 +226,7 @@ header
 {
 	&--header__bottom
 	{
-		padding: 0 6px 0 14px;
+		padding: 0 3px 0 14px;
 		margin-right: 8px;
 		font-size: 12px;
 		line-height: 32px;
@@ -267,7 +267,7 @@ header
 	margin-right: 36px;
 	svg
 	{
-		margin-right: 9px;
+		margin-right: 7px;
 		vertical-align: middle;
 	}
 	span

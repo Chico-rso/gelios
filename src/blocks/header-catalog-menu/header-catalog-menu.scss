@@ -41,6 +41,10 @@
 	font-size: 14px;
 	line-height: 18px;
 	color: #7B8E98;
-	a{color: inherit;}
+	a
+	{
+		color: inherit;
+		&:hover{color: #01A54E}
+	}
 	&:not(:last-child){margin-bottom: 6px;}
 }

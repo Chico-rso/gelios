@@ -1,6 +1,6 @@
 .news
 {
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	a{color: #263238;}
 	img
 	{
@@ -11,7 +11,7 @@
 	}
 	.slick-arrow
 	{
-		top: -56px;
+		top: -54px;
 		right: 0px;
 	}
 	.prev-arrow{right: 40px;}
@@ -25,12 +25,12 @@
 }
 .news__title
 {
-	margin-bottom: 16px;
+	margin-bottom: 19px;
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 24px;
 }
-.news__block-image{margin-bottom: 16px;}
+.news__block-image{margin-bottom: 21px;}
 .news__block-text{padding: 0 12px 21px 12px;}
 .news__block-date
 {
@@ -57,8 +57,12 @@
 {
 	.news
 	{
-		margin-bottom: 60px;
+		margin-bottom: 54px;
 		img{object-fit: cover;}
+		.slick-slider
+		{
+			.slick-track{padding-bottom: 5px;}
+		}
 	}
 	.news__block
 	{
