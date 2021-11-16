@@ -17,21 +17,18 @@
 		line-height: 18px;
 	}
 	svg{vertical-align: middle;}
-	.g-button
+	.g-button--questions
 	{
-		&--questions
+		padding: 0 14px;
+		border: 1px solid #01A54E;
+		font-size: 12px;
+		line-height: 32px;
+		background: #FFFFFF;
+		color: #01A54E;
+		&:hover
 		{
-			padding: 0 14px;
-			border: 1px solid #01A54E;
-			font-size: 12px;
-			line-height: 32px;
-			background: #FFFFFF;
-			color: #01A54E;
-			&:hover
-			{
-				color: #87D4AB;
-				background: none;
-			}
+			color: #87D4AB;
+			background: none;
 		}
 	}
 	&.open

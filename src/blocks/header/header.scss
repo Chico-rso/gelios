@@ -222,17 +222,14 @@ header
 	height: 32px;
 	margin-right: 32px;
 }
-.g-button
+.g-button--header__bottom
 {
-	&--header__bottom
-	{
-		padding: 0 3px 0 14px;
-		margin-right: 8px;
-		font-size: 12px;
-		line-height: 32px;
-		span{margin-right: 4px;}
-		&:hover{background: #00833D;}
-	}
+	padding: 0 3px 0 14px;
+	margin-right: 8px;
+	font-size: 12px;
+	line-height: 32px;
+	span{margin-right: 4px;}
+	&:hover{background: #00833D;}
 }
 .g-input-icon
 {
@@ -249,16 +246,13 @@ header
 	display: none;
 	&.active{display: inline-block;}
 }
-.g-input
+.g-input--header__bottom
 {
-	&--header__bottom
+	flex-grow: 1;
+	margin-right: 32px;
+	.search-input-items
 	{
-		flex-grow: 1;
-		margin-right: 32px;
-		.search-input-items
-		{
-			display: none;
-		}
+		display: none;
 	}
 }
 .header__bottom-favorit

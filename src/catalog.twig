@@ -1,5 +1,4 @@
 {% extends "layouts/layout.twig" %}
-
 {% block page %}
 <div class="catalog">
 	<div class="container">
@@ -8,9 +7,9 @@
 				{% include 'blocks/sidebar/sidebar.twig' %}
 			</div>
 			<div class="catalog__right">
-			<div class="catalog__right-title">
-				<h2>Каталог</h2>
-			</div>
+				<div class="catalog__right-title">
+					<h2>Каталог</h2>
+				</div>
 				{% include 'blocks/promo-slider/promo-slider.twig' %}
 				<div class="products-slider">
 					<h2>С большой скидкой</h2>
@@ -23,7 +22,7 @@
 					</div>
 				</div>
 				<div class="products-slider products-slider--see ">
-						<h2>Лекарственные средства</h2>
+					<h2>Лекарственные средства</h2>
 					<div class="products-slider__wr _products-slider">
 						{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30",'notReview':[notReview],'salePrice':[salePrice],imgUrl:"./img/see-1.png"} %}
 						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше…", imgUrl:"./img/see-2.png"} %}
@@ -34,7 +33,7 @@
 					</div>
 				</div>
 				<div class="products-slider products-slider--see ">
-						<h2>Линзы, очки, аксессуары</h2>
+					<h2>Линзы, очки, аксессуары</h2>
 					<div class="products-slider__wr _products-slider">
 						{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30",'notReview':[notReview],'salePrice':[salePrice],imgUrl:"./img/see-1.png"} %}
 						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше…", imgUrl:"./img/see-2.png"} %}
@@ -45,7 +44,7 @@
 					</div>
 				</div>
 				<div class="products-slider products-slider--see ">
-						<h2>Витамины, БАДы и пищевые добавки</h2>
+					<h2>Витамины, БАДы и пищевые добавки</h2>
 					<div class="products-slider__wr _products-slider">
 						{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30",'notReview':[notReview],'salePrice':[salePrice],imgUrl:"./img/see-1.png"} %}
 						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше…", imgUrl:"./img/see-2.png"} %}
