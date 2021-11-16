@@ -1452,8 +1452,8 @@ input.g-button--product-disable {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 6px;
-  height: 19px;
+  width: 100%;
+  height: 100%;
 }
 
 .ui-kit__section .ui-kit__title--popup {
@@ -2959,17 +2959,12 @@ html {
     margin-bottom: 40px;
   }
 
-  .banners .slick-slider .slick-track {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+  .banners .slick-slider .slick-slide {
+    margin: 0 10px;
   }
 
-  .banners__img a {
-    width: 0;
-    width: 100%;
-    margin-right: 20px;
+  .banners .slick-slider .slick-list {
+    margin: 0 -10px;
   }
 
   .instagram {
