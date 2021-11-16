@@ -2749,14 +2749,13 @@ input.g-button--product-disable {
 }
 
 .header-catalog-menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header-catalog__list {
-  width: 25%;
+  height: 757px;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-fill: auto;
+  -moz-column-fill: auto;
+  column-fill: auto;
 }
 
 .header-catalog__list:not(:last-child) {

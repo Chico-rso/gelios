@@ -16,10 +16,14 @@
 		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 	}
 }
-.header-catalog-menu{display: flex;}
+.header-catalog-menu
+{
+	height: 757px;
+	column-count: 4;
+	column-fill: auto;
+}
 .header-catalog__list
 {
-	width: 25%;
 	&:not(:last-child){margin-right: 19px;}
 	&:not(:last-child){margin-bottom: 35px;}
 }
