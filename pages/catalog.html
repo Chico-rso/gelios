@@ -741,14 +741,214 @@
 									</div>
 									<ul class="g-spoiler__list _g-spoiler__list">
 										<div class="g-range-slider _range-slider-wrap">
-											<div class="_range-slider" data-min="" data-max="" data-start=""></div>
-											<input type="hidden" class="_min">
-											<input type="hidden" class="_max">
 											<div class="g-range-slider__labels">
 												<div class="_label-from">0</div>
 												<div class="_label-to">0</div>
 											</div>
+											<div class="_range-slider" data-min="10" data-max="100000" data-start="1000,7000"></div>
+											<input type="hidden" class="_min">
+											<input type="hidden" class="_max">
 										</div>
+									</ul>
+								</div>
+								<div class="g-spoiler__item">
+									<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+										Производитель
+									</div>
+									<ul class="g-spoiler__list _g-spoiler__list">
+										<li class="g-spoiler__list-item g-spoiler__list-item--button">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7041 14C11.8994 14 12.0884 13.9242 12.2269 13.7788L15.7795 10.158C15.9181 10.019 16 9.82306 16 9.65245C16 9.23539 15.7102 8.95735 15.3197 8.95735C15.1118 8.95735 14.9544 9.03949 14.8284 9.16588L13.2663 10.7709L12.3403 11.8768L12.4033 10.4171V2.71406C12.4033 2.29068 12.1199 2 11.7041 2C11.2884 2 11.0049 2.29068 11.0049 2.71406V10.4171L11.0679 11.8768L10.142 10.7709L8.57986 9.16588C8.45389 9.03949 8.30271 8.95735 8.09485 8.95735C7.69801 8.95735 7.40826 9.23539 7.40826 9.65245C7.40826 9.82306 7.49015 10.019 7.62873 10.158L11.1813 13.7788C11.3262 13.9242 11.5152 14 11.7041 14Z" fill="#263238" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.29586 14C4.70529 14 4.99504 13.7093 4.99504 13.2859V5.58294L4.93205 4.12322L5.858 5.22907L7.42013 6.83412C7.54611 6.96051 7.69728 7.04265 7.90515 7.04265C8.30198 7.04265 8.58543 6.76461 8.58543 6.34755C8.58543 6.17694 8.50984 5.98104 8.37127 5.84202L4.81238 2.22117C4.6738 2.07583 4.48483 2 4.29586 2C4.1006 2 3.91163 2.07583 3.77305 2.22117L0.220462 5.84202C0.081886 5.98104 0 6.17694 0 6.34755C0 6.76461 0.283451 7.04265 0.680283 7.04265C0.888148 7.04265 1.04562 6.96051 1.1716 6.83412L2.72743 5.22907L3.65967 4.12322L3.59038 5.58294V13.2859C3.59038 13.7093 3.88014 14 4.29586 14Z" fill="#01A54E" />
+											</svg>
+											<button>Цена по возрастанию</button>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">В наличии</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Новинки</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Популярные</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Скидки и акции</span>
+												</div>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="g-spoiler__item">
+									<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+										Форма выпуска
+									</div>
+									<ul class="g-spoiler__list _g-spoiler__list">
+										<li class="g-spoiler__list-item g-spoiler__list-item--button">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7041 14C11.8994 14 12.0884 13.9242 12.2269 13.7788L15.7795 10.158C15.9181 10.019 16 9.82306 16 9.65245C16 9.23539 15.7102 8.95735 15.3197 8.95735C15.1118 8.95735 14.9544 9.03949 14.8284 9.16588L13.2663 10.7709L12.3403 11.8768L12.4033 10.4171V2.71406C12.4033 2.29068 12.1199 2 11.7041 2C11.2884 2 11.0049 2.29068 11.0049 2.71406V10.4171L11.0679 11.8768L10.142 10.7709L8.57986 9.16588C8.45389 9.03949 8.30271 8.95735 8.09485 8.95735C7.69801 8.95735 7.40826 9.23539 7.40826 9.65245C7.40826 9.82306 7.49015 10.019 7.62873 10.158L11.1813 13.7788C11.3262 13.9242 11.5152 14 11.7041 14Z" fill="#263238" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.29586 14C4.70529 14 4.99504 13.7093 4.99504 13.2859V5.58294L4.93205 4.12322L5.858 5.22907L7.42013 6.83412C7.54611 6.96051 7.69728 7.04265 7.90515 7.04265C8.30198 7.04265 8.58543 6.76461 8.58543 6.34755C8.58543 6.17694 8.50984 5.98104 8.37127 5.84202L4.81238 2.22117C4.6738 2.07583 4.48483 2 4.29586 2C4.1006 2 3.91163 2.07583 3.77305 2.22117L0.220462 5.84202C0.081886 5.98104 0 6.17694 0 6.34755C0 6.76461 0.283451 7.04265 0.680283 7.04265C0.888148 7.04265 1.04562 6.96051 1.1716 6.83412L2.72743 5.22907L3.65967 4.12322L3.59038 5.58294V13.2859C3.59038 13.7093 3.88014 14 4.29586 14Z" fill="#01A54E" />
+											</svg>
+											<button>Цена по возрастанию</button>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">В наличии</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Новинки</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Популярные</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Скидки и акции</span>
+												</div>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="g-spoiler__item">
+									<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+										Минимальный возраст
+									</div>
+									<ul class="g-spoiler__list _g-spoiler__list">
+										<li class="g-spoiler__list-item g-spoiler__list-item--button">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7041 14C11.8994 14 12.0884 13.9242 12.2269 13.7788L15.7795 10.158C15.9181 10.019 16 9.82306 16 9.65245C16 9.23539 15.7102 8.95735 15.3197 8.95735C15.1118 8.95735 14.9544 9.03949 14.8284 9.16588L13.2663 10.7709L12.3403 11.8768L12.4033 10.4171V2.71406C12.4033 2.29068 12.1199 2 11.7041 2C11.2884 2 11.0049 2.29068 11.0049 2.71406V10.4171L11.0679 11.8768L10.142 10.7709L8.57986 9.16588C8.45389 9.03949 8.30271 8.95735 8.09485 8.95735C7.69801 8.95735 7.40826 9.23539 7.40826 9.65245C7.40826 9.82306 7.49015 10.019 7.62873 10.158L11.1813 13.7788C11.3262 13.9242 11.5152 14 11.7041 14Z" fill="#263238" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.29586 14C4.70529 14 4.99504 13.7093 4.99504 13.2859V5.58294L4.93205 4.12322L5.858 5.22907L7.42013 6.83412C7.54611 6.96051 7.69728 7.04265 7.90515 7.04265C8.30198 7.04265 8.58543 6.76461 8.58543 6.34755C8.58543 6.17694 8.50984 5.98104 8.37127 5.84202L4.81238 2.22117C4.6738 2.07583 4.48483 2 4.29586 2C4.1006 2 3.91163 2.07583 3.77305 2.22117L0.220462 5.84202C0.081886 5.98104 0 6.17694 0 6.34755C0 6.76461 0.283451 7.04265 0.680283 7.04265C0.888148 7.04265 1.04562 6.96051 1.1716 6.83412L2.72743 5.22907L3.65967 4.12322L3.59038 5.58294V13.2859C3.59038 13.7093 3.88014 14 4.29586 14Z" fill="#01A54E" />
+											</svg>
+											<button>Цена по возрастанию</button>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">В наличии</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Новинки</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Популярные</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Скидки и акции</span>
+												</div>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="g-spoiler__item">
+									<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+										Содержит антибиотик
+									</div>
+									<ul class="g-spoiler__list _g-spoiler__list">
+										<li class="g-spoiler__list-item g-spoiler__list-item--button">
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7041 14C11.8994 14 12.0884 13.9242 12.2269 13.7788L15.7795 10.158C15.9181 10.019 16 9.82306 16 9.65245C16 9.23539 15.7102 8.95735 15.3197 8.95735C15.1118 8.95735 14.9544 9.03949 14.8284 9.16588L13.2663 10.7709L12.3403 11.8768L12.4033 10.4171V2.71406C12.4033 2.29068 12.1199 2 11.7041 2C11.2884 2 11.0049 2.29068 11.0049 2.71406V10.4171L11.0679 11.8768L10.142 10.7709L8.57986 9.16588C8.45389 9.03949 8.30271 8.95735 8.09485 8.95735C7.69801 8.95735 7.40826 9.23539 7.40826 9.65245C7.40826 9.82306 7.49015 10.019 7.62873 10.158L11.1813 13.7788C11.3262 13.9242 11.5152 14 11.7041 14Z" fill="#263238" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M4.29586 14C4.70529 14 4.99504 13.7093 4.99504 13.2859V5.58294L4.93205 4.12322L5.858 5.22907L7.42013 6.83412C7.54611 6.96051 7.69728 7.04265 7.90515 7.04265C8.30198 7.04265 8.58543 6.76461 8.58543 6.34755C8.58543 6.17694 8.50984 5.98104 8.37127 5.84202L4.81238 2.22117C4.6738 2.07583 4.48483 2 4.29586 2C4.1006 2 3.91163 2.07583 3.77305 2.22117L0.220462 5.84202C0.081886 5.98104 0 6.17694 0 6.34755C0 6.76461 0.283451 7.04265 0.680283 7.04265C0.888148 7.04265 1.04562 6.96051 1.1716 6.83412L2.72743 5.22907L3.65967 4.12322L3.59038 5.58294V13.2859C3.59038 13.7093 3.88014 14 4.29586 14Z" fill="#01A54E" />
+											</svg>
+											<button>Цена по возрастанию</button>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">В наличии</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Новинки</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Популярные</span>
+												</div>
+											</label>
+										</li>
+										<li class="g-spoiler__list-item">
+											<label class="g-checkbox">
+												<input type="checkbox" name="" class="g-checkbox__input">
+												<div class="g-checkbox__body">
+													<span class="g-checkbox__box"></span>
+													<span class="g-checkbox__text">Скидки и акции</span>
+												</div>
+											</label>
+										</li>
 									</ul>
 								</div>
 							</div>

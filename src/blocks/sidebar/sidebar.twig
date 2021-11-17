@@ -150,18 +150,206 @@
 			</div>
 			<ul class="g-spoiler__list _g-spoiler__list">
 				<div class="g-range-slider _range-slider-wrap">
-					<div class="_range-slider"
-					data-min="{{min}}"
-					data-max="{{max}}"
-					data-start="{{start}}"
-					></div>
-					<input type="hidden" class="_min">
-					<input type="hidden" class="_max">
 					<div class="g-range-slider__labels">
 						<div class="_label-from">0</div>
 						<div class="_label-to">0</div>
 					</div>
+					<div class="_range-slider"
+					data-min="10"
+					data-max="100000"
+					data-start="1000,7000"
+					></div>
+					<input type="hidden" class="_min">
+					<input type="hidden" class="_max">
 				</div>
+			</ul>
+		</div>
+		<div class="g-spoiler__item">
+			<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+				Производитель
+			</div>
+			<ul class="g-spoiler__list _g-spoiler__list">
+				<li class="g-spoiler__list-item g-spoiler__list-item--button">
+					{% include '../../assets/svg/catalog-sort-price.svg' %}
+					<button>Цена по возрастанию</button>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">В наличии</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Новинки</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Популярные</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Скидки и акции</span>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="g-spoiler__item">
+			<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+				Форма выпуска
+			</div>
+			<ul class="g-spoiler__list _g-spoiler__list">
+				<li class="g-spoiler__list-item g-spoiler__list-item--button">
+					{% include '../../assets/svg/catalog-sort-price.svg' %}
+					<button>Цена по возрастанию</button>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">В наличии</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Новинки</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Популярные</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Скидки и акции</span>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="g-spoiler__item">
+			<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+				Минимальный возраст
+			</div>
+			<ul class="g-spoiler__list _g-spoiler__list">
+				<li class="g-spoiler__list-item g-spoiler__list-item--button">
+					{% include '../../assets/svg/catalog-sort-price.svg' %}
+					<button>Цена по возрастанию</button>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">В наличии</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Новинки</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Популярные</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Скидки и акции</span>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="g-spoiler__item">
+			<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+				Содержит антибиотик
+			</div>
+			<ul class="g-spoiler__list _g-spoiler__list">
+				<li class="g-spoiler__list-item g-spoiler__list-item--button">
+					{% include '../../assets/svg/catalog-sort-price.svg' %}
+					<button>Цена по возрастанию</button>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">В наличии</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Новинки</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Популярные</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Скидки и акции</span>
+						</div>
+					</label>
+				</li>
 			</ul>
 		</div>
 	</div>

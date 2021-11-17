@@ -22,6 +22,7 @@ const o2 =
 		this.banners.initSlider();
 		this.instagram.initSlider();
 		this.news.initSlider();
+		this.gRangeSlider.init();
 	},
 	/**
 	* отслеживание клика вне блока

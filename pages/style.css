@@ -3504,7 +3504,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .g-range-slider {
   min-height: 1px;
-  max-width: 270px;
+  max-width: 240px;
+  margin-bottom: 17px;
 }
 
 .g-range-slider__labels {
@@ -3516,11 +3517,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 7px;
-  font-size: 0.69231rem;
-  line-height: 0.92308rem;
-  font-weight: 400;
-  color: #959dab;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #7B8E98;
 }
 
 .g-range-slider .noUi-target {
@@ -3534,15 +3535,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .g-range-slider .noUi-horizontal .noUi-handle {
-  width: 16px;
-  height: 16px;
+  width: 11px;
+  height: 11px;
   border: 1px solid #fff;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  background-color: #7C7791;
+  background-color: #01A54E;
   -webkit-box-shadow: none;
   box-shadow: none;
   position: relative;
+  top: -4px;
   left: -10px;
 }
 
@@ -3558,7 +3560,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .g-range-slider .noUi-horizontal .noUi-connect {
-  background-color: #5e6064;
+  background-color: #01A54E;
 }
 
 .g-range-slider .noUi-horizontal .noUi-touch-area {
