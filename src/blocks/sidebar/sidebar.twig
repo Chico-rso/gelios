@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar__catalog">
 	<div class="sidebar__title">
 		<h2>Каталог</h2>
 	</div>
@@ -62,16 +62,110 @@
 		<button class="g-button g-button--more">Смотреть всё {% include '../../assets/svg/sidebar-arrow-down.svg' %}</button>
 	</ul>
 </div>
-
-
-
-
-
-
-
-
-
-
+<div class="sidebar__category">
+	<div class="sidebar__category-title">
+		<h2>Лекарственные средства</h2>
+	</div>
+	<ul class="sidebar__category-list">
+		<li class="sidebar__category-item"><a href="#">Простуда, грипп</a></li>
+		<li class="sidebar__category-item"><a href="#">Желудок, кишечник, печень</a></li>
+		<li class="sidebar__category-item"><a href="#">Болеутоляющие препараты</a></li>
+		<li class="sidebar__category-item"><a href="#">Аллергия</a></li>
+		<li class="sidebar__category-item"><a href="#">Мышцы, кости и суставы</a></li>
+		<li class="sidebar__category-item"><a href="#">Контактные линзы и аксессуары</a></li>
+		<li class="sidebar__category-item"><a href="#">Витамины и витаминные комплексы</a></li>
+		<li class="sidebar__category-item"><a href="#">Минералы</a></li>
+		<li class="sidebar__category-item"><a href="#">БАДы</a></li>
+		<li class="sidebar__category-item"><a href="#">Пищевые добавки</a></li>
+		<li class="sidebar__category-item"><a href="#">Пребиотики</a></li>
+		<li class="sidebar__category-item"><a href="#">Ирригаторы</a></li>
+		<li class="sidebar__category-item"><a href="#">Зубные пасты</a></li>
+		<li class="sidebar__category-item"><a href="#">Зубные щетки</a></li>
+		<li class="sidebar__category-item"><a href="#">Сердце, кровообращение и вены</a></li>
+		<li class="sidebar__category-item"><a href="#">Зубные гели</a></li>
+		<li class="sidebar__category-item"><a href="#">Активаторы воды</a></li>
+		<li class="sidebar__category-item"><a href="#">Глюкометры и анализаторы крови</a></li>
+		<li class="sidebar__category-item"><a href="#">Ингаляторы</a></li>
+		<li class="sidebar__category-item"><a href="#">Термометры медицинские</a></li>
+		<li class="sidebar__category-item"><a href="#">Тонометры и аксессуары</a></li>
+		<li class="sidebar__category-item"><a href="#">Аптечки</a></li>
+		<li class="sidebar__category-item"><a href="#">Диагностические тесты</a></li>
+		<li class="sidebar__category-item"><a href="#">Средства по уходу за больными</a></li>
+		<li class="sidebar__category-item"><a href="#">Средства для реабилитации</a></li>
+		<li class="sidebar__category-item"><a href="#">Расходные материалы</a></li>
+	</ul>
+</div>
+<div class="sidebar__sort">
+	<div class="g-spoiler _g-spoiler">
+		<div class="g-spoiler__item">
+			<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+				Сортировать
+			</div>
+			<ul class="g-spoiler__list _g-spoiler__list">
+				<li class="g-spoiler__list-item g-spoiler__list-item--button">
+					{% include '../../assets/svg/catalog-sort-price.svg' %}
+					<button>Цена по возрастанию</button>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">В наличии</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Новинки</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Популярные</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Скидки и акции</span>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="g-spoiler__item">
+			<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+				Цена
+			</div>
+			<ul class="g-spoiler__list _g-spoiler__list">
+				<div class="g-range-slider _range-slider-wrap">
+					<div class="_range-slider"
+					data-min="{{min}}"
+					data-max="{{max}}"
+					data-start="{{start}}"
+					></div>
+					<input type="hidden" class="_min">
+					<input type="hidden" class="_max">
+					<div class="g-range-slider__labels">
+						<div class="_label-from">0</div>
+						<div class="_label-to">0</div>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
 

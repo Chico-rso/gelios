@@ -1,3 +1,4 @@
+.sidebar__catalog{display: none;}
 .sidebar__title
 {
 	margin-bottom: 16px;
@@ -34,6 +35,38 @@
 	a
 	{
 		color: #7B8E98;
-		&:hover{color: #5d6c74;}
+		&:hover{color: #01A54E;}
 	}
 }
+.sidebar__category{display: none;}
+.sidebar__category-title
+{
+	margin-bottom: 24px;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 34px;
+	color: #263238;
+}
+.sidebar__category-item
+{
+	padding: 8px 0;
+	border-bottom: 1px solid #ECEFF1;
+	font-size: 14px;
+	line-height: 18px;
+	color: #7B8E98;
+	a
+	{
+		color: inherit;
+		&:hover{color: #01A54E;}
+	}
+}
+
+
+
+
+
+
+
+
+
+
