@@ -1,3 +1,4 @@
+{% if sidebarCatalog is defined %}
 <div class="sidebar__catalog _sidebar__catalog">
 	<div class="sidebar__title">
 		<h2>Каталог</h2>
@@ -62,6 +63,8 @@
 		<button class="g-button g-button--more">Смотреть всё {% include '../../assets/svg/sidebar-arrow-down.svg' %}</button>
 	</ul>
 </div>
+{% endif %}
+{% if sidebarCategory is defined %}
 <div class="sidebar__category _sidebar__category">
 	<div class="sidebar__category-title">
 		<h2>Лекарственные средства</h2>
@@ -95,6 +98,8 @@
 		<li class="sidebar__category-item"><a href="#">Расходные материалы</a></li>
 	</ul>
 </div>
+{% endif %}
+{% if sidebarSort is defined %}
 <div class="sidebar__sort">
 	<div class="g-spoiler _g-spoiler">
 		<div class="g-spoiler__item">
@@ -366,6 +371,8 @@
 		</div>
 	</div>
 </div>
+{% endif %}
+
 
 
 

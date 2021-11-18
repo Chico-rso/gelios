@@ -51,8 +51,10 @@
 		{% endif %}
 	</div>
 	<div class="product-card__btn">
+	{% if btn is defined %}
 		<button class="g-button g-button--product-basket" onclick="o2.productCard.changeBasket(event)">В корзину</button>
 		<button class="g-button g-button--product-inbasket" onclick="o2.productCard.changeBasket(event)">В корзине</button>
 		<button class="g-button g-button--product-disable">В корзину</button>
+	{% endif %}
 	</div>
 </div>
