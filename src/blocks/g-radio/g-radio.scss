@@ -23,13 +23,13 @@
 			align-items: center;
 			cursor: pointer;
 			.g-radio__box {border-color: #c2c7cf; }
-			.g-radio__text {color: #c2c7cf; }
+			.g-radio__text {color: #263238; }
 		}
 		// включен, но не выбран
 		&:not(:checked)
 		{
 			& ~ .g-radio__body:hover .g-radio__box {
-				border-color: rgba(25, 28, 33, 0.7);
+				border-color: #01A54E;
 				&:before
 				{
 					content:'';
@@ -47,10 +47,10 @@
 		}
 		// включен и выбран
 		&:checked ~ .g-radio__body .g-radio__box{
-			border-color: rgba(25, 28, 33, 0.7);
+			border-color: #01A54E;
 			border-width: 2px;
 		}
-		&:checked 
+		&:checked
 		{
 			&~ .g-radio__body .g-radio__box:before
 			{
@@ -59,22 +59,22 @@
 				border-radius: 10px;
 				width: 10px;
 				height: 10px;
-				background: rgba(25, 28, 33, 0.7);
+				background: #01A54E;
 				position: relative;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 			}
-			&~ .g-radio__body .g-radio__text { color: #191C21; }
+			&~ .g-radio__body .g-radio__text { color: #01A54E; }
 		}
 		// состояние фокуса
-		&:hover ~ .g-radio__body .g-radio__text{color: #000000}
+		&:hover ~ .g-radio__body .g-radio__text{color: #01A54E}
 	}
 	// выключен и выбран
 	&:disabled:checked ~ .g-radio__body .g-radio__box
 	{
 		border-color: pink;
-		background-color: gray;
+		background-color: #01A54E;
 	}
 }
 // базовые стили для выключенного состояния
@@ -82,15 +82,16 @@
 {
 	width: 20px;
 	height: 20px;
-	border: 1px solid grey;
+	border: 2px solid grey;
 	display: inline-block;
 	vertical-align: top;
 	border-radius: 100%;
 }
 .g-radio__text
 {
-	font-size: rem(13);
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 10px;
+	font-size: 14px;
+	line-height: 1.3em;
 }

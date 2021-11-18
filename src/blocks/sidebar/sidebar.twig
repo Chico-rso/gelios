@@ -169,16 +169,12 @@
 				Производитель
 			</div>
 			<ul class="g-spoiler__list _g-spoiler__list">
-				<li class="g-spoiler__list-item g-spoiler__list-item--button">
-					{% include '../../assets/svg/catalog-sort-price.svg' %}
-					<button>Цена по возрастанию</button>
-				</li>
 				<li class="g-spoiler__list-item">
 					<label class="g-checkbox">
 						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
 						<div class="g-checkbox__body">
 							<span class="g-checkbox__box"></span>
-							<span class="g-checkbox__text">В наличии</span>
+							<span class="g-checkbox__text">Galderma</span>
 						</div>
 					</label>
 				</li>
@@ -187,7 +183,7 @@
 						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
 						<div class="g-checkbox__body">
 							<span class="g-checkbox__box"></span>
-							<span class="g-checkbox__text">Новинки</span>
+							<span class="g-checkbox__text">Glenmark</span>
 						</div>
 					</label>
 				</li>
@@ -196,7 +192,7 @@
 						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
 						<div class="g-checkbox__body">
 							<span class="g-checkbox__box"></span>
-							<span class="g-checkbox__text">Популярные</span>
+							<span class="g-checkbox__text">Globopharm</span>
 						</div>
 					</label>
 				</li>
@@ -205,7 +201,45 @@
 						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
 						<div class="g-checkbox__body">
 							<span class="g-checkbox__box"></span>
-							<span class="g-checkbox__text">Скидки и акции</span>
+							<span class="g-checkbox__text">Janssen</span>
+						</div>
+					</label>
+				</li>
+				<li class="button-more">
+					<button class="g-button--more">Смотреть всё</button>
+					{% include '../../assets/svg/g-button-arrow-down.svg' %}
+				</li>
+			</ul>
+		</div>
+		<div class="g-spoiler__item">
+			<div class="g-spoiler__title _g-spoiler__title" onclick="o2.gSpoiler.spoilerToggle(this)">
+				Рецептурный препарат
+			</div>
+			<ul class="g-spoiler__list _g-spoiler__list">
+				<li class="g-spoiler__list-item">
+					<label class="g-radio">
+						<input type="radio" name="{{ name }}" class="g-radio__input"  >
+						<div class="g-radio__body">
+							<span class="g-radio__box"></span>
+							<span class="g-radio__text">Да</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-radio">
+						<input type="radio" name="{{ name }}" class="g-radio__input"  >
+						<div class="g-radio__body">
+							<span class="g-radio__box"></span>
+							<span class="g-radio__text">Нет</span>
+						</div>
+					</label>
+				</li>
+				<li class="g-spoiler__list-item">
+					<label class="g-radio">
+						<input type="radio" name="{{ name }}" class="g-radio__input"  >
+						<div class="g-radio__body">
+							<span class="g-radio__box"></span>
+							<span class="g-radio__text">Не важно</span>
 						</div>
 					</label>
 				</li>

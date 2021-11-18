@@ -60,7 +60,20 @@
 		&:hover{color: #01A54E;}
 	}
 }
-
+.button-more
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+	button
+	{
+		margin-right: 9px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	&:hover svg path{fill: #00833D;}
+}
+.g-spoiler__list-item--button:hover{color: #00833D;}
 
 
 
