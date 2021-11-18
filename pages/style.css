@@ -2705,10 +2705,6 @@ input.g-button--product-disable {
   display: none;
 }
 
-.sidebar__title {
-  margin-bottom: 16px;
-}
-
 .sidebar__title h2 {
   font-weight: bold;
   font-size: 28px;
@@ -2882,10 +2878,6 @@ input.g-button--product-disable {
 .g-spoiler {
   width: 240px;
   min-height: 44px;
-}
-
-.g-spoiler__item {
-  margin-bottom: 16px;
 }
 
 .g-spoiler__item:last-child {
