@@ -2701,7 +2701,7 @@ input.g-button--product-disable {
   margin-right: 16px;
 }
 
-.sidebar__catalog {
+.sidebar__catalog.active {
   display: none;
 }
 
@@ -2756,8 +2756,15 @@ input.g-button--product-disable {
   display: none;
 }
 
+.sidebar__category.active {
+  display: block;
+}
+
 .sidebar__category-title {
   margin-bottom: 24px;
+}
+
+.sidebar__category-title h2 {
   font-weight: bold;
   font-size: 28px;
   line-height: 34px;
@@ -2804,6 +2811,10 @@ input.g-button--product-disable {
 
 .g-spoiler__list-item--button:hover {
   color: #00833D;
+}
+
+.sidebar__sort {
+  display: none;
 }
 
 .header-catalog-menu__wr {
