@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="catalog__wr">
 			<div class="catalog__left">
-				{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Главная']} %}
+				{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Главная'], 'addres': 'index.html'} %}
 				{% include 'blocks/sidebar/sidebar.twig' with {'sidebarCatalog': [sidebarCatalog], }%}
 			</div>
 			<div class="catalog__right">
@@ -14,7 +14,7 @@
 				{% include 'blocks/promo-slider/promo-slider.twig' %}
 				<div class="catalog__mob">
 					{% include 'assets/svg/catalog-mob.svg' %}
-					<a href="#" onclick="o2.openCategory()">Каталог товаров</a>
+					<a href="catalog__category">Каталог товаров</a>
 					{% include 'assets/svg/arrow-rigth.svg' %}
 				</div>
 				<div class="products-slider">
@@ -51,62 +51,6 @@
 				</div>
 				<div class="products-slider products-slider--see ">
 					<h2>Витамины, БАДы и пищевые добавки</h2>
-					<div class="products-slider__wr _products-slider">
-						{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30",'notReview':[notReview],'salePrice':[salePrice],imgUrl:"./img/see-1.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше…", imgUrl:"./img/see-2.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'end':[end],'usualPrice':[usualPrice], cardTitle: "Аденурик таб. п/о плён. 80 мг", imgUrl:"./img/see-3.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], 'notReview':[notReview],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl:"./img/see-4.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice],'notReview':[notReview],cardTitle: "Ибупрофен таб. п/о плен. 400 мг", imgUrl:"./img/see-5.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'balance':[balance],'usualPrice':[usualPrice],cardTitle: "Нурофен таб. п/о 200мг № 10", imgUrl:"./img/see-6.png"} %}
-					</div>
-				</div>
-				<div class="catalog__btn-more">
-					<button class="g-button">Показать ещё</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="catalog__category _catalog__category">
-	<div class="container">
-		<div class="catalog__wr">
-			<div class="catalog__left">
-				{% include 'blocks/sidebar/sidebar.twig' with {'sidebarCategory': [sidebarCategory], }%}
-			</div>
-			<div class="catalog__right">
-				<div class="catalog__right-title">
-					<h2>Лекарственные средства</h2>
-				</div>
-				{% include 'blocks/promo-slider/promo-slider.twig' %}
-				<div class="catalog__mob">
-					 {% include 'assets/svg/catalog-mob.svg' %}
-					<a href="#">Список категорий</a>
-					{% include 'assets/svg/arrow-rigth.svg' %}
-				</div>
-				<div class="products-slider products-slider--see ">
-					<h2>Простуда, грипп</h2>
-					<div class="products-slider__wr _products-slider">
-						{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30",'notReview':[notReview],'salePrice':[salePrice],imgUrl:"./img/see-1.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше…", imgUrl:"./img/see-2.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'end':[end],'usualPrice':[usualPrice], cardTitle: "Аденурик таб. п/о плён. 80 мг", imgUrl:"./img/see-3.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], 'notReview':[notReview],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl:"./img/see-4.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice],'notReview':[notReview],cardTitle: "Ибупрофен таб. п/о плен. 400 мг", imgUrl:"./img/see-5.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'balance':[balance],'usualPrice':[usualPrice],cardTitle: "Нурофен таб. п/о 200мг № 10", imgUrl:"./img/see-6.png"} %}
-					</div>
-				</div>
-				<div class="products-slider products-slider--see ">
-					<h2>Желудок, кишечник, печень</h2>
-					<div class="products-slider__wr _products-slider">
-						{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30",'notReview':[notReview],'salePrice':[salePrice],imgUrl:"./img/see-1.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше…", imgUrl:"./img/see-2.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'end':[end],'usualPrice':[usualPrice], cardTitle: "Аденурик таб. п/о плён. 80 мг", imgUrl:"./img/see-3.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], 'notReview':[notReview],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl:"./img/see-4.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice],'notReview':[notReview],cardTitle: "Ибупрофен таб. п/о плен. 400 мг", imgUrl:"./img/see-5.png"} %}
-						{% include 'blocks/product-card/product-card.twig' with {'balance':[balance],'usualPrice':[usualPrice],cardTitle: "Нурофен таб. п/о 200мг № 10", imgUrl:"./img/see-6.png"} %}
-					</div>
-				</div>
-				<div class="products-slider products-slider--see ">
-					<h2>Болеутоляющие препараты</h2>
 					<div class="products-slider__wr _products-slider">
 						{% include 'blocks/product-card/product-card.twig' with {'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30",'notReview':[notReview],'salePrice':[salePrice],imgUrl:"./img/see-1.png"} %}
 						{% include 'blocks/product-card/product-card.twig' with {'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше…", imgUrl:"./img/see-2.png"} %}

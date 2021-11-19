@@ -3648,22 +3648,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-bottom: 40px;
 }
 
-.catalog.close {
-  display: none;
-}
-
-.catalog__category {
-  display: none;
-}
-
-.catalog__category.open {
-  display: block;
-}
-
-.catalog__category-sort {
-  display: none;
-}
-
 .catalog__wr {
   display: -webkit-box;
   display: -webkit-flex;
