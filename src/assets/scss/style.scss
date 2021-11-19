@@ -33,11 +33,13 @@
 @import 'blocks/g-checkbox/g-checkbox';
 @import 'blocks/g-radio/g-radio';
 @import 'blocks/g-range-slider/g-range-slider';
-@import 'blocks/catalog-category/catalog-category';
+@import 'blocks/g-pagination/g-pagination';
 /* Пример подключения*/
 /* @import 'blocks/component/component'; */
 /* pages */
 @import 'src/pages/catalog/catalog';
+@import 'src/pages/catalog-category/catalog-category';
+@import 'src/pages/catalog-category-item/catalog-category-item';
 
 * {
 	-webkit-box-sizing: border-box;

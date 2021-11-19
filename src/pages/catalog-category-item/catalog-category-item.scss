@@ -1,0 +1,20 @@
+.catalog__category-item{margin-bottom: 40px;}
+.catalog__category-item-wr{display: flex;}
+.catalog__category-item-left
+{
+	max-width: 240px;
+	margin-right: 20px;
+}
+.catalog__category-item-right
+{
+	max-width: 100%;
+}
+.catalog__category-item-list
+{
+	display: flex;
+	margin-bottom: 24px;
+}
+@media (min-width: 1024px)
+{
+	.catalog__category-item{margin-bottom: 60px;}
+}

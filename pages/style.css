@@ -2803,10 +2803,6 @@ input.g-button--product-disable {
   color: #00833D;
 }
 
-.sidebar__sort {
-  display: none;
-}
-
 .header-catalog-menu__wr {
   width: 100%;
   position: absolute;
@@ -3638,6 +3634,84 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: block;
 }
 
+.g-pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.g-pagination__arrow,
+.g-pagination__number {
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+
+.g-pagination__arrow:hover,
+.g-pagination__number:hover {
+  background-color: #ccc;
+  color: #fff;
+  border-color: transparent;
+}
+
+.g-pagination__number {
+  margin-right: 5px;
+}
+
+.g-pagination__number:last-child {
+  margin-right: 0;
+}
+
+.g-pagination__numbers {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.g-pagination__arrow:hover:before {
+  border-left: 17px solid #fff;
+}
+
+.g-pagination__arrow--left {
+  margin-right: 5px;
+}
+
+.g-pagination__arrow--right {
+  margin-left: 5px;
+}
+
+.g-pagination__arrow:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 32%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: 8px solid transparent;
+  border-left: 17px solid #000;
+}
+
+.g-pagination__arrow--left:before {
+  left: 0;
+  right: 32%;
+  -webkit-transform: rotateZ(180deg) translateY(50%);
+  -ms-transform: rotate(180deg) translateY(50%);
+  transform: rotateZ(180deg) translateY(50%);
+}
+
 /* Пример подключения*/
 
 /* @import 'blocks/component/component'; */
@@ -3725,6 +3799,117 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background: #01A54E;
   border: 1px solid #fff;
   color: #fff;
+}
+
+.catalog__category {
+  margin-bottom: 40px;
+}
+
+.catalog__wr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__left {
+  display: none;
+  max-width: 240px;
+  min-width: 240px;
+  margin-right: 20px;
+}
+
+.catalog__right {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.catalog__right .products-slider h2 {
+  width: 80%;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+.catalog__mob {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ECEFF1;
+}
+
+.catalog__mob svg {
+  vertical-align: middle;
+}
+
+.catalog__mob a {
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 18px;
+  color: #263238;
+}
+
+.catalog__mob svg:first-child {
+  margin-right: 16px;
+}
+
+.catalog__right-title h2 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog__btn-more .g-button {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #CFD8DC;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 38px;
+  color: #263238;
+}
+
+.catalog__btn-more .g-button:hover {
+  background: #01A54E;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.catalog__category-item {
+  margin-bottom: 40px;
+}
+
+.catalog__category-item-wr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__category-item-left {
+  max-width: 240px;
+  margin-right: 20px;
+}
+
+.catalog__category-item-right {
+  max-width: 100%;
+}
+
+.catalog__category-item-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
 }
 
 * {
@@ -4136,6 +4321,34 @@ html {
 
   .catalog__mob {
     display: none;
+  }
+
+  .catalog__category {
+    margin-bottom: 60px;
+  }
+
+  .catalog__right .promo-slider {
+    margin-bottom: 50px;
+  }
+
+  .catalog__right .products-slider {
+    margin-bottom: 36px;
+  }
+
+  .catalog__left {
+    display: block;
+  }
+
+  .catalog__right-title {
+    display: none;
+  }
+
+  .catalog__mob {
+    display: none;
+  }
+
+  .catalog__category-item {
+    margin-bottom: 60px;
   }
 }
 
