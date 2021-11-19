@@ -30,7 +30,7 @@
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
 				</ul>
 				<div class="g-pagination">
-					<div class="g-pagination__arrow g-pagination__arrow--left"></div>
+					<div class="g-pagination__arrow g-pagination__arrow--left">{% include 'assets/svg/catalog-category-item-arrow-left.svg' %}<span>Назад</span></div>
 					<div class="g-pagination__numbers">
 						<div class="g-pagination__number">1</div>
 						<div class="g-pagination__number">2</div>
@@ -39,6 +39,8 @@
 						<div class="g-pagination__number">60</div>
 					</div>
 					<div class="g-pagination__arrow g-pagination__arrow--right">
+					<span>Вперёд</span>
+					{% include 'assets/svg/catalog-category-arrow-right.svg' %}
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,11 @@
-.g-pagination {display: flex;}
+.g-pagination
+{
+	display: flex;
+	justify-content: space-between;
+}
 .g-pagination__arrow, .g-pagination__number
 {
-	border: 1px solid #000;
+	border: 1px solid #CFD8DC;
 	border-radius: 5px;
 	height: 40px;
 	width: 40px;
@@ -13,25 +17,51 @@
 	cursor: pointer;
 	&:hover
 	{
-		background-color: #ccc;
-		color: #fff;
-		border-color: transparent;
+		border: 1px solid #01A54E;
+		color: #01A54E;
 	}
-	
 }
 .g-pagination__number
 {
 	margin-right: 5px;
+	font-weight: bold;
+	font-size: 14px;
 	&:last-child{margin-right: 0;}
 }
 
 .g-pagination__numbers{display: flex;}
 
-.g-pagination__arrow 
+.g-pagination__arrow
 {
+	display: flex;
+	align-items: center;
+	width: fit-content;
 	&:hover:before{border-left: 17px solid #fff;}
-	&--left{margin-right: 5px;}
-	&--right{margin-left: 5px;}
+	&--left
+	{
+		margin-right: 5px;
+		padding: 8px 18px 8px 8px;
+		svg{margin-right: 8px;}
+	}
+	&--right
+	{
+		margin-left: 5px;
+		padding: 8px 8px 8px 18px;
+		svg{margin-left: 8px;}
+	}
+	span
+	{
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+		color: #263238;
+	}
+	&:hover
+	{
+		border: 1px solid #01A54E;
+		span{color: #01A54E;}
+		svg path{fill: #01A54E;}
+	}
 }
 .g-pagination__arrow:before
 {
@@ -42,8 +72,6 @@
 	left: 32%;
 	top: 50%;
 	transform: translateY(-50%);
-	border: 8px solid transparent;
-	border-left: 17px solid #000;
 }
 .g-pagination__arrow--left:before
 {

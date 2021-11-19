@@ -3639,11 +3639,15 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .g-pagination__arrow,
 .g-pagination__number {
-  border: 1px solid #000;
+  border: 1px solid #CFD8DC;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   height: 40px;
@@ -3658,13 +3662,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .g-pagination__arrow:hover,
 .g-pagination__number:hover {
-  background-color: #ccc;
-  color: #fff;
-  border-color: transparent;
+  border: 1px solid #01A54E;
+  color: #01A54E;
 }
 
 .g-pagination__number {
   margin-right: 5px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .g-pagination__number:last-child {
@@ -3678,16 +3683,59 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: flex;
 }
 
+.g-pagination__arrow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .g-pagination__arrow:hover:before {
   border-left: 17px solid #fff;
 }
 
 .g-pagination__arrow--left {
   margin-right: 5px;
+  padding: 8px 18px 8px 8px;
+}
+
+.g-pagination__arrow--left svg {
+  margin-right: 8px;
 }
 
 .g-pagination__arrow--right {
   margin-left: 5px;
+  padding: 8px 8px 8px 18px;
+}
+
+.g-pagination__arrow--right svg {
+  margin-left: 8px;
+}
+
+.g-pagination__arrow span {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #263238;
+}
+
+.g-pagination__arrow:hover {
+  border: 1px solid #01A54E;
+}
+
+.g-pagination__arrow:hover span {
+  color: #01A54E;
+}
+
+.g-pagination__arrow:hover svg path {
+  fill: #01A54E;
 }
 
 .g-pagination__arrow:before {
@@ -3700,8 +3748,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  border: 8px solid transparent;
-  border-left: 17px solid #000;
 }
 
 .g-pagination__arrow--left:before {
