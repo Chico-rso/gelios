@@ -31,7 +31,11 @@
 		right: 0;
 		cursor: pointer;
 	}
-	img{width: 212px;}
+	img
+	{
+		width: 100%;
+		height: auto;
+	}
 }
 .product-card__statuses
 {
@@ -200,10 +204,6 @@
 		max-width: 235px;
 		margin-right: 20px;
 		&:last-child{margin-right: 0;}
-	}
-	.product-card__image
-	{
-		img{width: 235px;}
 	}
 }
 

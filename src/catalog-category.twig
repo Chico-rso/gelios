@@ -8,8 +8,12 @@
 				{% include 'blocks/sidebar/sidebar.twig' with {'sidebarCategory': [sidebarCategory], }%}
 			</div>
 			<div class="catalog__right">
+				<div class="breadcrumbs__mob">{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Каталог'], 'addres': 'catalog.html'} %}</div>
 				<div class="catalog__right-title">
-					<a href="{{ addres }}">Лекарственные средства</h2>
+					<a href="{{ addres }}">Лекарственные средства</a>
+				</div>
+				<div class="catalog__right-title-mob">
+					<h2>Лекарственные средства</h2>
 				</div>
 				{% include 'blocks/promo-slider/promo-slider.twig' %}
 				<div class="catalog__mob">

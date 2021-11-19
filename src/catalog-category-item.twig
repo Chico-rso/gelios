@@ -5,31 +5,55 @@
 		<div class="catalog__category-item-wr">
 			<div class="catalog__category-item-left">
 				{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Лекарственные средства'], 'addres': 'catalog-category.html'} %}
+				<h2>Простуда, грипп</h2>
 				{% include 'blocks/sidebar/sidebar.twig' with {'sidebarSort': ['sidebarSort'], }%}
 			</div>
 			<div class="catalog__category-item-right">
+				<div class="breadcrumbs__mob">{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Главная'], 'addres': 'index.html'} %}
+				</div>
+				<div class="catalog__right-title">
+					<h2>Каталог</h2>
+				</div>
+				<div class="catalog__mob">
+					{% include 'assets/svg/catalog-mob.svg' %}
+					<a href="catalog__category">Каталог товаров</a>
+					{% include 'assets/svg/arrow-rigth.svg' %}
+				</div>
 				<ul class="catalog__category-item-list">
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30
 					", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
+					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
 				</ul>
 				<ul class="catalog__category-item-list">
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30
 					", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
+					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
 				</ul>
 				<ul class="catalog__category-item-list">
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30
 					", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
+					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
 				</ul>
-				<div class="g-pagination">
+				<div class="g-pagination g-pagination--mob">
+					<div class="g-pagination__arrow g-pagination__arrow--left">{% include 'assets/svg/catalog-category-item-arrow-left.svg' %}<span>Назад</span></div>
+					<div class="g-pagination__numbers">
+						<div class="g-pagination__number">1</div>
+						<div class="g-pagination__number">2</div>
+						<div class="g-pagination__number">...</div>
+						<div class="g-pagination__number">60</div>
+					</div>
+					<div class="g-pagination__arrow g-pagination__arrow--right">
+						<span>Вперёд</span>
+						{% include 'assets/svg/catalog-category-arrow-right.svg' %}
+					</div>
+				</div>
+				<div class="g-pagination g-pagination--desktop">
 					<div class="g-pagination__arrow g-pagination__arrow--left">{% include 'assets/svg/catalog-category-item-arrow-left.svg' %}<span>Назад</span></div>
 					<div class="g-pagination__numbers">
 						<div class="g-pagination__number">1</div>
@@ -39,8 +63,8 @@
 						<div class="g-pagination__number">60</div>
 					</div>
 					<div class="g-pagination__arrow g-pagination__arrow--right">
-					<span>Вперёд</span>
-					{% include 'assets/svg/catalog-category-arrow-right.svg' %}
+						<span>Вперёд</span>
+						{% include 'assets/svg/catalog-category-arrow-right.svg' %}
 					</div>
 				</div>
 			</div>
