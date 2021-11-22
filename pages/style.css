@@ -3684,6 +3684,15 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-right: 0;
 }
 
+.g-pagination__number--current {
+  border: 1px solid #01A54E;
+  color: #01A54E;
+}
+
+.g-pagination__number--current svg path {
+  fill: #01A54E;
+}
+
 .g-pagination__numbers {
   display: -webkit-box;
   display: -webkit-flex;

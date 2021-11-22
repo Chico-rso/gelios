@@ -27,6 +27,12 @@
 	font-weight: bold;
 	font-size: 14px;
 	&:last-child{margin-right: 0;}
+	&--current
+	{
+		border: 1px solid #01A54E;
+		color: #01A54E;
+		svg path{fill: #01A54E;}
+	}
 }
 
 .g-pagination__numbers{display: flex;}
