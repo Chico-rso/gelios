@@ -4046,7 +4046,30 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .detail-card__slider {
+  position: relative;
   margin-bottom: 24px;
+}
+
+.detail-card__slider-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.detail-card__slider-status-mobile {
+  padding: 4px 8px;
+  background: #F44336;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.detail-card__slider-status-desktop {
+  display: none;
 }
 
 .slick-dots {
