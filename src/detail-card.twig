@@ -24,6 +24,76 @@
 					{% endfor %}
 				</div>
 			</div>
+			<div class="detail-card__price">
+				<span class="detail-card__price-sale">68,88 ₽</span>
+				<span class="detail-card__price-none">861 ₽</span>
+				<span class="detail-card__price-default">335 ₽</span>
+			</div>
+			<div class="detail-card__rait">
+				<div class="product-card__raits" data-rating="2.5">
+					<div
+						class="product-card__rait-notstar">{# <span>Нет отзывов</span> #}
+					</div>
+					<div class="product-card__rait-star">
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+						<span>280 отзывов</span>
+					</div>
+				</div>
+			</div>
+			<div class="detail-card__producer">
+				<span class="detail-card__producer-title">Производитель</span>
+				<div class="detail-card__text">
+					<span>Все товары бренда:</span>
+					<span>Contract Pharmacal Corporation</span>
+				</div>
+			</div>
+			<ul class="detail-card__list-top">
+				<li class="detail-card__item">
+					{% include "./assets/svg/detail-card-1.svg" %}
+					<span>Необходим рецепт</span>
+				</li>
+				<li class="detail-card__item">
+					{% include "./assets/svg/detail-card-2.svg" %}
+					<span>Осталось 2 штуки</span>
+				</li>
+				<li class="detail-card__item">
+					{% include "./assets/svg/detail-card-3.svg" %}
+					<span>Годен до 12 февраля 2021</span>
+				</li>
+			</ul>
+			<div class="detail-card__btns">
+				<div class="detail-card__btn _detail-card__btn">
+					<button class="g-button g-button--basket" onclick="o2.detailCard.changeBasket(event)">В корзину</button>
+					<button class="g-button g-button--inbasket" onclick="o2.detailCard.changeBasket(event)">В корзине</button>
+					<button class="g-button g-button--disable">В корзину</button>
+				</div>
+				<div class="detail-card__favorit">
+					{% include "./assets/svg/header-favorit.svg" %}
+					<span>В избранное</span>
+				</div>
+			</div>
+			<ul class="detail-card__list-bottom">
+				<li class="detail-card__item">
+					{% include "./assets/svg/detail-card-4.svg" %}
+					<span>Ваш город: Москва</span>
+				</li>
+				<li class="detail-card__item">
+					{% include "./assets/svg/detail-card-5.svg" %}
+					<span>Доставка 22 – 24 февраля —  390 ₽</span>
+				</li>
+				<li class="detail-card__item">
+					{% include "./assets/svg/detail.card-6.svg" %}
+					<span>Самовывоз 19 февраля — Бесплатно</span>
+				</li>
+				<li class="detail-card__link">
+					<span>Подробнее про условия доставки</span>
+					{% include "./assets/svg/arrow-rigth.svg" %}
+				</li>
+			</ul>
 		</div>
 	</div>
 {% endblock %}

@@ -26,5 +26,9 @@ o2.detailCard =
 				},
 			],
 		});
+	},
+	changeBasket(e)
+	{
+		e.target.closest('._detail-card__btn').classList.toggle('in-basket');
 	}
 }

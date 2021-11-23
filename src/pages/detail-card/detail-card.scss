@@ -63,3 +63,122 @@
 	}
 	li.slick-active button{background: #263238;}
 }
+.detail-card__price
+{
+	margin-bottom: 8px;
+	font-weight: 500;
+}
+.detail-card__price-sale
+{
+	margin-right: 4px;
+	font-size: 18px;
+	line-height: 22px;
+	color: #F44336;
+}
+.detail-card__price-none
+{
+	font-size: 12px;
+	line-height: 14px;
+	color: #7B8E98;
+	text-decoration: line-through #263238;
+}
+.detail-card__price-default{display: none;}
+.detail-card__rait{margin-bottom: 24px;}
+.detail-card__producer
+{
+	margin-bottom: 24px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #263238;
+}
+.detail-card__text
+{
+	display: flex;
+	span:first-child{flex-basis: 70%;}
+	span:last-child{color: #00CA5F;}
+}
+.detail-card__producer-title
+{
+	display: block;
+	font-weight: bold;
+}
+.detail-card__list-top{margin-bottom: 24px;}
+.detail-card__item
+{
+	&:not(:last-child){margin-bottom: 8px;}
+	font-size: 14px;
+	line-height: 18px;
+	color: #263238;
+	svg
+	{
+		margin-right: 8px;
+		vertical-align: middle;
+	}
+}
+.detail-card__btn
+{
+	font-weight: bold;
+	font-size: 14px;
+	&.in-basket
+	{
+		.g-button--inbasket
+		{
+			display: block;
+			padding: 0 34.5px;
+			background-color: #fff;
+			border: 1px solid #01A54E;
+			border-radius: 6px;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 38px;
+			color: #01A54E;
+		}
+		.g-button--basket{display: none;}
+	}
+}
+.g-button--basket
+{
+	padding: 0 34.5px;
+	line-height: 40px;
+}
+.g-button--inbasket{display: none;}
+.g-button--disable{display: none;}
+.detail-card__btns
+{
+	display: flex;
+	height: fit-content;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+.detail-card__favorit
+{
+	svg
+	{
+		margin-right: 8px;
+		vertical-align: middle;
+		& path{fill: #7B8E98;}
+	}
+	span
+	{
+		font-size: 16px;
+		line-height: 22px;
+		color: #7B8E98;
+	}
+}
+.detail-card__list-bottom{margin-bottom: 24px;}
+.detail-card__link
+{
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	line-height: 26px;
+	color: #00CA5F;
+	svg
+	{
+		width: 14px;
+		height: 14px;
+		& path{fill: #00CA5F;}
+	}
+	span{margin-right: 6px;}
+}
