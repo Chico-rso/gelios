@@ -1,0 +1,23 @@
+{% extends "layouts/layout.twig" %}
+{% block page %}
+	<div class="detail-card">
+		<div class="container">
+			<div class="detail-card__title">
+				<h2>Кальцемин адванс таб. п.о № 120</h2>
+				<span>Код товара: 6628741</span>
+			</div>
+			<div class="detail-card__slider">
+				<div class="detail-card__slider-wr _detail-card__slider">
+					{% for item in 1..3 %}
+						<a href="#">
+							<picture>
+								<source srcset="/img/detail-card-1-desktop.png" media="(min-width: 769px)">
+								<img src="/img/detail-card-1.png" alt="product image">
+							</picture>
+						</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

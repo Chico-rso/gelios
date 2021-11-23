@@ -4022,6 +4022,59 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: none;
 }
 
+.detail-card img {
+  width: 288px;
+  height: auto;
+}
+
+.detail-card__title {
+  margin-bottom: 24px;
+}
+
+.detail-card__title h2 {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #263238;
+}
+
+.detail-card__title span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #7B8E98;
+}
+
+.detail-card__slider {
+  margin-bottom: 24px;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.slick-dots li button {
+  margin-right: 4px;
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: none;
+  background: #ECEFF1;
+}
+
+.slick-dots li.slick-active button {
+  background: #263238;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
