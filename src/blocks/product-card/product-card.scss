@@ -59,10 +59,11 @@
 }
 .product-card__title
 {
-	min-height: 36px;
+	height: 36px;
 	margin-bottom: 8px;
 	font-size: 14px;
 	line-height: 18px;
+	overflow: hidden;
 	a{color: #263238;}
 	a:hover{color: #01A54E;}
 }
