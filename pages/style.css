@@ -4198,6 +4198,20 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .detail-card img {
   width: 288px;
   height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.detail-card .products-slider {
+  margin-bottom: 40px;
+}
+
+.detail-card .products-slider h2 {
+  width: 80%;
+}
+
+.detail-card .products-slider img {
+  width: 100%;
 }
 
 .detail-card__title {
@@ -4447,6 +4461,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-right: 6px;
 }
 
+.detail-card__news {
+  max-width: 320px;
+  margin-bottom: 24px;
+}
+
 .detail-card__news h2 {
   margin-bottom: 24px;
   font-weight: bold;
@@ -4485,6 +4504,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .detail-card__news-text a {
+  width: 100%;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -4492,6 +4512,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .detail-card__news-text span {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-bottom: 8px;
   padding: 4px 8px;
   font-size: 12px;

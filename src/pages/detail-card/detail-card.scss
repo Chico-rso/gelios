@@ -4,6 +4,13 @@
 	{
 		width: 288px;
 		height: auto;
+		object-fit: contain;
+	}
+	.products-slider
+	{
+		margin-bottom: 40px;
+		h2{width: 80%;}
+		img{width: 100%;}
 	}
 }
 .detail-card__title
@@ -187,6 +194,8 @@
 }
 .detail-card__news
 {
+	max-width: 320px;
+	margin-bottom: 24px;
 	h2
 	{
 		margin-bottom: 24px;
@@ -214,6 +223,7 @@
 	flex-wrap: wrap;
 	a
 	{
+		width: 100%;
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 18px;
@@ -221,6 +231,7 @@
 	}
 	span
 	{
+		height: fit-content;
 		margin-bottom: 8px;
 		padding: 4px 8px;
 		font-size: 12px;
