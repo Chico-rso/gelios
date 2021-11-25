@@ -164,6 +164,7 @@
 }
 .detail-card__favorit
 {
+	cursor: pointer;
 	svg
 	{
 		margin-right: 8px;
@@ -187,6 +188,7 @@
 {
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 	font-size: 12px;
 	line-height: 26px;
 	color: #00ca5f;
@@ -248,5 +250,24 @@
 }
 @media (min-width: 768px)
 {
-	
+	.detail-card__left{display: flex;}
+	.detail-card__slider{max-width: 570px;}
+	.detail-card__left-wr{flex: 1;}
+	.detail-card__text
+	{
+		span:first-child{flex-basis: 42%;}
+		span:last-child {width: 70%;}
+	}
+	.detail-card__left-inner{margin-right: 60px;}
+	.detail-card__btns
+	{
+		justify-content: start;
+		button{margin-right: 24px;}
+	}
+	.detail-card__right{display: flex;}
+	.detail-card-tabs
+	{
+		width: 63%;
+		.g-tabs__item{margin-right: 32px;}
+	}
 }
