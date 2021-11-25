@@ -2,132 +2,142 @@
 {% block page %}
 	<div class="detail-card">
 		<div class="container">
-			<div class="detail-card__title">
-				<h2>Кальцемин адванс таб. п.о № 120</h2>
-				<span>Код товара: 6628741</span>
-			</div>
-			<div class="detail-card__slider">
-				<div class="detail-card__slider-statuses">
-					<div class="detail-card__slider-status">
-						<span class="detail-card__slider-status-mobile">– 92%</span>
-						<span class="detail-card__slider-status-desktop">Экономия 92%</span>
+			<div class="detail-card__wr">
+				<div class="detail-card__left">
+					<div class="detail-card__left-inner">
+						<div class="detail-card__title">
+							<h2>Кальцемин адванс таб. п.о № 120</h2>
+							<span>Код товара: 6628741</span>
+						</div>
+						<div class="detail-card__slider">
+							<div class="detail-card__slider-statuses">
+								<div class="detail-card__slider-status">
+									<span class="detail-card__slider-status-mobile">– 92%</span>
+									<span class="detail-card__slider-status-desktop">Экономия 92%</span>
+								</div>
+							</div>
+							<div class="detail-card__slider-wr _detail-card__slider">
+								{% for item in 1..3 %}
+									<a href="#">
+										<picture>
+											<source srcset="/img/detail-card-1-desktop.png" media="(min-width: 769px)">
+											<img src="/img/detail-card-1.png" alt="product image">
+										</picture>
+									</a>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+					<div class="detail-card__left-wr">
+						<div class="detail-card__price">
+							<span class="detail-card__price-sale">68,88 ₽</span>
+							<span class="detail-card__price-none">861 ₽</span>
+							<span class="detail-card__price-default">335 ₽</span>
+						</div>
+						<div class="detail-card__rait">
+							<div class="product-card__raits" data-rating="2.5">
+								<div
+									class="product-card__rait-notstar">{# <span>Нет отзывов</span> #}
+								</div>
+								<div class="product-card__rait-star">
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<i></i>
+									<span>280 отзывов</span>
+								</div>
+							</div>
+						</div>
+						<div class="detail-card__producer">
+							<span class="detail-card__producer-title">Производитель</span>
+							<div class="detail-card__text">
+								<span>Все товары бренда:</span>
+								<span>Contract Pharmacal Corporation</span>
+							</div>
+						</div>
+						<ul class="detail-card__list-top">
+							<li class="detail-card__item">
+								{% include "./assets/svg/detail-card-1.svg" %}
+								<span>Необходим рецепт</span>
+							</li>
+							<li class="detail-card__item">
+								{% include "./assets/svg/detail-card-2.svg" %}
+								<span>Осталось 2 штуки</span>
+							</li>
+							<li class="detail-card__item">
+								{% include "./assets/svg/detail-card-3.svg" %}
+								<span>Годен до 12 февраля 2021</span>
+							</li>
+						</ul>
+						<div class="detail-card__btns">
+							<div class="detail-card__btn _detail-card__btn">
+								<button class="g-button g-button--basket" onclick="o2.detailCard.changeBasket(event)">В корзину</button>
+								<button class="g-button g-button--inbasket" onclick="o2.detailCard.changeBasket(event)">В корзине</button>
+								<button class="g-button g-button--disable">В корзину</button>
+							</div>
+							<div class="detail-card__favorit _detail-card__favorit" onclick="o2.detailCard.addFavorit(event)">
+								{% include "./assets/svg/header-favorit.svg" %}
+								<span>В избранное</span>
+							</div>
+						</div>
+						<ul class="detail-card__list-bottom">
+							<li class="detail-card__item">
+								{% include "./assets/svg/detail-card-4.svg" %}
+								<span>Ваш город: Москва</span>
+							</li>
+							<li class="detail-card__item">
+								{% include "./assets/svg/detail-card-5.svg" %}
+								<span>Доставка 22 – 24 февраля —  390 ₽</span>
+							</li>
+							<li class="detail-card__item">
+								{% include "./assets/svg/detail.card-6.svg" %}
+								<span>Самовывоз 19 февраля — Бесплатно</span>
+							</li>
+							<li class="detail-card__link">
+								<span>Подробнее про условия доставки</span>
+								{% include "./assets/svg/arrow-rigth.svg" %}
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="detail-card__slider-wr _detail-card__slider">
-					{% for item in 1..3 %}
-						<a href="#">
-							<picture>
-								<source srcset="/img/detail-card-1-desktop.png" media="(min-width: 769px)">
-								<img src="/img/detail-card-1.png" alt="product image">
-							</picture>
-						</a>
-					{% endfor %}
-				</div>
-			</div>
-			<div class="detail-card__price">
-				<span class="detail-card__price-sale">68,88 ₽</span>
-				<span class="detail-card__price-none">861 ₽</span>
-				<span class="detail-card__price-default">335 ₽</span>
-			</div>
-			<div class="detail-card__rait">
-				<div class="product-card__raits" data-rating="2.5">
-					<div
-						class="product-card__rait-notstar">{# <span>Нет отзывов</span> #}
+				<div class="detail-card__right">
+					{% include "./blocks/detail-card-tabs/detail-card-tabs.twig" %}
+					<div class="detail-card__news">
+						<h2>Новости</h2>
+						<ul class="detail-card__news-list">
+							<li class="detail-card__news-item">
+								<img src="img/detail-card-news-1.png" alt="news">
+								<div class="detail-card__news-text">
+									<span>04 фев 2020</span>
+									<a href="#">Как узнать, что лекарство испорти...</a>
+								</div>
+							</li>
+							<li class="detail-card__news-item">
+								<img src="img/detail-card-news-2.png" alt="news">
+								<div class="detail-card__news-text">
+									<span>29 янв 2020</span>
+									<a href="#">Пить или не пить, переполох с антибиоти...</a>
+								</div>
+							</li>
+							<li class="detail-card__news-item">
+								<img src="img/detail-card-news-3.png" alt="news">
+								<div class="detail-card__news-text">
+									<span>22 авг 2020</span>
+									<a href="#">Походная аптечка, едем на природу</a>
+								</div>
+							</li>
+						</ul>
 					</div>
-					<div class="product-card__rait-star">
-						<i></i>
-						<i></i>
-						<i></i>
-						<i></i>
-						<i></i>
-						<span>280 отзывов</span>
+				</div>
+				<div class="products-slider">
+					<h2>С этим товаром покупают</h2>
+					<div class="products-slider__wr _products-slider">
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
 					</div>
-				</div>
-			</div>
-			<div class="detail-card__producer">
-				<span class="detail-card__producer-title">Производитель</span>
-				<div class="detail-card__text">
-					<span>Все товары бренда:</span>
-					<span>Contract Pharmacal Corporation</span>
-				</div>
-			</div>
-			<ul class="detail-card__list-top">
-				<li class="detail-card__item">
-					{% include "./assets/svg/detail-card-1.svg" %}
-					<span>Необходим рецепт</span>
-				</li>
-				<li class="detail-card__item">
-					{% include "./assets/svg/detail-card-2.svg" %}
-					<span>Осталось 2 штуки</span>
-				</li>
-				<li class="detail-card__item">
-					{% include "./assets/svg/detail-card-3.svg" %}
-					<span>Годен до 12 февраля 2021</span>
-				</li>
-			</ul>
-			<div class="detail-card__btns">
-				<div class="detail-card__btn _detail-card__btn">
-					<button class="g-button g-button--basket" onclick="o2.detailCard.changeBasket(event)">В корзину</button>
-					<button class="g-button g-button--inbasket" onclick="o2.detailCard.changeBasket(event)">В корзине</button>
-					<button class="g-button g-button--disable">В корзину</button>
-				</div>
-				<div class="detail-card__favorit _detail-card__favorit" onclick="o2.detailCard.addFavorit(event)">
-					{% include "./assets/svg/header-favorit.svg" %}
-					<span>В избранное</span>
-				</div>
-			</div>
-			<ul class="detail-card__list-bottom">
-				<li class="detail-card__item">
-					{% include "./assets/svg/detail-card-4.svg" %}
-					<span>Ваш город: Москва</span>
-				</li>
-				<li class="detail-card__item">
-					{% include "./assets/svg/detail-card-5.svg" %}
-					<span>Доставка 22 – 24 февраля —  390 ₽</span>
-				</li>
-				<li class="detail-card__item">
-					{% include "./assets/svg/detail.card-6.svg" %}
-					<span>Самовывоз 19 февраля — Бесплатно</span>
-				</li>
-				<li class="detail-card__link">
-					<span>Подробнее про условия доставки</span>
-					{% include "./assets/svg/arrow-rigth.svg" %}
-				</li>
-			</ul>
-			{% include "./blocks/detail-card-tabs/detail-card-tabs.twig" %}
-			<div class="detail-card__news">
-				<h2>Новости</h2>
-				<ul class="detail-card__news-list">
-					<li class="detail-card__news-item">
-						<img src="img/detail-card-news-1.png" alt="news">
-						<div class="detail-card__news-text">
-							<span>04 фев 2020</span>
-							<a href="#">Как узнать, что лекарство испорти...</a>
-						</div>
-					</li>
-					<li class="detail-card__news-item">
-						<img src="img/detail-card-news-2.png" alt="news">
-						<div class="detail-card__news-text">
-							<span>29 янв 2020</span>
-							<a href="#">Пить или не пить, переполох с антибиоти...</a>
-						</div>
-					</li>
-					<li class="detail-card__news-item">
-						<img src="img/detail-card-news-3.png" alt="news">
-						<div class="detail-card__news-text">
-							<span>22 авг 2020</span>
-							<a href="#">Походная аптечка, едем на природу</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="products-slider">
-				<h2>С этим товаром покупают</h2>
-				<div class="products-slider__wr _products-slider">
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
 				</div>
 			</div>
 		</div>
