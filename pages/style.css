@@ -4215,7 +4215,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .detail-card__title span {
   font-size: 12px;
   line-height: 14px;
-  color: #7B8E98;
+  color: #7b8e98;
 }
 
 .detail-card__slider {
@@ -4232,7 +4232,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .detail-card__slider-status-mobile {
   padding: 4px 8px;
-  background: #F44336;
+  background: #f44336;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   font-weight: bold;
@@ -4264,7 +4264,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   border: none;
-  background: #ECEFF1;
+  background: #eceff1;
 }
 
 .slick-dots li.slick-active button {
@@ -4280,13 +4280,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-right: 4px;
   font-size: 18px;
   line-height: 22px;
-  color: #F44336;
+  color: #f44336;
 }
 
 .detail-card__price-none {
   font-size: 12px;
   line-height: 14px;
-  color: #7B8E98;
+  color: #7b8e98;
   -webkit-text-decoration: line-through #263238;
   text-decoration: line-through #263238;
 }
@@ -4320,7 +4320,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .detail-card__text span:last-child {
-  color: #00CA5F;
+  color: #00ca5f;
 }
 
 .detail-card__producer-title {
@@ -4356,13 +4356,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: block;
   padding: 0 34.5px;
   background-color: #fff;
-  border: 1px solid #01A54E;
+  border: 1px solid #01a54e;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   font-size: 14px;
   font-weight: bold;
   line-height: 38px;
-  color: #01A54E;
+  color: #01a54e;
 }
 
 .detail-card__btn.in-basket .g-button--basket {
@@ -4407,13 +4407,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .detail-card__favorit svg path {
-  fill: #7B8E98;
+  fill: #7b8e98;
 }
 
 .detail-card__favorit span {
   font-size: 16px;
   line-height: 22px;
-  color: #7B8E98;
+  color: #7b8e98;
 }
 
 .detail-card__list-bottom {
@@ -4431,7 +4431,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   align-items: center;
   font-size: 12px;
   line-height: 26px;
-  color: #00CA5F;
+  color: #00ca5f;
 }
 
 .detail-card__link svg {
@@ -4440,11 +4440,65 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .detail-card__link svg path {
-  fill: #00CA5F;
+  fill: #00ca5f;
 }
 
 .detail-card__link span {
   margin-right: 6px;
+}
+
+.detail-card__news h2 {
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.detail-card__news-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.detail-card__news-item img {
+  width: 85px;
+  height: 66px;
+  margin-right: 16px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+}
+
+.detail-card__news-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.detail-card__news-text a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #263238;
+}
+
+.detail-card__news-text span {
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 14px;
+  background: #eceff1;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 
 * {

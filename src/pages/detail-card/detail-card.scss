@@ -21,7 +21,7 @@
 	{
 		font-size: 12px;
 		line-height: 14px;
-		color: #7B8E98;
+		color: #7b8e98;
 	}
 }
 .detail-card__slider
@@ -39,7 +39,7 @@
 .detail-card__slider-status-mobile
 {
 	padding: 4px 8px;
-	background: #F44336;
+	background: #f44336;
 	border-radius: 6px;
 	font-weight: bold;
 	font-size: 12px;
@@ -59,9 +59,12 @@
 		height: 6px;
 		border-radius: 50%;
 		border: none;
-		background: #ECEFF1;
+		background: #eceff1;
 	}
-	li.slick-active button{background: #263238;}
+	li.slick-active button
+	{
+		background: #263238;
+	}
 }
 .detail-card__price
 {
@@ -73,16 +76,16 @@
 	margin-right: 4px;
 	font-size: 18px;
 	line-height: 22px;
-	color: #F44336;
+	color: #f44336;
 }
 .detail-card__price-none
 {
 	font-size: 12px;
 	line-height: 14px;
-	color: #7B8E98;
+	color: #7b8e98;
 	text-decoration: line-through #263238;
 }
-.detail-card__price-default{display: none;}
+.detail-card__price-default {display: none;}
 .detail-card__rait{margin-bottom: 24px;}
 .detail-card__producer
 {
@@ -94,18 +97,18 @@
 .detail-card__text
 {
 	display: flex;
-	span:first-child{flex-basis: 70%;}
-	span:last-child{color: #00CA5F;}
+	span:first-child {flex-basis: 70%;}
+	span:last-child {color: #00ca5f;}
 }
 .detail-card__producer-title
 {
 	display: block;
 	font-weight: bold;
 }
-.detail-card__list-top{margin-bottom: 24px;}
+.detail-card__list-top {margin-bottom: 24px;}
 .detail-card__item
 {
-	&:not(:last-child){margin-bottom: 8px;}
+	&:not(:last-child) {margin-bottom: 8px;}
 	font-size: 14px;
 	line-height: 18px;
 	color: #263238;
@@ -126,14 +129,14 @@
 			display: block;
 			padding: 0 34.5px;
 			background-color: #fff;
-			border: 1px solid #01A54E;
+			border: 1px solid #01a54e;
 			border-radius: 6px;
 			font-size: 14px;
 			font-weight: bold;
 			line-height: 38px;
-			color: #01A54E;
+			color: #01a54e;
 		}
-		.g-button--basket{display: none;}
+		.g-button--basket {display: none;}
 	}
 }
 .g-button--basket
@@ -141,8 +144,8 @@
 	padding: 0 34.5px;
 	line-height: 40px;
 }
-.g-button--inbasket{display: none;}
-.g-button--disable{display: none;}
+.g-button--inbasket {display: none;}
+.g-button--disable {display: none;}
 .detail-card__btns
 {
 	display: flex;
@@ -157,13 +160,13 @@
 	{
 		margin-right: 8px;
 		vertical-align: middle;
-		& path{fill: #7B8E98;}
+		& path {fill: #7b8e98;}
 	}
 	span
 	{
 		font-size: 16px;
 		line-height: 22px;
-		color: #7B8E98;
+		color: #7b8e98;
 	}
 }
 .detail-card__list-bottom{margin-bottom: 24px;}
@@ -173,12 +176,56 @@
 	align-items: center;
 	font-size: 12px;
 	line-height: 26px;
-	color: #00CA5F;
+	color: #00ca5f;
 	svg
 	{
 		width: 14px;
 		height: 14px;
-		& path{fill: #00CA5F;}
+		& path {fill: #00ca5f;}
 	}
-	span{margin-right: 6px;}
+	span {margin-right: 6px;}
+}
+.detail-card__news
+{
+	h2
+	{
+		margin-bottom: 24px;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+.detail-card__news-item
+{
+	display: flex;
+	margin-bottom: 8px;
+	img
+	{
+		width: 85px;
+		height: 66px;
+		margin-right: 16px;
+		object-fit: contain;
+		flex: 0 0 30%;
+	}
+}
+.detail-card__news-text
+{
+	display: flex;
+	flex-wrap: wrap;
+	a
+	{
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		color: #263238;
+	}
+	span
+	{
+		margin-bottom: 8px;
+		padding: 4px 8px;
+		font-size: 12px;
+		line-height: 14px;
+		background: #eceff1;
+		border-radius: 6px;
+	}
 }
