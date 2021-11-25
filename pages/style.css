@@ -4339,6 +4339,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .detail-card__producer-title {
   display: block;
+  margin-bottom: 8px;
   font-weight: bold;
 }
 
@@ -4428,6 +4429,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 16px;
   line-height: 22px;
   color: #7b8e98;
+}
+
+.detail-card__favorit.in-favorit svg path {
+  fill: #f44336;
+}
+
+.detail-card__favorit.in-favorit span {
+  color: #f44336;
 }
 
 .detail-card__list-bottom {

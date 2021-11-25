@@ -110,6 +110,7 @@
 .detail-card__producer-title
 {
 	display: block;
+	margin-bottom: 8px;
 	font-weight: bold;
 }
 .detail-card__list-top {margin-bottom: 24px;}
@@ -174,6 +175,11 @@
 		font-size: 16px;
 		line-height: 22px;
 		color: #7b8e98;
+	}
+	&.in-favorit
+	{
+		svg path{fill: #f44336;}
+		span{color: #f44336;}
 	}
 }
 .detail-card__list-bottom{margin-bottom: 24px;}
