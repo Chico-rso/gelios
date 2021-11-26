@@ -2,7 +2,7 @@ o2.detailCard =
 {
 	initSlider()
 	{
-		$('._detail-card__slider').slick({
+		$('._detail-card__slider-mob').slick({
 			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -25,6 +25,21 @@ o2.detailCard =
 					}
 				},
 			],
+		});
+		$('._detail-card__slider-desktop').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			vertical: true,
+			asNavFor: '._detail-card__slider-block'
+		});
+		$('._detail-card__slider-block').slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			asNavFor: '._detail-card__slider-desktop',
+			dots: false,
+			centerMode: true,
+			focusOnSelect: true,
 		});
 	},
 	changeBasket(e)
