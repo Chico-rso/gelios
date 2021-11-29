@@ -2,8 +2,81 @@
 {% block page %}
 	<div class="basket">
 		<div class="container">
-			{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {breadClass:'breadcrumbs breadcrumbs--desk', items:['Главная','Лекарственные препараты','Витамины']} %}
 			{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {breadClass:'breadcrumbs breadcrumbs--mob', items:['Назад']} %}
+			<h2>Корзина</h2>
+			<div class="basket__inbasket">
+				<h3>В корзине 3 товара</h3>
+				<div class="basket__item">
+					<div class="basket__item-img">
+						<img src="./assets/img/basket-img-1.png" alt="product-image">
+					</div>
+					<div class="basket__item-desc">
+						<div class="basket__item-price">
+							<span>251 ₽</span>
+							<span>125,5 ₽ / шт.</span>
+						</div>
+						<p class="basket__item-text">Кальцемин адванс таб. п.о № 120</p>
+						<div class="basket__item-counter">
+							<button>-</button>
+							<span>1</span>
+							<button>+</button>
+						</div>
+					</div>
+					<div class="basket__item-close">
+						{% include "./assets/svg/basket-close.svg" %}
+					</div>
+				</div>
+				<div class="basket__item">
+					<div class="basket__item-img">
+						<img src="./assets/img/basket-img-1.png" alt="product-image">
+					</div>
+					<div class="basket__item-desc">
+						<div class="basket__item-price">
+							<span>251 ₽</span>
+							<span>125,5 ₽ / шт.</span>
+						</div>
+						<p class="basket__item-text">Кальцемин адванс таб. п.о № 120</p>
+						<div class="basket__item-counter">
+							<button>-</button>
+							<span>1</span>
+							<button>+</button>
+						</div>
+					</div>
+					<div class="basket__item-close">
+						{% include "./assets/svg/basket-close.svg" %}
+					</div>
+				</div>
+			</div>
+			<div class="basket__order">
+				<h3>Вашь заказ</h3>
+				<div class="basket__order-promo">
+					<span>Промокод на скидку</span>
+					<input class='basket__order-input' type="text" placeholder='Промокод'>
+					<button>Применить</button>
+				</div>
+				<div class="basket__order-all">
+					<span>Товар (3)</span>
+					<span>319,88 ₽</span>
+				</div>
+				<div class="basket__order-promo-sale">
+					<span>Скидка по промокоду</span>
+					<span>- 200 ₽</span>
+				</div>
+				<div class="basket__order-sum">
+					<span>Итого</span>
+					<span>119,88 ₽</span>
+				</div>
+				<button>Перейти к оформлению</button>
+			</div>
+			<div class="products-slider">
+				<h2>С этим товаром покупают</h2>
+				<div class="products-slider__wr _products-slider">
+					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
+					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
+					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
+					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
+				</div>
+			</div>
 		</div>
 	</div>
 {% endblock %}

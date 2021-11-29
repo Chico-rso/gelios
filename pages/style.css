@@ -4221,13 +4221,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 100%;
 }
 
-.breadcrumbs__item svg {
+.detail-card .breadcrumbs__item svg {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.breadcrumbs--desk {
+.detail-card .breadcrumbs--desk {
   display: none;
 }
 
@@ -4762,17 +4762,17 @@ html {
     line-height: 34px;
   }
 
-  .breadcrumbs__item svg {
+  .detail-card .breadcrumbs__item svg {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  .breadcrumbs--mob {
+  .detail-card .breadcrumbs--mob {
     display: none;
   }
 
-  .breadcrumbs--desk {
+  .detail-card .breadcrumbs--desk {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
