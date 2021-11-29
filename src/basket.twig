@@ -6,68 +6,76 @@
 			<h2>Корзина</h2>
 			<div class="basket__inbasket">
 				<h3>В корзине 3 товара</h3>
-				<div class="basket__item">
-					<div class="basket__item-img">
-						<img src="./assets/img/basket-img-1.png" alt="product-image">
-					</div>
-					<div class="basket__item-desc">
-						<div class="basket__item-price">
-							<span>251 ₽</span>
-							<span>125,5 ₽ / шт.</span>
+				<div class="basket__wr">
+					<div class="basket__list">
+						<div class="basket__item">
+							<div class="basket__item-img">
+								<img src="/img/basket-img-1.png" alt="product-image">
+							</div>
+							<div class="basket__item-desc">
+								<div class="basket__item-price">
+									<span>251 ₽</span>
+									<span>125,5 ₽ / шт.</span>
+								</div>
+								<p class="basket__item-text">Кальцемин адванс таб. п.о № 120</p>
+								<div class="basket__item-counter">
+									<button>-</button>
+									<span>2</span>
+									<button>+</button>
+								</div>
+							</div>
+							<div class="basket__item-close">
+								<button>{% include "./assets/svg/basket-close.svg" %}</button>
+							</div>
 						</div>
-						<p class="basket__item-text">Кальцемин адванс таб. п.о № 120</p>
-						<div class="basket__item-counter">
-							<button>-</button>
-							<span>1</span>
-							<button>+</button>
+						<div class="border-bottom"></div>
+						<div class="basket__item">
+							<div class="basket__item-img">
+								<img src="/img/basket-img-1.png" alt="product-image">
+							</div>
+							<div class="basket__item-desc">
+								<div class="basket__item-price">
+									<span>251 ₽</span>
+									<span>125,5 ₽ / шт.</span>
+								</div>
+								<p class="basket__item-text">Кальцемин адванс таб. п.о № 120</p>
+								<div class="basket__item-counter">
+									<button>-</button>
+									<span>1</span>
+									<button>+</button>
+								</div>
+							</div>
+							<div class="basket__item-close">
+								<button>{% include "./assets/svg/basket-close.svg" %}</button>
+							</div>
 						</div>
 					</div>
-					<div class="basket__item-close">
-						{% include "./assets/svg/basket-close.svg" %}
-					</div>
-				</div>
-				<div class="basket__item">
-					<div class="basket__item-img">
-						<img src="./assets/img/basket-img-1.png" alt="product-image">
-					</div>
-					<div class="basket__item-desc">
-						<div class="basket__item-price">
-							<span>251 ₽</span>
-							<span>125,5 ₽ / шт.</span>
+					<div class="basket__order">
+						<h3>Вашь заказ</h3>
+						<div class="basket__order-promo">
+							<span>Промокод на скидку</span>
+							<form action="#">
+								<input type="text" placeholder='Промокод'>
+								<button>Применить</button>
+							</form>
 						</div>
-						<p class="basket__item-text">Кальцемин адванс таб. п.о № 120</p>
-						<div class="basket__item-counter">
-							<button>-</button>
-							<span>1</span>
-							<button>+</button>
+						<div class="basket__order-all">
+							<span>Товар (3)</span>
+							<span>319,88 ₽</span>
 						</div>
-					</div>
-					<div class="basket__item-close">
-						{% include "./assets/svg/basket-close.svg" %}
+						<div class="basket__order-promo-sale">
+							<span>Скидка по промокоду</span>
+							<span>- 200 ₽</span>
+						</div>
+						<div class="basket__order-sum">
+							<span>Итого</span>
+							<span>119,88 ₽</span>
+						</div>
+						<button class="g-button g-button--basket">Перейти к оформлению</button>
 					</div>
 				</div>
 			</div>
-			<div class="basket__order">
-				<h3>Вашь заказ</h3>
-				<div class="basket__order-promo">
-					<span>Промокод на скидку</span>
-					<input class='basket__order-input' type="text" placeholder='Промокод'>
-					<button>Применить</button>
-				</div>
-				<div class="basket__order-all">
-					<span>Товар (3)</span>
-					<span>319,88 ₽</span>
-				</div>
-				<div class="basket__order-promo-sale">
-					<span>Скидка по промокоду</span>
-					<span>- 200 ₽</span>
-				</div>
-				<div class="basket__order-sum">
-					<span>Итого</span>
-					<span>119,88 ₽</span>
-				</div>
-				<button>Перейти к оформлению</button>
-			</div>
+			.basket__empty
 			<div class="products-slider">
 				<h2>С этим товаром покупают</h2>
 				<div class="products-slider__wr _products-slider">
