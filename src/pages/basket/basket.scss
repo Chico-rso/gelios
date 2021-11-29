@@ -208,4 +208,13 @@
 		color: #01A54E;
 		transition: color .3s, background .3s;
 	}
+	.basket__order-promo
+	{
+		button:hover
+		{
+			background: #01A54E;
+			color:#FFF;
+			transition: color .3s, background .3s;
+		}
+	}
 }
