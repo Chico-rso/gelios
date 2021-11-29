@@ -297,17 +297,14 @@
 		width: 63%;
 		.g-tabs__item{margin-right: 32px;}
 	}
-	.detail-card__slider-block
-	{
-		display: block;
-		width: 30%;
-	}
+	.detail-card__slider-block{display: block;}
 	.detail-card__slider-mob{display: none;}
 	.detail-card__slider-desktop
 	{
 		display: block;
 		width: 60%;
 		margin-left: auto;
+		margin-right: 100px;
 	}
 	.detail-card__slider-wr{display: flex;}
 	.detail-card__main-image
