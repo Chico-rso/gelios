@@ -1,0 +1,9 @@
+{% extends "layouts/layout.twig" %}
+{% block page %}
+	<div class="basket">
+		<div class="container">
+			{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {breadClass:'breadcrumbs breadcrumbs--desk', items:['Главная','Лекарственные препараты','Витамины']} %}
+			{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {breadClass:'breadcrumbs breadcrumbs--mob', items:['Назад']} %}
+		</div>
+	</div>
+{% endblock %}

@@ -1,5 +1,8 @@
-<div class="breadcrumbs">
+<div class="{{ breadClass }}">
 	{% for item in items %}
-		<a class="breadcrumbs__item" href={{ addres }}> {% include '../../assets/svg/arrow-left.svg' %} {{ item }}</a>
+		<a class="breadcrumbs__item" href={{ addres }}>
+			{% include '../../assets/svg/arrow-rigth.svg' %}
+			{{ item }}
+		</a>
 	{% endfor %}
 </div>

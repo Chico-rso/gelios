@@ -1,4 +1,8 @@
-.breadcrumbs{margin-bottom: 7px;}
+.breadcrumbs
+{
+	display: flex;
+	margin-bottom: 7px;
+}
 .breadcrumbs__item
 {
 	display: flex;
@@ -6,5 +10,11 @@
 	font-size: 14px;
 	line-height: 17px;
 	color: #7B8E98;
-	svg{margin-right: 4px;}
+	svg
+	{
+		width: 17px;
+		height: 17px;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
 }
