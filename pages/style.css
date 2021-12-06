@@ -1025,6 +1025,9 @@ input.g-button {
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: 0px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .g-button svg,
@@ -1940,7 +1943,7 @@ input.g-button--product-disable {
 }
 
 .product-card__favorit svg:hover path {
-  fill: #F44336;
+  fill: #F4433680;
 }
 
 .product-card__raits {
@@ -2310,8 +2313,15 @@ input.g-button--product-disable {
   color: #87D4AB;
 }
 
-.footer a:hover svg:hover path {
-  fill: #87D4AB;
+.footer a:hover svg:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .footer p {
