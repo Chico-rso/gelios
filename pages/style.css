@@ -5027,10 +5027,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .checkout .g-input {
   max-width: 292px;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .checkout .g-input__input {
   padding: 11px 12px;
+}
+
+.checkout .g-radio__input:enabled:checked ~ .g-radio__body .g-radio__text {
+  color: #263238;
+}
+
+.label-title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7B8E98;
 }
 
 .checkout__order-item {
