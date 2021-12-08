@@ -16,16 +16,47 @@
 					</div>
 					<div class="checkout__order-choose">
 						<p>Выбрите способ получения</p>
-						<div class="checkout__order-delivery">
-							{% include "./assets/svg/checkout-dlivery-1.svg" %}
-							<span>Доставка</span>
-							<span>В удобное для вас время
-							</span>
-						</div>
-						<div class="checkout__order-pickup">
-							{% include "./assets/svg/checkout-pickup-1.svg" %}
-							<span>Самовывоз</span>
-							<span>Забрать можно будет через 5 минут</span>
+						<div class="g-tabs _tabs-container">
+							<div class="g-tabs__item _tab active" onclick="o2.gTabs.open(this, 1)">
+								{% include "./assets/svg/checkout-dlivery-1.svg" %}
+								<div class="g-tabs__link">
+									<span>Доставка</span>
+									<span>В удобное для вас время</span>
+								</div>
+							</div>
+							<div class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 2)">
+								{% include "./assets/svg/checkout-pickup-1.svg" %}
+								<div class="g-tabs__link">
+									<span>Самовывоз</span>
+									<span>Забрать можно будет через 5 минут</span>
+								</div>
+							</div>
+							<div class="g-tabs__content open" data-tab="1">
+								<p>Адрес получателя</p>
+								<label class="g-input">
+									<span class="label-title">Город *</span>
+									<input name="name" type="text" class="g-input__input" placeholder="Placeholder" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+								<label class="g-input">
+									<span class="label-title">Улица *</span>
+									<input name="name" type="text" class="g-input__input" placeholder="Placeholder" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+								<label class="g-input">
+									<span class="label-title">Дом *</span>
+									<input name="name" type="text" class="g-input__input" placeholder="Placeholder" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+								<label class="g-input">
+									<span class="label-title">Квартира *</span>
+									<input name="name" type="text" class="g-input__input" placeholder="Placeholder" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+							</div>
+							<div class="g-tabs__content" data-tab="2">
+								Tab 2 content
+							</div>
 						</div>
 					</div>
 				</div>
