@@ -1085,6 +1085,17 @@ input.g-button--product-disable {
   color: #fff;
 }
 
+.g-button--white,
+input.g-button--white {
+  background: #fff;
+  border: 1px solid #CFD8DC;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  color: #263238;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 .g-select {
   position: relative;
   display: inline-block;
