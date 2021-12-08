@@ -1087,13 +1087,23 @@ input.g-button--product-disable {
 
 .g-button--white,
 input.g-button--white {
+  padding: 0 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background: #fff;
   border: 1px solid #CFD8DC;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   color: #263238;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 32px;
+}
+
+.g-button--white:hover,
+input.g-button--white:hover {
+  background-color: #00833D;
+  color: #fff;
 }
 
 .g-select {
@@ -4856,6 +4866,54 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .basket__order-promo-sale span:last-child {
   color: #F44336;
+}
+
+.basket__empty {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.basket__empty-flex {
+  max-width: 380px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.basket__empty-flex svg {
+  margin-bottom: 24px;
+}
+
+.basket__empty-text p:first-child {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #7B8E98;
+}
+
+.basket__empty-text p:last-child {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #7B8E98;
 }
 
 .basket__order-sum {
