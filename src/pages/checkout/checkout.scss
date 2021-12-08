@@ -1,0 +1,36 @@
+.checkout
+{
+	p
+	{
+		margin: 0;
+		margin-bottom: 24px;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		color: #263238;
+	}
+	.h2-style{margin-bottom: 24px;}
+	.text-black
+	{
+		font-size: 15px;
+		line-height: 18px;
+		color: #263238;
+	}
+	.text-gray
+	{
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B8E98;
+	}
+}
+.checkout__order-item
+{
+	display: flex;
+	margin-bottom: 24px;
+}
+.checkout__order-item-text
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 70%;
+}

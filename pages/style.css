@@ -548,11 +548,8 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 10px;
-  line-height: 24px;
+  margin: 0;
+  color: #263238;
 }
 
 h3 {
@@ -584,6 +581,12 @@ a:visited,
 a:focus {
   outline: 0;
   text-decoration: none;
+}
+
+.h2-style {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 body {
@@ -4659,12 +4662,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .basket .g-button--basket {
-  padding: 11px 0;
+  padding: 0 14px;
   max-width: 292px;
   width: 100%;
   font-weight: bold;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 40px;
+  text-align: center;
 }
 
 .basket__inbasket h3 {
@@ -4930,6 +4934,53 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 14px;
   line-height: 18px;
   color: #263238;
+}
+
+.checkout p {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #263238;
+}
+
+.checkout .h2-style {
+  margin-bottom: 24px;
+}
+
+.checkout .text-black {
+  font-size: 15px;
+  line-height: 18px;
+  color: #263238;
+}
+
+.checkout .text-gray {
+  font-size: 14px;
+  line-height: 18px;
+  color: #7B8E98;
+}
+
+.checkout__order-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.checkout__order-item-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 70%;
+  -ms-flex: 1 1 70%;
+  flex: 1 1 70%;
 }
 
 * {

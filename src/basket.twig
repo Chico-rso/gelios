@@ -4,7 +4,7 @@
 		<div class="container">
 			{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {breadClass:'breadcrumbs breadcrumbs--mob', items:['Назад']} %}
 			<h2>Корзина</h2>
-			<div class="basket__inbasket" style="display:none">
+			<div class="basket__inbasket">
 				<div class="basket__wr">
 					<div class="basket__list">
 						<h3>В корзине 3 товара</h3>
@@ -71,11 +71,11 @@
 							<span>Итого</span>
 							<span>119,88 ₽</span>
 						</div>
-						<button class="g-button g-button--basket">Перейти к оформлению</button>
+						<a href="checkout.html"class="g-button g-button--basket">Перейти к оформлению</a>
 					</div>
 				</div>
 			</div>
-			<div class="basket__empty">
+			<div class="basket__empty" style="display:none">
 				<div class="basket__empty-flex">
 					{% include "./assets/svg/basket-empty-1.svg" %}
 					<div class="basket__empty-text">
