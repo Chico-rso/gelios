@@ -5075,6 +5075,21 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 40px;
 }
 
+.checkout-dlivery-type {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
