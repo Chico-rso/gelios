@@ -1109,6 +1109,13 @@ input.g-button--white:hover {
   color: #fff;
 }
 
+.g-button--green:hover,
+input.g-button--green:hover {
+  background-color: #fff;
+  color: #00833D;
+  border: 1px solid #00833D;
+}
+
 .g-select {
   position: relative;
   display: inline-block;
