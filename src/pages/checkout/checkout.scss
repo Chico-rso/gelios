@@ -26,8 +26,10 @@
 	{
 		display: flex;
 		max-width: 292px;
+		width: 100%;
 		min-height: 100px;
 		margin-bottom: 16px;
+		margin-right: 0;
 		padding: 16px 24px;
 		border: 1px solid #CFD8DC;
 		border-radius: 6px;
@@ -211,4 +213,19 @@
 		line-height: 18px;
 		color: #263238;
 	}
+}
+.g-tabs__content{width: 100%;}
+.g-tabs__content-head
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 24px;
+	svg
+	{
+		vertical-align: middle;
+		margin-left: 8px;
+	}
+	p{margin: 0;}
+	span{cursor: pointer;}
 }

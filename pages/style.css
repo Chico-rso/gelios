@@ -4974,8 +4974,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: -ms-flexbox;
   display: flex;
   max-width: 292px;
+  width: 100%;
   min-height: 100px;
   margin-bottom: 16px;
+  margin-right: 0;
   padding: 16px 24px;
   border: 1px solid #CFD8DC;
   -webkit-border-radius: 6px;
@@ -5251,6 +5253,36 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 14px;
   line-height: 18px;
   color: #263238;
+}
+
+.g-tabs__content {
+  width: 100%;
+}
+
+.g-tabs__content-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.g-tabs__content-head svg {
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.g-tabs__content-head p {
+  margin: 0;
+}
+
+.g-tabs__content-head span {
+  cursor: pointer;
 }
 
 * {
