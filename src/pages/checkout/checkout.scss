@@ -42,6 +42,7 @@
 	{
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: 24px;
 	}
 	.g-tabs__link
 	{
@@ -70,7 +71,29 @@
 	}
 	.g-input__input{padding: 11px 12px;}
 	.g-radio__input:enabled:checked ~ .g-radio__body .g-radio__text{color:#263238}
+	.g-radio:not(:last-child){margin-bottom: 12px;}
+	.g-radio__box
+	{
+		width: 16px;
+		height: 16px;
+		min-width: 16px;
+	}
+	.g-radio__body{align-items: flex-start !important;}
+	.g-radio__text--subtext
+	{
+		font-size: 12px;
+		line-height: 14px;
+		margin: 0;
+		color: #7B8E98 !important;
+	}
+	.g-radio__text--green{color: #01A54E !important;}
+	.g-button--green
+	{
+		width: 100%;
+		line-height: 40px;
+	}
 }
+.checkout__wr{margin-bottom: 40px;}
 .label-title
 {
 	display: block;
@@ -96,4 +119,96 @@
 	display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+}
+.checkout__personal
+{
+	p{margin-bottom: 24px;}
+}
+.g-input__input--promo
+{
+	max-width: 445px;
+	width: 44%;
+	margin-right: 16px;
+}
+.g-input__btn
+{
+	width: fit-content;
+	padding: 0 18px;
+	border: 1px solid #CFD8DC;
+	border-radius: 6px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 38px;
+	color: #263238;
+}
+.checkout__your-order
+{
+	max-width: 340px;
+	width: 100%;
+	padding: 16px;
+	margin-bottom: 24px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+}
+.checkout__your-order-head
+{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #ECEFF1;
+	p
+	{
+		margin: 0;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		color: #263238;
+	}
+	span
+	{
+		font-size: 16px;
+		line-height: 22px;
+		color: #00CA5F;
+	}
+}
+.checkout__your-order-list
+{
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #ECEFF1;
+}
+.checkout__your-order-item
+{
+	display: flex;
+	justify-content: space-between;
+	span
+	{
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B8E98;
+	}
+	.checkout__your-order-item--green
+	{
+		font-weight: 500;
+		color: #01A54E;
+	}
+	.checkout__your-order-item--red
+	{
+		font-weight: 500;
+		color: #F44336;
+	}
+}
+.checkout__your-order-item:not(:last-child){margin-bottom: 16px;}
+.checkout__your-order-sum
+{
+	display: flex;
+	justify-content: space-between;
+	span
+	{
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+		color: #263238;
+	}
 }

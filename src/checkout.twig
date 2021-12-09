@@ -66,14 +66,17 @@
 										<input type="radio" name="{{ name }}" class="g-radio__input">
 										<div class="g-radio__body">
 											<span class="g-radio__box"></span>
-											<span class="g-radio__text">Сегодня в любое время — Бесплатно</span>
+											<span class="g-radio__text">Сегодня в любое время-<span class="g-radio__text g-radio__text--green">Бесплатно</span>
+												<span class="g-radio__text g-radio__text--subtext">Оператор согласует с вами время доставки заказа</span>
+											</span>
 										</div>
 									</label>
 									<label class="g-radio">
 										<input type="radio" name="{{ name }}" class="g-radio__input">
 										<div class="g-radio__body">
 											<span class="g-radio__box"></span>
-											<span class="g-radio__text">Завтра в любое время — Бесплатно</span>
+											<span class="g-radio__text">Завтра в любое время —<span class="g-radio__text g-radio__text--green">Бесплатно</span>
+											</span>
 										</div>
 									</label>
 								</div>
@@ -82,8 +85,53 @@
 								Tab 2 content
 							</div>
 						</div>
+						<div class="checkout__personal">
+							<p>Личные данные</p>
+							<label class="g-input">
+								<span class="label-title">Имя *</span>
+								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+								<div class="g-input__sub">Error: invalid name</div>
+							</label>
+							<label class="g-input">
+								<span class="label-title">Фамилия *</span>
+								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+								<div class="g-input__sub">Error: invalid name</div>
+							</label>
+							<label class="g-input">
+								<span class="label-title">Номер телефона *</span>
+								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+								<div class="g-input__sub">Error: invalid name</div>
+							</label>
+							<label class="g-input">
+								<span class="label-title">Email *</span>
+								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+								<div class="g-input__sub">Error: invalid name</div>
+							</label>
+							<label class="g-input">
+								<span class="label-title">Промокод</span>
+								<input name="name" type="text" class="g-input__input g-input__input--promo" placeholder="Промокод" data-call="emty" data-msg="Заполните это поле">
+								<div class="g-input__sub">Error: invalid name</div>
+								<button class="g-input__btn">Активировать</button>
+							</label>
+						</div>
 					</div>
 				</div>
+				<div class="checkout__your-order">
+					<div class="checkout__your-order-head">
+						<p>Вашь заказ</p>
+						<span>Изменить</span>
+					</div>
+					<ul class="checkout__your-order-list">
+						<li class="checkout__your-order-item"><span>Товар (2)</span> <span>280 ₽</span></li>
+						<li class="checkout__your-order-item"><span>Доставка</span> <span class="checkout__your-order-item--green">Бесплатно</span></li>
+						<li class="checkout__your-order-item"><span>Скидка по промокоду</span> <span class="checkout__your-order-item--red">- 200 ₽</span></li>
+					</ul>
+					<div class="checkout__your-order-sum">
+						<span>Итого</span>
+						<span>80 ₽</span>
+					</div>
+				</div>
+				<button class="g-button g-button--green">Оформить заказ</button>
 			</div>
 		</div>
 	</div>
