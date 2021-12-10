@@ -24,6 +24,7 @@ const o2 =
 		this.detailCard.initSlider();
 		this.news.initSlider();
 		this.gRangeSlider.init();
+		this.gYamap.init();
 	},
 	/**
 	* отслеживание клика вне блока

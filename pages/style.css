@@ -1557,6 +1557,17 @@ input.g-button--green:hover {
   cursor: pointer;
 }
 
+.g-yamap__map {
+  width: 100%;
+  height: 400px;
+}
+
+.ymaps_https___api_maps_yandex_ru_2_1_79_277404006749islands_icon___FF00FF_34x41_1639126184593 {
+  background-image: url("/src/assets/svg/yamap-pointer-1.svg");
+  -webkit-background-size: 28px 28px;
+  background-size: 28px 28px;
+}
+
 .promo-slider {
   margin-bottom: 24px;
 }

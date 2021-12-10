@@ -84,7 +84,11 @@
 							<div class="g-tabs__content" data-tab="2">
 								<div class="g-tabs__content-head">
 									<p>Адреса аптек</p>
-									<span>Cписком {% include "./assets/svg/g-tabs__content-head.svg" %}</span>
+									<span>Cписком
+										{% include "./assets/svg/g-tabs__content-head.svg" %}</span>
+								</div>
+								<div class="g-yamap">
+									<div class="g-yamap__map" id="yamap"></div>
 								</div>
 							</div>
 						</div>
@@ -125,9 +129,18 @@
 						<span>Изменить</span>
 					</div>
 					<ul class="checkout__your-order-list">
-						<li class="checkout__your-order-item"><span>Товар (2)</span> <span>280 ₽</span></li>
-						<li class="checkout__your-order-item"><span>Доставка</span> <span class="checkout__your-order-item--green">Бесплатно</span></li>
-						<li class="checkout__your-order-item"><span>Скидка по промокоду</span> <span class="checkout__your-order-item--red">- 200 ₽</span></li>
+						<li class="checkout__your-order-item">
+							<span>Товар (2)</span>
+							<span>280 ₽</span>
+						</li>
+						<li class="checkout__your-order-item">
+							<span>Доставка</span>
+							<span class="checkout__your-order-item--green">Бесплатно</span>
+						</li>
+						<li class="checkout__your-order-item">
+							<span>Скидка по промокоду</span>
+							<span class="checkout__your-order-item--red">- 200 ₽</span>
+						</li>
 					</ul>
 					<div class="checkout__your-order-sum">
 						<span>Итого</span>
