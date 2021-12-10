@@ -943,6 +943,18 @@ header {
   transform: translateY(-50%);
 }
 
+.g-input-icon.hide {
+  display: none;
+}
+
+.g-input-icon-close {
+  display: none;
+}
+
+.g-input-icon-close.active {
+  display: block;
+}
+
 .header__svg-x,
 .header__svg-arrow {
   display: none;
@@ -1263,7 +1275,7 @@ input.g-button--green:hover {
   width: 100%;
   font-size: 14px;
   line-height: 16px;
-  color: #7B8E98;
+  color: #263238;
   padding: 7px 12px;
   border: 1px solid #CFD8DC;
   -webkit-border-radius: 6px;
@@ -5570,6 +5582,7 @@ html {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin-right: 60px;
   }
 
   .basket__wr {

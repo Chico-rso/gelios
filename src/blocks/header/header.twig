@@ -118,9 +118,12 @@
 					<span class="header__svg-x">{% include "../../assets/svg/header-tic.svg" %}</span>
 				</button>
 				<label class="g-input g-input--header__bottom">
-					<input name="name" type="text" class="g-input__input" autocomplete="off" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">
-					<div class="g-input-icon">
+					<input name="name" type="text" class="g-input__input _g-input__input" oninput="o2.header.changeIconSearch(this)" autocomplete="off" placeholder="Поиск по названию или симптомам" data-call="emty" data-msg="Заполните это поле">
+					<div class="g-input-icon _g-input-icon">
 						{% include "../../assets/svg/header-search.svg" %}
+					</div>
+					<div class="g-input-icon g-input-icon-close _g-input-icon-close" onclick="o2.header.clearInput(this)">
+						{% include "../../assets/svg/header-search-close.svg" %}
 					</div>
 					{% include "blocks/search-input-items/search-input-items.twig" %}
 				</label>

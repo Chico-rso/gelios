@@ -239,6 +239,12 @@ header
 	top: 36%;
 	right: 15px;
 	transform: translateY(-50%);
+	&.hide{display: none;}
+}
+.g-input-icon-close
+{
+	display: none;
+	&.active{display: block;}
 }
 .header__svg-x,
 .header__svg-arrow
