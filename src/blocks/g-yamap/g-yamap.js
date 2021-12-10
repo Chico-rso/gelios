@@ -29,10 +29,9 @@ o2.gYamap =
 			zoom: 12
 		})
 
-		myMap.geoObjects.add(createPlaceMark);
-		this.data.forEach( (el) => myMap.geoObjects.add(this.createPlaceMark(el.coords, el.title, el.address)))
+		o2.gYamap.data.forEach( (el) => myMap.geoObjects.add(o2.gYamap.createPlacemark(el.coords, el.title, el.address)))
 	},
-	createPlaceMark(coords, title, address)
+	createPlacemark(coords, title, address)
 	{
 		return new ymaps.Placemark(coords, {
 			balloonContentHeader: title,
