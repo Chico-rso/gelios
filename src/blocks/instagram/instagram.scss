@@ -49,11 +49,13 @@
 {
 	display: flex;
 	flex: 1 1 48%;
+	transition: all .3s ease;
 	img
 	{
 		max-width: 100%;
 		height: auto;
 	}
+	&:hover{transform: scale(1.05)}
 }
 .instagram__btn-more
 {

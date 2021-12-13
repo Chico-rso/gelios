@@ -1,12 +1,13 @@
 .header-catalog-menu__wr
 {
+	display: none;
 	width: 100%;
 	position: absolute;
+	padding: 24px 0;
 	z-index: 10;
 	visibility: hidden;
 	opacity: 0;
 	overflow: hidden;
-	padding: 24px 0;
 	background-color: #fff;
 	transition: all .3s;
 	&.active

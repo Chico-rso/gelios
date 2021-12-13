@@ -24,7 +24,7 @@ o2.banners =
 					{
 						slidesToShow: 2,
 					},
-					breakpoint: 1024,
+					breakpoint: 1023,
 					settings:
 					{
 						slidesToShow: 2,

@@ -2,6 +2,7 @@
 {
 	max-width: 212px;
 	margin-right: 20px;
+	transition: all .3s ease;
 	&:last-child{margin-right: 0;}
 	&.in-basket
 	{
@@ -17,6 +18,10 @@
 		{
 			svg path{fill: #F44336;}
 		}
+	}
+	&:hover .product-card__title
+	{
+		a{color:#01A54E;}
 	}
 }
 
@@ -36,6 +41,7 @@
 		width: 100%;
 		height: auto;
 	}
+	
 }
 .product-card__statuses
 {
