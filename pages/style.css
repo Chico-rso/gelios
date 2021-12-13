@@ -1938,7 +1938,6 @@ input.g-button--green:hover {
 .sale__btn-more .g-button {
   padding: 0 14px 0 14px;
   width: 100%;
-  max-width: 288px;
   background: none;
   color: #263238;
   border: 1px solid #CFD8DC;
@@ -2311,17 +2310,31 @@ input.g-button--green:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 48%;
+  -ms-flex: 1 1 48%;
+  flex: 1 1 48%;
 }
 
-.instagram__content-item a img {
-  width: 139px;
-  height: 139px;
+.instagram__content-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.instagram__btn-more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .instagram__btn-more .g-button {
   padding: 0 14px 0 14px;
   width: 100%;
-  max-width: 288px;
   background: none;
   color: #263238;
   border: 1px solid #CFD8DC;
@@ -5541,11 +5554,15 @@ html {
 
   .instagram__content-item {
     margin-right: 20px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 25%;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
   }
 
-  .instagram__content-item a img {
-    width: 235px;
-    height: 235px;
+  .instagram__content-item img {
+    max-width: 235px;
+    height: auto;
   }
 
   .instagram__content-list--desktop {

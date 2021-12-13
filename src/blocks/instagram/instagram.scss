@@ -48,23 +48,21 @@
 .instagram__content-item
 {
 	display: flex;
-	a
+	flex: 1 1 48%;
+	img
 	{
-		img
-		{
-			width: 139px;
-			height: 139px;
-
-		}
+		max-width: 100%;
+		height: auto;
 	}
 }
 .instagram__btn-more
 {
+	display: flex;
+	justify-content: center;
 	.g-button
 	{
 		padding: 0 14px 0 14px;
 		width: 100%;
-		max-width: 288px;
 		background: none;
 		color: #263238;
 		border: 1px solid #CFD8DC;
@@ -102,13 +100,11 @@
 	.instagram__content-item
 	{
 		margin-right: 20px;
-		a
+		flex: 1 1 25%;
+		img
 		{
-			img
-			{
-				width: 235px;
-				height: 235px;
-			}
+			max-width: 235px;
+			height: auto;
 		}
 	}
 	.instagram__content-list--desktop{display: block;}
