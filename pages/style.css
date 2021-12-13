@@ -1602,6 +1602,11 @@ input.g-button--green:hover {
   background: #263238;
 }
 
+.promo-slider__wrapper .slick-list {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
 .promo-slider__slider-dot {
   height: 6px;
   width: 6px;
@@ -1648,6 +1653,8 @@ input.g-button--green:hover {
 .promo-slider__content {
   width: 288px;
   height: 200px;
+  padding-left: 16px;
+  padding-top: 16px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   overflow: hidden;
@@ -1655,7 +1662,48 @@ input.g-button--green:hover {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
+}
+
+.promo-slider__content h2 {
+  margin-bottom: 16px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.promo-slider__content h2 span {
+  display: block;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.promo-slider__content span {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.promos-slider__btn {
+  display: none;
+  padding: 0 18px;
+  border: 1px solid #CFD8DC;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  line-height: 38px;
+  color: #FFFFFF;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.promos-slider__btn:hover {
+  opacity: 0.6;
 }
 
 .sale {
@@ -5338,13 +5386,7 @@ html {
 
 @media (min-width: 425px) {
   .promo-slider__content {
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    overflow: hidden;
     background-image: url("/img/promo-tablet-1.png");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
     background-position: center;
   }
 }
@@ -5363,22 +5405,6 @@ html {
     -webkit-justify-content: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-  }
-
-  .promo-slider {
-    margin-bottom: 40px;
-  }
-
-  .promo-slider__content {
-    height: 240px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    overflow: hidden;
-    background-image: url("/img/promo-desktop-1.png");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: right;
   }
 
   .sale .g-button--more {
@@ -5662,6 +5688,37 @@ html {
 }
 
 @media (min-width: 769px) {
+  .promo-slider {
+    margin-bottom: 40px;
+  }
+
+  .promo-slider__content {
+    height: 240px;
+    padding-left: 100px;
+    padding-top: 33px;
+    background-image: url("/img/promo-desktop-1.png");
+    background-position: right;
+  }
+
+  .promo-slider__content h2 {
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+
+  .promo-slider__content h2 span {
+    display: block;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .promos-slider__btn {
+    display: block;
+  }
+
   .product-card__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -5716,6 +5773,13 @@ html {
 
   .products-slider--relevance .prev-arrow {
     right: 40px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .promo-slider__content {
+    padding-left: 150px;
+    padding-top: 33px;
   }
 }
 
