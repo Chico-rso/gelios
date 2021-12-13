@@ -989,19 +989,20 @@ header {
 
 .header__bottom-favorit span {
   position: absolute;
-  bottom: 13px;
-  left: 16px;
+  max-width: 14px;
+  width: 100%;
+  bottom: 11px;
+  left: 13px;
+  background: #F44336;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #fff;
   font-style: normal;
   font-weight: 700;
   font-size: 7px;
   line-height: 13px;
   color: #FFF;
-  max-width: 13px;
-  width: 100%;
   text-align: center;
-  background: #F44336;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
 }
 
 .header__bottom-basket {
@@ -1014,20 +1015,21 @@ header {
 }
 
 .header__bottom-basket span {
+  max-width: 14px;
+  width: 100%;
   position: absolute;
-  bottom: 13px;
-  left: 13px;
+  bottom: 12px;
+  left: 12px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: #F44336;
   font-style: normal;
   font-weight: 700;
   font-size: 7px;
   line-height: 13px;
   color: #FFF;
-  max-width: 13px;
-  width: 100%;
   text-align: center;
-  background: #F44336;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
 }
 
 .g-button,
