@@ -1645,11 +1645,17 @@ input.g-button--green:hover {
   border-radius: 50%;
 }
 
-.promo-slider__content img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-  object-fit: cover;
+.promo-slider__content {
+  width: 288px;
+  height: 200px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-image: url("/img/promo-mobile-1.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .sale {
@@ -2885,9 +2891,9 @@ input.g-button--green:hover {
   overflow: hidden;
   padding: 24px 0;
   background-color: #fff;
-  -webkit-transition: opacity .3s;
-  -o-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .header-catalog-menu__wr.active {
@@ -2895,6 +2901,9 @@ input.g-button--green:hover {
   opacity: 1;
   -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .header-catalog-menu {
@@ -5327,6 +5336,19 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+@media (min-width: 425px) {
+  .promo-slider__content {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-image: url("/img/promo-tablet-1.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @media (min-width: 768px) {
   header {
     margin-bottom: 24px;
@@ -5345,6 +5367,18 @@ html {
 
   .promo-slider {
     margin-bottom: 40px;
+  }
+
+  .promo-slider__content {
+    height: 240px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-image: url("/img/promo-desktop-1.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: right;
   }
 
   .sale .g-button--more {
