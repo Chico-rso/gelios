@@ -35,6 +35,10 @@
 	}
 	&--relevance{margin-bottom: 10px;}
 }
+.products-slider__wr
+{
+	display: flex;
+}
 @media (min-width: 769px)
 {
 	.products-slider
