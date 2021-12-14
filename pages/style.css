@@ -2727,6 +2727,10 @@ input.g-button--green:hover {
   margin-right: 16px;
 }
 
+.header-menu__mob-menu-list li:last-child {
+  font-weight: bold;
+}
+
 .header-menu__mob-info {
   padding: 16px;
   border-bottom: 1px solid #ECEFF1;
