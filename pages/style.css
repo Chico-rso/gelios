@@ -5337,8 +5337,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .checkout .g-button--green {
+  border: 1px solid #01A54E;
   width: 100%;
-  line-height: 40px;
+  line-height: 38px;
 }
 
 .checkout__wr {
