@@ -15,6 +15,10 @@
 		right: 0px;
 	}
 	.prev-arrow{right: 40px;}
+	.slick-slider
+	{
+		.slick-track{padding-bottom: 5px;}
+	}
 }
 .news__block
 {
@@ -57,23 +61,20 @@
 		font-size: 16px;
 	}
 }
+.news__block-wr{padding: 0 9px 0 5px;}
 @media (min-width: 768px)
 {
 	.news
 	{
 		margin-bottom: 58px;
 		img{object-fit: cover;}
-		.slick-slider
-		{
-			.slick-track{padding-bottom: 5px;}
-		}
 	}
 	.news__block
 	{
 		width: 320px;
 		min-height: 235px;
+		margin-right: 10px;
 	}
-	.news__block-wr{padding: 0 9px 0 5px;}
 	.news__title
 	{
 		margin-bottom: 19px;
