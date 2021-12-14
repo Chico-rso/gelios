@@ -4879,6 +4879,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   transform: rotate(180deg);
 }
 
+.basket .products-slider h2 {
+  width: 60%;
+}
+
 .basket__inbasket h3 {
   margin-bottom: 24px;
 }
@@ -5006,6 +5010,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 15px;
   line-height: 18px;
   color: #263238;
+}
+
+.basket__item-counter button:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .basket__order {
