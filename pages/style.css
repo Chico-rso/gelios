@@ -2611,13 +2611,18 @@ input.g-button--green:hover {
 .header-menu {
   visibility: hidden;
   opacity: 0;
+  display: block;
   position: fixed;
   padding-bottom: 48px;
   width: 100%;
+  height: 100%;
   top: 0;
   background-color: #ffffff;
   overflow: auto;
   z-index: 5;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .header-menu a {
@@ -2645,6 +2650,7 @@ input.g-button--green:hover {
 }
 
 .header-menu.open {
+  display: block;
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity .3s;
@@ -2780,6 +2786,7 @@ input.g-button--green:hover {
 }
 
 .header-menu__catalog.open {
+  display: block;
   position: fixed;
   top: 0;
   width: 100%;
@@ -2822,6 +2829,7 @@ input.g-button--green:hover {
 }
 
 .header-menu__catalog-inner {
+  display: none;
   visibility: hidden;
   opacity: 0;
   padding-bottom: 64px;
@@ -2836,6 +2844,7 @@ input.g-button--green:hover {
 }
 
 .header-menu__catalog-inner.active {
+  display: block;
   position: fixed;
   top: 0;
   width: 100%;
@@ -6048,6 +6057,14 @@ html {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .header-menu.open {
+    display: none;
+  }
+
+  .header-catalog-menu__wr {
+    display: block;
   }
 
   .catalog__right .promo-slider {

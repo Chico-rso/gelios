@@ -50,3 +50,7 @@
 	}
 	&:not(:last-child){margin-bottom: 6px;}
 }
+@media (min-width: 1024px)
+{
+	.header-catalog-menu__wr{display: block;}
+}

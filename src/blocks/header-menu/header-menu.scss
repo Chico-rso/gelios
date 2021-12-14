@@ -2,13 +2,16 @@
 {
 	visibility: hidden;
 	opacity: 0;
+	display: block;
 	position: fixed;
 	padding-bottom: 48px;
 	width: 100%;
+	height: 100%;
 	top: 0;
 	background-color: #ffffff;
 	overflow: auto;
 	z-index: 5;
+	transition: all .3s ease;
 	a
 	{
 		color: #263238;
@@ -32,6 +35,7 @@
 	}
 	&.open
 	{
+		display: block;
 		visibility: visible;
 		opacity: 1;
 		transition: opacity .3s;
@@ -140,6 +144,7 @@
 	}
 	&.open
 	{
+		display: block;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -171,6 +176,7 @@
 
 .header-menu__catalog-inner
 {
+	display: none;
 	visibility: hidden;
 	opacity: 0;
 	padding-bottom: 64px;
@@ -183,6 +189,7 @@
 	}
 	&.active
 	{
+		display: block;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -210,8 +217,13 @@
 		}
 	}
 }
-
-
+@media (min-width: 1024px)
+{
+	.header-menu
+	{
+		&.open{display: none;}
+	}
+}
 
 
 
