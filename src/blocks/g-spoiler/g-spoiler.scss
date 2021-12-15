@@ -32,33 +32,24 @@
 		background: #263238;
 		position: absolute;
 		right: 20px;
-		top: 50%;
+		top: 25%;
+		transform: translate(0, -50%);
 		transition: transform .3s ease;
 	}
 
 	&::before
 	{
 		right: 25px;
-		transform: translate(-50%) rotate(45deg);
+		transform: rotate(45deg);
 	}
-	&::after
-	{
-		transform: translate(-50%) rotate(-45deg);
-	}
+	&::after{transform: rotate(-45deg);}
 }
 
 .g-spoiler__title--active
 {
 	border-bottom: none;
-
-	&::before
-	{
-		transform: translate(-50%) rotate(-45deg);
-	}
-	&::after
-	{
-		transform: translate(-50%) rotate(45deg);
-	}
+	&::before{transform: translate(-50%) rotate(-45deg);}
+	&::after{transform: translate(-50%) rotate(45deg);}
 }
 
 .g-spoiler__list

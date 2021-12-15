@@ -1,4 +1,11 @@
-.catalog{padding-bottom: 40px;}
+.catalog
+{
+	padding-bottom: 40px;
+	.promo-slider
+	{
+		.promo-slider__content{padding-left: 20px;}
+	}
+}
 .catalog__wr{display: flex;}
 .catalog__left
 {
@@ -21,6 +28,7 @@
 			margin-bottom: 28px;
 		}
 	}
+	.breadcrumbs__mob{margin-bottom: 8px;}
 }
 .catalog__mob
 {
@@ -41,6 +49,7 @@
 }
 .catalog__right-title
 {
+	display: block;
 	h2
 	{
 		margin-bottom: 24px;
@@ -78,6 +87,7 @@
 	}
 	.catalog__left{display: block;}
 	.catalog__mob{display: none;}
+	.catalog__right-title{display: none;}
 }
 
 

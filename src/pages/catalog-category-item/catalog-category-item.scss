@@ -27,10 +27,21 @@
 		font-size: 28px;
 		line-height: 34px;
 	}
+	.breadcrumbs__item
+	{
+		svg{transform: rotate(180deg)}
+	}
 }
 .catalog__category-item-right
 {
 	max-width: 100%;
+	.breadcrumbs__mob
+	{
+		.breadcrumbs__item
+		{
+			svg{transform: rotate(180deg)}
+		}
+	}
 }
 .catalog__category-item-list
 {

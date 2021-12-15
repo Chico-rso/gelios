@@ -77,7 +77,13 @@
 .g-spoiler__list-item--button:hover{color: #00833D;}
 .sidebar__sort
 {
-	.g-spoiler__title{cursor: pointer;}
+	.g-spoiler__title
+	{
+		height: fit-content;
+		padding: 0;
+		padding-bottom: 16px;
+		cursor: pointer;
+	}
 }
 @media (width: 768px)
 {
