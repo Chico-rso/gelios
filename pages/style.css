@@ -3047,6 +3047,10 @@ input.g-button--green:hover {
   color: #00833D;
 }
 
+.sidebar__sort .g-spoiler__title {
+  cursor: pointer;
+}
+
 .header-catalog-menu__wr {
   display: none;
   width: 100%;
