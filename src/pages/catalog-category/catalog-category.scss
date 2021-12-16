@@ -4,6 +4,10 @@
 	.promo-slider
 	{
 		.promo-slider__content{padding-left: 20px;}
+		.promo-slider__wrapper
+		{
+			.slick-arrow{display: none;}
+		}
 	}
 }
 .catalog__wr
