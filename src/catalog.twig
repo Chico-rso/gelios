@@ -15,8 +15,11 @@
 					{% include 'blocks/promo-slider/promo-slider.twig' %}
 					<div class="catalog__mob">
 						{% include 'assets/svg/catalog-mob.svg' %}
-						<a href="catalog__category">Каталог товаров</a>
+						<a onclick="o2.catalog.openCatalog()">Каталог товаров</a>
 						{% include 'assets/svg/arrow-rigth.svg' %}
+						<div class="sidebar__catalog-mob _sidebar__catalog-mob">
+							{% include 'blocks/sidebar/sidebar.twig' with {'sidebarCatalog': [sidebarCatalog], }%}
+						</div>
 					</div>
 					<div class="products-slider">
 						<h2>С большой скидкой</h2>
