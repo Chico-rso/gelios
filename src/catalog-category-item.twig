@@ -1,24 +1,25 @@
 {% extends "layouts/layout.twig" %}
 {% block page %}
-<div class="catalog__category-item _catalog__category-item">
+<div class="catalog-category-item _catalog-category-item">
 	<div class="container">
-		<div class="catalog__category-item-wr">
-			<div class="catalog__category-item-left">
+		<div class="catalog-category-item__wr">
+			<div class="catalog-category-item__left">
 				{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Лекарственные средства'], 'addres': 'catalog-category.html'} %}
 				<h2>Простуда, грипп</h2>
 				{% include 'blocks/sidebar/sidebar.twig' with {'sidebarSort': ['sidebarSort'], }%}
 			</div>
-			<div class="catalog__category-item-right">
+			<div class="catalog-category-item__right">
 				<div class="breadcrumbs__mob">{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Главная'], 'addres': 'index.html'} %}
 				</div>
 				<div class="catalog__right-title">
 					<h2>Простуда, грипп</h2>
 				</div>
-				<div class="catalog__mob">
+				<div class="catalog-category-item__mob">
 					{% include 'assets/svg/catalog-mob.svg' %}
-					<a href="catalog__category">Сортировка и фильтры</a>
+					<a href="#" onclick='o2.catalogCategoryItem.openSort()'>Сортировка и фильтры</a>
+					<div class="sidebar__sort-item _sidebar__sort-item">{% include "blocks/sidebar/sidebar.twig" with {'sidebarSort': ['sidebar']} %}</div>
 				</div>
-				<ul class="catalog__category-item-list">
+				<ul class="catalog-category-item__list">
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30
 					", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
 					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
