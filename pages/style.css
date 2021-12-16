@@ -1016,7 +1016,7 @@ header {
 
 .header__bottom-favorit span {
   position: absolute;
-  max-width: 14px;
+  max-width: 15px;
   width: 100%;
   bottom: 11px;
   left: 13px;
@@ -1042,7 +1042,7 @@ header {
 }
 
 .header__bottom-basket span {
-  max-width: 14px;
+  max-width: 15px;
   width: 100%;
   position: absolute;
   bottom: 12px;
@@ -4314,6 +4314,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 40px;
 }
 
+.catalog__category .promo-slider .promo-slider__content {
+  padding-left: 20px;
+}
+
 .catalog__wr {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4471,9 +4475,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .catalog__category-item-list .product-card {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
+  -webkit-flex: 1 1 48%;
+  -ms-flex: 1 1 48%;
+  flex: 1 1 48%;
   margin-right: 7px;
   margin-bottom: 24px;
 }

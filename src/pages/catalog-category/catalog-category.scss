@@ -1,4 +1,11 @@
-.catalog__category{margin-bottom: 40px;}
+.catalog__category
+{
+	margin-bottom: 40px;
+	.promo-slider
+	{
+		.promo-slider__content{padding-left: 20px;}
+	}
+}
 .catalog__wr
 {
 	display: flex;
