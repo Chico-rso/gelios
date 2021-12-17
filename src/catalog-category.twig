@@ -16,10 +16,11 @@
 					<h2>Лекарственные средства</h2>
 				</div>
 				{% include 'blocks/promo-slider/promo-slider.twig' %}
-				<div class="catalog__mob">
+				<div class="catalog-category__mob">
 					{% include 'assets/svg/catalog-mob.svg' %}
-					<a href="#">Список категорий</a>
+					<a onclick="o2.catalogCategory.openMobCatalog()">Список категорий</a>
 					{% include 'assets/svg/arrow-rigth.svg' %}
+					<div class="sidebar__catalog-category _sidebar__catalog-category">{% include 'blocks/sidebar/sidebar.twig' with {sidebarCategory: 'sidebarCategory', }%}</div>
 				</div>
 				<div class="products-slider products-slider--see ">
 					<h2>Простуда, грипп</h2>

@@ -4342,7 +4342,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 28px;
 }
 
-.catalog__mob {
+.catalog-category__mob {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4356,19 +4357,41 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-bottom: 1px solid #ECEFF1;
 }
 
-.catalog__mob svg {
+.catalog-category__mob svg {
   vertical-align: middle;
 }
 
-.catalog__mob a {
+.catalog-category__mob a {
   margin-right: auto;
   font-size: 14px;
   line-height: 18px;
   color: #263238;
 }
 
-.catalog__mob svg:first-child {
+.catalog-category__mob svg:first-child {
   margin-right: 16px;
+}
+
+.catalog-category__mob .sidebar__category-title h2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sidebar__catalog-category {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  z-index: 12;
+  background-color: #fff;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.sidebar__catalog-category.active {
+  left: 0;
 }
 
 .catalog__right-title-category {
@@ -6343,7 +6366,7 @@ html {
     display: block;
   }
 
-  .catalog__mob {
+  .catalog-category__mob {
     display: none;
   }
 

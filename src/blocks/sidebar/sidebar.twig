@@ -1,8 +1,10 @@
 {% if sidebarCatalog is defined %}
 <div class="sidebar__catalog _sidebar__catalog">
+	{% if catalogTitle is defined%}
 	<div class="sidebar__title">
 		<h2>Каталог</h2>
 	</div>
+	{% endif %}
 	<ul class="sidebar__list">
 		<li class="sidebar__list-title"><a href="catalog-category.html">Лекарственные средства</a></li>
 		<li class="sidebar__item"><a href="#">Простуда, грипп</a></li>

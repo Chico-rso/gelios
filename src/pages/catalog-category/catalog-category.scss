@@ -37,8 +37,9 @@
 		}
 	}
 }
-.catalog__mob
+.catalog-category__mob
 {
+	position: relative;
 	display: flex;
 	align-items: center;
 	padding: 12px 0;
@@ -53,6 +54,29 @@
 		color: #263238;
 	}
 	svg:first-child{margin-right: 16px;}
+	.sidebar__category-title
+	{
+		h2
+		{
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+}
+.sidebar__catalog-category
+{
+	position: absolute;
+	top: 60px;
+	left: -100%;
+	width: 100%;
+	z-index: 12;
+	background-color: #fff;
+	transition: all .3s linear;
+	&.active
+	{
+		left: 0;
+	}
 }
 .catalog__right-title-category{display: none;}
 .catalog__right-title-mob
@@ -97,7 +121,7 @@
 	}
 	.catalog__right-title-mob{display: none;}
 	.catalog__left{display: block;}
-	.catalog__mob{display: none;}
+	.catalog-category__mob{display: none;}
 }
 
 
