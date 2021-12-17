@@ -17,6 +17,7 @@
 		svg{transform: rotate(180deg)}
 	}
 	.breadcrumbs--desk{display: none;}
+	.g-tabs__menu{overflow: scroll;}
 }
 .detail-card__title
 {
@@ -77,10 +78,7 @@
 		border: none;
 		background: #eceff1;
 	}
-	li.slick-active button
-	{
-		background: #263238;
-	}
+	li.slick-active button{background: #263238;}
 }
 .detail-card__slider-block{display: none;}
 .detail-card__slider-desktop{display: none;}
@@ -182,7 +180,8 @@
 .g-button--basket
 {
 	padding: 0 34.5px;
-	line-height: 40px;
+	line-height: 38px;
+	border: 1px solid #00833D;
 }
 .g-button--inbasket {display: none;}
 .g-button--disable {display: none;}
@@ -214,6 +213,11 @@
 		svg path{fill: #f44336;}
 		span{color: #f44336;}
 	}
+	&:hover
+	{
+		span{color: #c16f69;}
+		svg path{fill: #c16f69;}
+	}
 }
 .detail-card__list-bottom{margin-bottom: 24px;}
 .detail-card__link
@@ -231,6 +235,7 @@
 		& path {fill: #00ca5f;}
 	}
 	span {margin-right: 6px;}
+	&:hover{color: #04823f;}
 }
 .detail-card__news
 {
