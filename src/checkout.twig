@@ -5,115 +5,117 @@
 			<div class="checkout__wr">
 				{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Корзина'], 'addres': 'basket.html'} %}
 				<h2 class="h2-style">Оформления заказа</h2>
-				<div class="checkout__order-list">
-					<p>Состав заказа</p>
-					<div class="checkout__order-item">
-						<img src="./img/checkout-order-list-1.png" alt="product image">
-						<div class="checkout__order-item-text">
-							<span class="text-black">Кальцемин адванс таб. п.о № 120</span>
-							<span class="text-gray">2 шт.</span>
-						</div>
-					</div>
-					<div class="checkout__order-choose">
-						<p>Выбрите способ получения</p>
-						<div class="g-tabs _tabs-container">
-							<div class="g-tabs__item _tab active" onclick="o2.gTabs.open(this, 1)">
-								{% include "./assets/svg/checkout-dlivery-1.svg" %}
-								<div class="g-tabs__link">
-									<span>Доставка</span>
-									<span>В удобное для вас время</span>
-								</div>
-							</div>
-							<div class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 2)">
-								{% include "./assets/svg/checkout-pickup-1.svg" %}
-								<div class="g-tabs__link">
-									<span>Самовывоз</span>
-									<span>Забрать можно будет через 5 минут</span>
-								</div>
-							</div>
-							<div class="g-tabs__content open" data-tab="1">
-								<p>Адрес получателя</p>
-								<label class="g-input">
-									<span class="label-title">Город *</span>
-									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-									<div class="g-input__sub">Error: invalid name</div>
-								</label>
-								<label class="g-input">
-									<span class="label-title">Улица *</span>
-									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-									<div class="g-input__sub">Error: invalid name</div>
-								</label>
-								<label class="g-input">
-									<span class="label-title">Дом *</span>
-									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-									<div class="g-input__sub">Error: invalid name</div>
-								</label>
-								<label class="g-input">
-									<span class="label-title">Квартира *</span>
-									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-									<div class="g-input__sub">Error: invalid name</div>
-								</label>
-								<div class="checkout-dlivery-type">
-									<p>Выберите тип доставки</p>
-									<label class="g-radio">
-										<input type="radio" name="radio-1" class="g-radio__input">
-										<div class="g-radio__body">
-											<span class="g-radio__box"></span>
-											<span class="g-radio__text">Срочная сегодня — 100 ₽</span>
-										</div>
-									</label>
-									<label class="g-radio">
-										<input type="radio" name="radio-1" class="g-radio__input">
-										<div class="g-radio__body">
-											<span class="g-radio__box"></span>
-											<span class="g-radio__text">Сегодня в любое время-<span class="g-radio__text g-radio__text--green">Бесплатно</span>
-												<span class="g-radio__text g-radio__text--subtext">Оператор согласует с вами время доставки заказа</span>
-											</span>
-										</div>
-									</label>
-									<label class="g-radio">
-										<input type="radio" name="radio-1" class="g-radio__input">
-										<div class="g-radio__body">
-											<span class="g-radio__box"></span>
-											<span class="g-radio__text">Завтра в любое время —<span class="g-radio__text g-radio__text--green">Бесплатно</span>
-											</span>
-										</div>
-									</label>
-								</div>
-							</div>
-							<div class="g-tabs__content" data-tab="2">
-								<div class="g-tabs__content-head">
-									<p>Адреса аптек</p>
-									<span>Cписком
-										{% include "./assets/svg/g-tabs__content-head.svg" %}</span>
-								</div>
-								<div class="g-yamap">
-									<div class="g-yamap__map" id="yamap"></div>
-								</div>
+				<div class="checkout__flex">
+					<div class="checkout__order-list">
+						<p>Состав заказа</p>
+						<div class="checkout__order-item">
+							<img src="./img/checkout-order-list-1.png" alt="product image">
+							<div class="checkout__order-item-text">
+								<span class="text-black">Кальцемин адванс таб. п.о № 120</span>
+								<span class="text-gray">2 шт.</span>
 							</div>
 						</div>
-						<div class="checkout__personal">
-							<p>Личные данные</p>
-							<label class="g-input">
-								<span class="label-title">Имя *</span>
-								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-								<div class="g-input__sub">Error: invalid name</div>
-							</label>
-							<label class="g-input">
-								<span class="label-title">Фамилия *</span>
-								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-								<div class="g-input__sub">Error: invalid name</div>
-							</label>
-							<label class="g-input">
-								<span class="label-title">Номер телефона *</span>
-								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-								<div class="g-input__sub">Error: invalid name</div>
-							</label>
-							<label class="g-input">
-								<span class="label-title">Email *</span>
-								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-								<div class="g-input__sub">Error: invalid name</div>
-							</label>
+						<div class="checkout__order-choose">
+							<p>Выбрите способ получения</p>
+							<div class="g-tabs _tabs-container">
+								<div class="g-tabs__item _tab active" onclick="o2.gTabs.open(this, 1)">
+									{% include "./assets/svg/checkout-dlivery-1.svg" %}
+									<div class="g-tabs__link">
+										<span>Доставка</span>
+										<span>В удобное для вас время</span>
+									</div>
+								</div>
+								<div class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 2)">
+									{% include "./assets/svg/checkout-pickup-1.svg" %}
+									<div class="g-tabs__link">
+										<span>Самовывоз</span>
+										<span>Забрать можно будет через 5 минут</span>
+									</div>
+								</div>
+								<div class="g-tabs__content open" data-tab="1">
+									<p>Адрес получателя</p>
+									<label class="g-input">
+										<span class="label-title">Город *</span>
+										<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+										<div class="g-input__sub">Error: invalid name</div>
+									</label>
+									<label class="g-input">
+										<span class="label-title">Улица *</span>
+										<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+										<div class="g-input__sub">Error: invalid name</div>
+									</label>
+									<label class="g-input">
+										<span class="label-title">Дом *</span>
+										<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+										<div class="g-input__sub">Error: invalid name</div>
+									</label>
+									<label class="g-input">
+										<span class="label-title">Квартира *</span>
+										<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+										<div class="g-input__sub">Error: invalid name</div>
+									</label>
+									<div class="checkout-dlivery-type">
+										<p>Выберите тип доставки</p>
+										<label class="g-radio">
+											<input type="radio" name="radio-1" class="g-radio__input">
+											<div class="g-radio__body">
+												<span class="g-radio__box"></span>
+												<span class="g-radio__text">Срочная сегодня — 100 ₽</span>
+											</div>
+										</label>
+										<label class="g-radio">
+											<input type="radio" name="radio-1" class="g-radio__input">
+											<div class="g-radio__body">
+												<span class="g-radio__box"></span>
+												<span class="g-radio__text">Сегодня в любое время-<span class="g-radio__text g-radio__text--green">Бесплатно</span>
+													<span class="g-radio__text g-radio__text--subtext">Оператор согласует с вами время доставки заказа</span>
+												</span>
+											</div>
+										</label>
+										<label class="g-radio">
+											<input type="radio" name="radio-1" class="g-radio__input">
+											<div class="g-radio__body">
+												<span class="g-radio__box"></span>
+												<span class="g-radio__text">Завтра в любое время —<span class="g-radio__text g-radio__text--green">Бесплатно</span>
+												</span>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="g-tabs__content" data-tab="2">
+									<div class="g-tabs__content-head">
+										<p>Адреса аптек</p>
+										<span>Cписком
+											{% include "./assets/svg/g-tabs__content-head.svg" %}</span>
+									</div>
+									<div class="g-yamap">
+										<div class="g-yamap__map" id="yamap"></div>
+									</div>
+								</div>
+							</div>
+							<div class="checkout__personal">
+								<p>Личные данные</p>
+								<label class="g-input">
+									<span class="label-title">Имя *</span>
+									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+								<label class="g-input">
+									<span class="label-title">Фамилия *</span>
+									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+								<label class="g-input">
+									<span class="label-title">Номер телефона *</span>
+									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+								<label class="g-input">
+									<span class="label-title">Email *</span>
+									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+							</div>
 							<label class="g-input">
 								<span class="label-title">Промокод</span>
 								<input name="name" type="text" class="g-input__input g-input__input--promo" placeholder="Промокод" data-call="emty" data-msg="Заполните это поле">
@@ -122,29 +124,29 @@
 							</label>
 						</div>
 					</div>
-				</div>
-				<div class="checkout__your-order">
-					<div class="checkout__your-order-head">
-						<p>Вашь заказ</p>
-						<span>Изменить</span>
-					</div>
-					<ul class="checkout__your-order-list">
-						<li class="checkout__your-order-item">
-							<span>Товар (2)</span>
-							<span>280 ₽</span>
-						</li>
-						<li class="checkout__your-order-item">
-							<span>Доставка</span>
-							<span class="checkout__your-order-item--green">Бесплатно</span>
-						</li>
-						<li class="checkout__your-order-item">
-							<span>Скидка по промокоду</span>
-							<span class="checkout__your-order-item--red">- 200 ₽</span>
-						</li>
-					</ul>
-					<div class="checkout__your-order-sum">
-						<span>Итого</span>
-						<span>80 ₽</span>
+					<div class="checkout__your-order">
+						<div class="checkout__your-order-head">
+							<p>Вашь заказ</p>
+							<span>Изменить</span>
+						</div>
+						<ul class="checkout__your-order-list">
+							<li class="checkout__your-order-item">
+								<span>Товар (2)</span>
+								<span>280 ₽</span>
+							</li>
+							<li class="checkout__your-order-item">
+								<span>Доставка</span>
+								<span class="checkout__your-order-item--green">Бесплатно</span>
+							</li>
+							<li class="checkout__your-order-item">
+								<span>Скидка по промокоду</span>
+								<span class="checkout__your-order-item--red">- 200 ₽</span>
+							</li>
+						</ul>
+						<div class="checkout__your-order-sum">
+							<span>Итого</span>
+							<span>80 ₽</span>
+						</div>
 					</div>
 				</div>
 				<button class="g-button g-button--green">Оформить заказ</button>
