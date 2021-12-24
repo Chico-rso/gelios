@@ -94,7 +94,22 @@
 		width: 100%;
 		line-height: 38px;
 	}
+	.g-yamap
+	{
+		&--hidden{display: none;}
+	}
+	.g-tabs__content-list
+	{
+		&--hidden{display: none;}
+	}
+	.g-tabs__content-map
+	{
+		display: none;
+		cursor: pointer;
+		&--visibility{display: block;}
+	}
 }
+
 .checkout__wr{margin-bottom: 40px;}
 .checkout__flex
 {
@@ -239,7 +254,7 @@
 }
 .checkout__radio-btn
 {
-	display: flex;
+	display: none;
 	flex-flow: column;
 	.g-radio__input
 	{
@@ -324,7 +339,11 @@
 		font-size: 14px;
 		line-height: 18px;
 	}
+	&--visibility{display: flex;}
 }
+
+.g-tabs__content-list{cursor: pointer;}
+
 @media (min-width: 768px)
 {
 	.checkout

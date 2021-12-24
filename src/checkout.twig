@@ -85,12 +85,13 @@
 								<div class="g-tabs__content" data-tab="2">
 									<div class="g-tabs__content-head">
 										<p>Адреса аптек</p>
-										<span>Cписком{% include "./assets/svg/g-tabs__content-head.svg" %}</span>
+										<span class="g-tabs__content-list _g-tabs__content-list" onclick='o2.checkout.openList()'>Cписком{% include "./assets/svg/g-tabs__content-head.svg" %}</span>
+										<span class="g-tabs__content-map _g-tabs__content-map" onclick='o2.checkout.openMap()'>Карта{% include "./assets/svg/checkout-map.svg" %}</span>
 									</div>
-									<div class="g-yamap">
+									<div class="g-yamap _g-yamap">
 										<div class="g-yamap__map" id="yamap"></div>
 									</div>
-									<div class="checkout__radio-btn">
+									<div class="checkout__radio-btn _checkout__radio-btn">
 										<label class="g-radio">
 											<input type="radio" name="radio-1" class="g-radio__input">
 											<div class="g-radio__body">

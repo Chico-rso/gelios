@@ -5511,6 +5511,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   line-height: 38px;
 }
 
+.checkout .g-yamap--hidden {
+  display: none;
+}
+
+.checkout .g-tabs__content-list--hidden {
+  display: none;
+}
+
+.checkout .g-tabs__content-map {
+  display: none;
+  cursor: pointer;
+}
+
+.checkout .g-tabs__content-map--visibility {
+  display: block;
+}
+
 .checkout__wr {
   margin-bottom: 40px;
 }
@@ -5744,10 +5761,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .checkout__radio-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-flow: column;
@@ -5855,6 +5869,17 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+}
+
+.checkout__radio-btn--visibility {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.g-tabs__content-list {
+  cursor: pointer;
 }
 
 * {
