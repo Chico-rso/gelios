@@ -382,6 +382,13 @@
 			width: 292px;
 			&:nth-child(even){margin-right: 15px;}
 		}
+		.g-button--green
+		{
+			width: 153px;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 38px;
+		}
 	}
 }
 @media (min-width: 1024px)

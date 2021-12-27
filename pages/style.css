@@ -6300,6 +6300,13 @@ html {
   .checkout .g-input:nth-child(even) {
     margin-right: 15px;
   }
+
+  .checkout .g-button--green {
+    width: 153px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 38px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -6642,10 +6649,6 @@ html {
   }
 
   .catalog-category__mob {
-    display: none;
-  }
-
-  .g-button--green {
     display: none;
   }
 
