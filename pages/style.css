@@ -5469,12 +5469,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 16px;
 }
 
-.checkout .g-input .g-input__btn:hover {
-  border: 1px solid #CFD8DC;
-  background: #fff;
-  color: #01A54E;
-}
-
 .checkout .g-input__input {
   padding: 11px 12px;
 }
@@ -5624,6 +5618,15 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 14px;
   line-height: 38px;
   color: #263238;
+}
+
+.g-input__btn:hover {
+  border: 1px solid #CFD8DC;
+  background: #fff;
+  color: #01A54E;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .checkout__order-list {
