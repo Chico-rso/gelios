@@ -5469,6 +5469,26 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 16px;
 }
 
+.checkout .g-input.g-input--promo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  width: 100%;
+  max-width: 600px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.checkout .g-input.g-input--promo .label-title {
+  width: 100%;
+}
+
 .checkout .g-input__input {
   padding: 11px 12px;
 }
@@ -5526,6 +5546,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .checkout .g-radio__input:enabled ~ .g-radio__body .g-radio__text .g-radio__text--subtext {
+  width: 100%;
   font-size: 12px;
   line-height: 14px;
   margin: 0;
@@ -5607,10 +5628,18 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .g-input__input--promo {
   max-width: 445px;
   width: 44%;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
   margin-right: 16px;
 }
 
 .g-input__btn {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -6259,11 +6288,13 @@ html {
 
   .checkout .g-tabs__item:not(:last-child) {
     max-width: 292px;
+    width: 100%;
     margin-right: 16px;
   }
 
   .checkout .g-input {
-    max-width: 292px;
+    max-width: 100%;
+    width: 292px;
   }
 
   .checkout .g-input:nth-child(even) {

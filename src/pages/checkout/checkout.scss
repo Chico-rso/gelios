@@ -69,6 +69,15 @@
 		max-width: 100%;
 		width: 100%;
 		margin-bottom: 16px;
+		&.g-input--promo
+		{
+			display: flex;
+			flex-flow: wrap;
+			width: 100%;
+			max-width: 600px;
+			flex: 1;
+			.label-title{width: 100%;}
+		}
 	}
 	.g-input__input{padding: 11px 12px;}
 	.g-radio__input:enabled:checked ~ .g-radio__body .g-radio__text{color:#263238}
@@ -106,6 +115,7 @@
 		.g-radio__text--green{color: #01A54E;}
 		.g-radio__text--subtext
 		{
+			width: 100%;
 			font-size: 12px;
 			line-height: 14px;
 			margin: 0;
@@ -154,10 +164,12 @@
 {
 	max-width: 445px;
 	width: 44%;
+	flex: 2;
 	margin-right: 16px;
 }
 .g-input__btn
 {
+	flex: 1;
 	width: fit-content;
 	padding: 0 18px;
 	border: 1px solid #CFD8DC;
@@ -334,7 +346,6 @@
 					left: 50%;
 					transform: translate(-50%, -50%);
 				}
-
 			}
 		}
 	}
@@ -362,11 +373,13 @@
 		.g-tabs__item:not(:last-child)
 		{
 			max-width: 292px;
+			width: 100%;
 			margin-right: 16px;
 		}
 		.g-input
 		{
-			max-width: 292px;
+			max-width: 100%;
+			width: 292px;
 			&:nth-child(even){margin-right: 15px;}
 		}
 	}
