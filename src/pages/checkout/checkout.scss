@@ -69,6 +69,12 @@
 		max-width: 100%;
 		width: 100%;
 		margin-bottom: 16px;
+		.g-input__btn:hover
+		{
+			border: 1px solid #CFD8DC;
+			background: #fff;
+			color: #01A54E;
+		}
 	}
 	.g-input__input{padding: 11px 12px;}
 	.g-radio__input:enabled:checked ~ .g-radio__body .g-radio__text{color:#263238}

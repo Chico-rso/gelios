@@ -5469,6 +5469,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 16px;
 }
 
+.checkout .g-input .g-input__btn:hover {
+  border: 1px solid #CFD8DC;
+  background: #fff;
+  color: #01A54E;
+}
+
 .checkout .g-input__input {
   padding: 11px 12px;
 }
