@@ -80,14 +80,6 @@
 		min-width: 16px;
 	}
 	.g-radio__body{align-items: flex-start;}
-	.g-radio__text--subtext
-	{
-		font-size: 12px;
-		line-height: 14px;
-		margin: 0;
-		color: #7B8E98 !important;
-	}
-	.g-radio__text--green{color: #01A54E;}
 	.g-button--green
 	{
 		border: 1px solid #01A54E;
@@ -107,6 +99,18 @@
 		display: none;
 		cursor: pointer;
 		&--visibility{display: block;}
+	}
+	.g-radio__input:enabled ~ .g-radio__body .g-radio__text
+	{
+		color: #263238;
+		.g-radio__text--green{color: #01A54E;}
+		.g-radio__text--subtext
+		{
+			font-size: 12px;
+			line-height: 14px;
+			margin: 0;
+			color: #7B8E98;
+		}
 	}
 }
 
