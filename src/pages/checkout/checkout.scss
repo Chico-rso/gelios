@@ -95,6 +95,17 @@
 		width: 100%;
 		line-height: 38px;
 	}
+	.g-button--gray
+	{
+		display: none;
+		width: 100%;
+		background-color: #CFD8DC;
+		border-radius: 6px;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 40px;
+		color: #fff;
+	}
 	.g-yamap
 	{
 		&--hidden{display: none;}
@@ -123,7 +134,22 @@
 		}
 	}
 }
-
+.checkout__privacy-policy
+{
+	margin-bottom: 24px;
+	.g-checkbox__box
+	{
+		flex: none;
+		margin-right: 8px;
+	}
+	.g-checkbox__text
+	{
+		max-width: 576px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.g-checkbox__input:enabled ~ .g-checkbox__body .g-checkbox__text{color: #7B8E98;}
+}
 .checkout__wr{margin-bottom: 40px;}
 .checkout__flex
 {
@@ -389,6 +415,7 @@
 			font-size: 14px;
 			line-height: 38px;
 		}
+		.g-button--gray{width: 153px;}
 	}
 }
 @media (min-width: 1024px)
