@@ -44,6 +44,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 24px;
+		p{width: 100%;}
 	}
 	.g-tabs__link
 	{
@@ -73,9 +74,8 @@
 		{
 			display: flex;
 			flex-flow: wrap;
-			width: 100%;
 			max-width: 600px;
-			flex: 1;
+			flex: 1 1 100%;
 			.label-title{width: 100%;}
 		}
 	}
@@ -91,20 +91,20 @@
 	.g-radio__body{align-items: flex-start;}
 	.g-button--green
 	{
-		border: 1px solid #01A54E;
 		width: 100%;
 		line-height: 38px;
-	}
-	.g-button--gray
-	{
-		display: none;
-		width: 100%;
-		background-color: #CFD8DC;
-		border-radius: 6px;
-		font-weight: bold;
-		font-size: 14px;
-		line-height: 40px;
-		color: #fff;
+		border: 1px solid #01A54E;
+		cursor: pointer;
+		&:disabled
+		{
+			background-color: #CFD8DC;
+			border: 1px solid #CFD8DC;
+			border-radius: 6px;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 40px;
+			color: #fff;
+		}
 	}
 	.g-yamap
 	{
@@ -151,11 +151,6 @@
 	.g-checkbox__input:enabled ~ .g-checkbox__body .g-checkbox__text{color: #7B8E98;}
 }
 .checkout__wr{margin-bottom: 40px;}
-.checkout__flex
-{
-	display: flex;
-	flex-flow: column;
-}
 .label-title
 {
 	display: block;
@@ -167,15 +162,22 @@
 .checkout__order-item
 {
 	display: flex;
+	flex-flow: wrap;
 	margin-bottom: 24px;
+	p{width: 100%;}
 }
 .checkout__order-item-text
 {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	.text-black{flex: 1 1 100%;}
+	&--flex
+	{
+		display: flex;
+		flex-flow: wrap;
+	}
 }
-.checkout__order-choose{margin-bottom: 40px;}
 .checkout-dlivery-type
 {
 	display: flex;
@@ -212,7 +214,12 @@
 		transition: all .3s linear;
 	}
 }
-.checkout__order-list{flex: 1 1 60%}
+.checkout__order-list
+{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
 .checkout__your-order
 {
 	flex: 1 1 50%;
@@ -420,10 +427,19 @@
 }
 @media (min-width: 1024px)
 {
-	.checkout__flex{flex-flow: row;}
+	.checkout
+	{
+		.g-tabs{margin-top: -100px;}
+	}
 	.checkout__your-order
 	{
 		align-self: flex-start;
 		max-width: 340px;
+		order: -1;
+	}
+	.checkout__order-item
+	{
+		order: -2;
+		height: fit-content;
 	}
 }
