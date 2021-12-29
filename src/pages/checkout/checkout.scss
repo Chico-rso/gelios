@@ -93,13 +93,16 @@
 	{
 		width: 100%;
 		line-height: 38px;
+		text-align: center;
 		border: 1px solid #01A54E;
 		cursor: pointer;
-		&:disabled
+		pointer-events: auto;
+		&[disabled]
 		{
 			background-color: #CFD8DC;
 			border: 1px solid #CFD8DC;
 			border-radius: 6px;
+			pointer-events: none;
 			font-weight: bold;
 			font-size: 14px;
 			line-height: 38px;
