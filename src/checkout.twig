@@ -5,166 +5,173 @@
 			<div class="checkout__wr">
 				{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Корзина'], 'addres': 'basket.html'} %}
 				<h2 class="h2-style">Оформления заказа</h2>
-				<div class="checkout__flex">
-					<div class="checkout__order-list">
+				<div class="checkout__order-list">
+					<div class="checkout__order-item">
 						<p>Состав заказа</p>
-						<div class="checkout__order-item">
+						<div class="checkout__order-item-text">
 							<img src="./img/checkout-order-list-1.png" alt="product image">
-							<div class="checkout__order-item-text">
+							<div class="checkout__order-item-text checkout__order-item-text--flex">
 								<span class="text-black">Кальцемин адванс таб. п.о № 120</span>
 								<span class="text-gray">2 шт.</span>
 							</div>
 						</div>
-						<div class="checkout__order-choose">
-							<p>Выбрите способ получения</p>
-							<div class="g-tabs _tabs-container">
-								<div class="g-tabs__item _tab active" onclick="o2.gTabs.open(this, 1)">
-									{% include "./assets/svg/checkout-dlivery-1.svg" %}
-									<div class="g-tabs__link">
-										<span>Доставка</span>
-										<span>В удобное для вас время</span>
-									</div>
-								</div>
-								<div class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 2)">
-									{% include "./assets/svg/checkout-pickup-1.svg" %}
-									<div class="g-tabs__link">
-										<span>Самовывоз</span>
-										<span>Забрать можно будет через 5 минут</span>
-									</div>
-								</div>
-								<div class="g-tabs__content open" data-tab="1">
-									<p>Адрес получателя</p>
-									<label class="g-input">
-										<span class="label-title">Город *</span>
-										<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-										<div class="g-input__sub">Error: invalid name</div>
-									</label>
-									<label class="g-input">
-										<span class="label-title">Улица *</span>
-										<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-										<div class="g-input__sub">Error: invalid name</div>
-									</label>
-									<label class="g-input">
-										<span class="label-title">Дом *</span>
-										<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-										<div class="g-input__sub">Error: invalid name</div>
-									</label>
-									<label class="g-input">
-										<span class="label-title">Квартира *</span>
-										<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-										<div class="g-input__sub">Error: invalid name</div>
-									</label>
-									<div class="checkout-dlivery-type">
-										<p>Выберите тип доставки</p>
-										<label class="g-radio">
-											<input type="radio" name="radio-1" class="g-radio__input">
-											<div class="g-radio__body">
-												<span class="g-radio__box"></span>
-												<span class="g-radio__text">Срочная сегодня — 100 ₽</span>
-											</div>
-										</label>
-										<label class="g-radio">
-											<input type="radio" name="radio-1" class="g-radio__input">
-											<div class="g-radio__body">
-												<span class="g-radio__box"></span>
-												<span class="g-radio__text">Сегодня в любое время-<span class="g-radio__text g-radio__text--green">Бесплатно</span>
-													<span class="g-radio__text g-radio__text--subtext">Оператор согласует с вами время доставки заказа</span>
-												</span>
-											</div>
-										</label>
-										<label class="g-radio">
-											<input type="radio" name="radio-1" class="g-radio__input">
-											<div class="g-radio__body">
-												<span class="g-radio__box"></span>
-												<span class="g-radio__text">Завтра в любое время —<span class="g-radio__text g-radio__text--green">Бесплатно</span>
-												</span>
-											</div>
-										</label>
-									</div>
-								</div>
-								<div class="g-tabs__content" data-tab="2">
-									<div class="g-tabs__content-head">
-										<p>Адреса аптек</p>
-										<span class="g-tabs__content-list _g-tabs__content-list" onclick='o2.checkout.openList()'>Cписком{% include "./assets/svg/g-tabs__content-head.svg" %}</span>
-										<span class="g-tabs__content-map _g-tabs__content-map" onclick='o2.checkout.openMap()'>Карта{% include "./assets/svg/checkout-map.svg" %}</span>
-									</div>
-									<div class="g-yamap _g-yamap">
-										<div class="g-yamap__map" id="yamap"></div>
-									</div>
-									<div class="checkout__radio-btn _checkout__radio-btn">
-										<label class="g-radio">
-											<input type="radio" name="radio-1" class="g-radio__input">
-											<div class="g-radio__body">
-												<span class="g-radio__box"></span>
-												<div class="g-radio__flex">
-													<span class="g-radio__text g-radio__text--title">Аптека Гелиос</span>
-													<span class="g-radio__text g-radio__text--adress">Москва, Лубянский пр. 15 стр 2</span>
-													<span class="g-radio__text g-radio__text--condition">Забрать можно будет через 5 минут</span>
-													<span class="g-radio__text">Будни: 09:00 — 19:00<br>Суббота: 10:00 — 19:00<br>Воскресенье: 10:00 — 19:00</span>
-												</div>
-											</div>
-										</label>
-										<label class="g-radio">
-											<input type="radio" name="radio-1" class="g-radio__input">
-											<div class="g-radio__body">
-												<span class="g-radio__box"></span>
-												<div class="g-radio__flex">
-													<span class="g-radio__text g-radio__text--title">Аптека Гелиос</span>
-													<span class="g-radio__text g-radio__text--adress">Москва, ул. Никольская, 8</span>
-													<span class="g-radio__text g-radio__text--condition">Можно забрать в воскресенье, 23 февраля</span>
-													<span class="g-radio__text">Ежедневно:	10:00 — 20:00</span>
-												</div>
-											</div>
-										</label>
-										<label class="g-radio">
-											<input type="radio" name="radio-1" class="g-radio__input">
-											<div class="g-radio__body">
-												<span class="g-radio__box"></span>
-												<div class="g-radio__flex">
-													<span class="g-radio__text g-radio__text--title">Аптека Гелиос</span>
-													<span class="g-radio__text g-radio__text--adress">Москва,  ул.Мясницкая, 24/7с2</span>
-													<span class="g-radio__text g-radio__text--condition">Можно забрать в воскресенье, 23 февраля</span>
-													<span class="g-radio__text">Будни: 09:00 — 19:00</span>
-													<span class="g-radio__text">Суббота: 10:00 — 19:00</span>
-													<span class="g-radio__text">Воскресенье: 10:00 — 19:00</span>
-												</div>
-											</div>
-										</label>
-										<button class="g-button g-button--more">Показать на карте (3)</button>
-									</div>
-								</div>
+					</div>
+					<div class="g-tabs _tabs-container">
+						<p>Выбрите способ получения</p>
+						<div class="g-tabs__item _tab active" onclick="o2.gTabs.open(this, 1)">
+							{% include "./assets/svg/checkout-dlivery-1.svg" %}
+							<div class="g-tabs__link">
+								<span>Доставка</span>
+								<span>В удобное для вас время</span>
 							</div>
-							<div class="checkout__personal">
-								<p>Личные данные</p>
+						</div>
+						<div class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 2)">
+							{% include "./assets/svg/checkout-pickup-1.svg" %}
+							<div class="g-tabs__link">
+								<span>Самовывоз</span>
+								<span>Забрать можно будет через 5 минут</span>
+							</div>
+						</div>
+						<div class="g-tabs__content g-tabs__content--wrap open" data-tab="1">
+							<p>Адрес получателя</p>
+							<div class="g-tabs__content-flex">
 								<label class="g-input">
-									<span class="label-title">Имя *</span>
+									<span class="label-title">Город *</span>
 									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
 									<div class="g-input__sub">Error: invalid name</div>
 								</label>
 								<label class="g-input">
-									<span class="label-title">Фамилия *</span>
-									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-									<div class="g-input__sub">Error: invalid name</div>
-								</label>
-								<label class="g-input">
-									<span class="label-title">Номер телефона *</span>
-									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
-									<div class="g-input__sub">Error: invalid name</div>
-								</label>
-								<label class="g-input">
-									<span class="label-title">Email *</span>
+									<span class="label-title">Улица *</span>
 									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
 									<div class="g-input__sub">Error: invalid name</div>
 								</label>
 							</div>
+							<div class="g-tabs__content-flex">
+								<label class="g-input">
+									<span class="label-title">Дом *</span>
+									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+								<label class="g-input">
+									<span class="label-title">Квартира *</span>
+									<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+									<div class="g-input__sub">Error: invalid name</div>
+								</label>
+							</div>
+							<div class="checkout-dlivery-type">
+								<p>Выберите тип доставки</p>
+								<label class="g-radio">
+									<input type="radio" name="radio-1" class="g-radio__input">
+									<div class="g-radio__body">
+										<span class="g-radio__box"></span>
+										<span class="g-radio__text">Срочная сегодня —</span>
+										<span class="g-radio__text g-radio__text--bold">100 ₽</span>
+									</div>
+								</label>
+								<label class="g-radio">
+									<input type="radio" name="radio-1" class="g-radio__input">
+									<div class="g-radio__body">
+										<span class="g-radio__box"></span>
+										<span class="g-radio__text">Сегодня в любое время-<span class="g-radio__text g-radio__text--green">Бесплатно</span>
+											<span class="g-radio__text g-radio__text--subtext">Оператор согласует с вами время доставки заказа</span>
+										</span>
+									</div>
+								</label>
+								<label class="g-radio">
+									<input type="radio" name="radio-1" class="g-radio__input">
+									<div class="g-radio__body">
+										<span class="g-radio__box"></span>
+										<span class="g-radio__text">Завтра в любое время —<span class="g-radio__text g-radio__text--green">Бесплатно</span>
+										</span>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="g-tabs__content" data-tab="2">
+							<div class="g-tabs__content-head">
+								<p>Адреса аптек</p>
+								<span class="g-tabs__content-list _g-tabs__content-list" onclick='o2.checkout.openList()'>Cписком{% include "./assets/svg/g-tabs__content-head.svg" %}</span>
+								<span class="g-tabs__content-map _g-tabs__content-map" onclick='o2.checkout.openMap()'>Карта{% include "./assets/svg/checkout-map.svg" %}</span>
+							</div>
+							<div class="g-yamap _g-yamap">
+								<div class="g-yamap__map" id="yamap"></div>
+							</div>
+							<div class="checkout__radio-btn _checkout__radio-btn">
+								<label class="g-radio">
+									<input type="radio" name="radio-1" class="g-radio__input">
+									<div class="g-radio__body">
+										<span class="g-radio__box"></span>
+										<div class="g-radio__flex">
+											<span class="g-radio__text g-radio__text--title">Аптека Гелиос</span>
+											<span class="g-radio__text g-radio__text--adress">Москва, Лубянский пр. 15 стр 2</span>
+											<span class="g-radio__text g-radio__text--condition">Забрать можно будет через 5 минут</span>
+											<span class="g-radio__text">Будни: 09:00 — 19:00<br>Суббота: 10:00 — 19:00<br>Воскресенье: 10:00 — 19:00</span>
+										</div>
+									</div>
+								</label>
+								<label class="g-radio">
+									<input type="radio" name="radio-1" class="g-radio__input">
+									<div class="g-radio__body">
+										<span class="g-radio__box"></span>
+										<div class="g-radio__flex">
+											<span class="g-radio__text g-radio__text--title">Аптека Гелиос</span>
+											<span class="g-radio__text g-radio__text--adress">Москва, ул. Никольская, 8</span>
+											<span class="g-radio__text g-radio__text--condition">Можно забрать в воскресенье, 23 февраля</span>
+											<span class="g-radio__text">Ежедневно:	10:00 — 20:00</span>
+										</div>
+									</div>
+								</label>
+								<label class="g-radio">
+									<input type="radio" name="radio-1" class="g-radio__input">
+									<div class="g-radio__body">
+										<span class="g-radio__box"></span>
+										<div class="g-radio__flex">
+											<span class="g-radio__text g-radio__text--title">Аптека Гелиос</span>
+											<span class="g-radio__text g-radio__text--adress">Москва,  ул.Мясницкая, 24/7с2</span>
+											<span class="g-radio__text g-radio__text--condition">Можно забрать в воскресенье, 23 февраля</span>
+											<span class="g-radio__text">Будни: 09:00 — 19:00</span>
+											<span class="g-radio__text">Суббота: 10:00 — 19:00</span>
+											<span class="g-radio__text">Воскресенье: 10:00 — 19:00</span>
+										</div>
+									</div>
+								</label>
+								<button class="g-button g-button--more">Показать на карте (3)</button>
+							</div>
+						</div>
+					</div>
+					<div class="checkout__personal">
+						<p>Личные данные</p>
+						<div class="checkout__personal-flex">
 							<label class="g-input">
-								<span class="label-title">Промокод</span>
-								<input name="name" type="text" class="g-input__input g-input__input--promo" placeholder="Промокод" data-call="emty" data-msg="Заполните это поле">
+								<span class="label-title">Имя *</span>
+								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
 								<div class="g-input__sub">Error: invalid name</div>
-								<button class="g-input__btn">Активировать</button>
+							</label>
+							<label class="g-input">
+								<span class="label-title">Фамилия *</span>
+								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+								<div class="g-input__sub">Error: invalid name</div>
+							</label>
+						</div>
+						<div class="checkout__personal-flex">
+							<label class="g-input">
+								<span class="label-title">Номер телефона *</span>
+								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+								<div class="g-input__sub">Error: invalid name</div>
+							</label>
+							<label class="g-input">
+								<span class="label-title">Email *</span>
+								<input name="name" type="text" class="g-input__input" data-call="emty" data-msg="Заполните это поле">
+								<div class="g-input__sub">Error: invalid name</div>
 							</label>
 						</div>
 					</div>
+					<label class="g-input g-input--promo">
+						<span class="label-title">Промокод</span>
+						<input name="name" type="text" class="g-input__input g-input__input--promo" placeholder="Промокод" data-call="emty" data-msg="Заполните это поле">
+						<div class="g-input__sub">Error: invalid name</div>
+						<button class="g-input__btn">Активировать</button>
+					</label>
 					<div class="checkout__your-order">
 						<div class="checkout__your-order-head">
 							<p>Вашь заказ</p>
@@ -190,9 +197,17 @@
 						</div>
 					</div>
 				</div>
-				<button class="g-button g-button--green">Оформить заказ</button>
+				<div class="checkout__privacy-policy">
+					<label class="g-checkbox">
+						<input type="checkbox" name="{{ name }}" class="g-checkbox__input">
+						<div class="g-checkbox__body">
+							<span class="g-checkbox__box"></span>
+							<span class="g-checkbox__text">Нажимая на кнопку оформить заказ я соглашаюсь с политикой конфиденциальности, публичной офертой и регистрируюсь на сайте.</span>
+						</div>
+					</label>
+				</div>
+				<button class="g-button g-button--green" disabled>Оформить заказ</button>
 			</div>
 		</div>
 	</div>
-
 {% endblock %}
