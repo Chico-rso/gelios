@@ -5981,6 +5981,51 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   cursor: pointer;
 }
 
+.order-complit__title {
+  margin-bottom: 24px;
+}
+
+.order-complit__title h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #263238;
+}
+
+.order-complit__title p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #7B8E98;
+}
+
+.order-complit__list h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #263238;
+}
+
+.order-complit__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order-complit__item img {
+  width: 60px;
+  height: 60px;
+}
+
+.order-complit__price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

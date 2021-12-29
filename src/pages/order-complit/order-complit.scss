@@ -1,0 +1,42 @@
+.order-complit__title
+{
+	margin-bottom: 24px;
+	h2
+	{
+		margin-bottom: 8px;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: bold;
+		color: #263238;
+	}
+	p
+	{
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B8E98;
+	}
+}
+.order-complit__list
+{
+	h3
+	{
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		color: #263238;
+	}
+}
+.order-complit__item
+{
+	display: flex;
+	img
+	{
+		width: 60px;
+		height: 60px;
+	}
+}
+.order-complit__price
+{
+	display: flex;
+	width: 100%;
+}
