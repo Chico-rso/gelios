@@ -5520,9 +5520,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .checkout .g-button--green {
   width: 100%;
   line-height: 38px;
+  text-align: center;
   border: 1px solid #01A54E;
   text-align: center;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .checkout .g-button--green[disabled] {
@@ -5530,6 +5532,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border: 1px solid #CFD8DC;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+  pointer-events: none;
   font-weight: bold;
   font-size: 14px;
   line-height: 38px;

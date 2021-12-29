@@ -31,6 +31,6 @@ o2.checkout =
 	{
 		const input = document.querySelector('._g-checkbox__input');
 		const orderBtn = document.querySelector('._g-button--green');
-		(input.checked) ? orderBtn.disabled = false : orderBtn.disabled = true;
+		(input.checked) ? orderBtn.removeAttribute('disabled') : orderBtn.setAttribute('disabled', 'disabled');
 	}
 }
