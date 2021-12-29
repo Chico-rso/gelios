@@ -26,5 +26,11 @@ o2.checkout =
 		mapBtn.classList.remove('g-tabs__content-map--visibility');
 		map.classList.remove('g-yamap--hidden');
 		list.classList.remove('checkout__radio-btn--visibility');
+	},
+	activeOrderBtn()
+	{
+		const input = document.querySelector('._g-checkbox__input');
+		const orderBtn = document.querySelector('._g-button--green');
+		(input.checked) ? orderBtn.disabled = false : orderBtn.disabled = true;
 	}
 }
