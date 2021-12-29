@@ -186,6 +186,7 @@
 }
 .checkout__personal
 {
+	width: 100%;
 	p{margin-bottom: 24px;}
 }
 .g-input__input--promo
@@ -424,22 +425,33 @@
 		}
 		.g-button--gray{width: 153px;}
 	}
+	.checkout__personal-flex
+	{
+		label:first-child{margin-right: 16px;}
+	}
+	.g-tabs__content-flex
+	{
+		label:first-child{margin-right: 16px;}
+	}
 }
 @media (min-width: 1024px)
 {
-	.checkout
+	.checkout__order-item
 	{
-		.g-tabs{margin-top: -100px;}
+		order: -2;
+		height: fit-content;
 	}
+}
+@media (min-width: 1150px)
+{
 	.checkout__your-order
 	{
 		align-self: flex-start;
 		max-width: 340px;
 		order: -1;
 	}
-	.checkout__order-item
+	.checkout
 	{
-		order: -2;
-		height: fit-content;
+		.g-tabs{margin-top: -100px;}
 	}
 }
