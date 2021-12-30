@@ -1,3 +1,12 @@
+.order-complit
+{
+	margin-bottom: 40px;
+	.g-button--white
+	{
+		width: 100%;
+		line-height: 38px;
+	}
+}
 .order-complit__title
 {
 	margin-bottom: 24px;
@@ -20,6 +29,7 @@
 {
 	h3
 	{
+		margin-bottom: 24px;
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 22px;
@@ -29,14 +39,121 @@
 .order-complit__item
 {
 	display: flex;
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid #ECEFF1;
 	img
 	{
+		margin-right: 16px;
 		width: 60px;
 		height: 60px;
+	}
+}
+.order-complit__flex
+{
+	span
+	{
+		font-size: 15px;
+		line-height: 18px;
+		color: #263238;
 	}
 }
 .order-complit__price
 {
 	display: flex;
+	align-items: flex-end;
 	width: 100%;
+	span:first-child
+	{
+		margin-right: 6px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #263238;
+	}
+	span:last-child
+	{
+		vertical-align: bottom;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B8E98;
+	}
+}
+.order-complit__total
+{
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid #ECEFF1;
+	.order-complit__total-item:not(:last-child){margin-bottom: 12px;}
+	.order-complit__total-item:last-child
+	{
+		span
+		{
+			font-weight: 500;
+			color: #263238;
+		}
+	}
+}
+.order-complit__total-item
+{
+	display: flex;
+	justify-content: space-between;
+	span
+	{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	span:first-child{color: #7B8E98;}
+	span:last-child{color: #263238;}
+}
+.order-complit__recipient
+{
+	padding-bottom: 24px;
+	border-bottom: 1px solid #ECEFF1;
+}
+.order-complit__recipient-list
+{
+	svg
+	{
+		margin-right: 16px;
+		vertical-align: middle;
+	}
+	span
+	{
+		font-size: 14px;
+		line-height: 18px;
+		color: #263238;
+	}
+}
+.order-complit__recipient-item:not(:last-child){margin-bottom: 12px;}
+.order-complit__point{margin-bottom: 24px;}
+.order-complit__point-flex{display: flex;}
+.order-complit__svg{margin-right: 16px;}
+.order-complit__point-list
+{
+	margin-bottom: 12px;
+	.order-complit__point-item
+	{
+		margin-bottom: 4px;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B8E98;
+		&:nth-child(2)
+		{
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 22px;
+			color: #263238;
+		}
+	}
+}
+.order-complit__point-chart
+{
+	.order-complit__point-item
+	{
+		&:not(:last-child){margin-bottom: 4px;}
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B8E98;
+	}
 }
