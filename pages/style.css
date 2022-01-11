@@ -6168,6 +6168,32 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 4px;
 }
 
+.order-complit__delivery {
+  margin-bottom: 25px;
+}
+
+.order-complit__delivery-list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.order-complit__delivery-list li:first-child span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #263238;
+}
+
+.order-complit__delivery-list li span {
+  font-size: 14px;
+  line-height: 18px;
+  color: #7B8E98;
+}
+
+.order-complit__delivery-list svg {
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6563,6 +6589,65 @@ html {
   .g-tabs__content-flex label:first-child {
     margin-right: 16px;
   }
+
+  .order-complit .g-button--white {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    padding: 0 18px;
+    font-size: 14px;
+  }
+
+  .order-complit__title h2 {
+    font-size: 28px;
+  }
+
+  .order-complit__flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .order-complit__price {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .order-complit__price span:first-child {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .order-complit__product {
+    -webkit-flex-basis: 80%;
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 80%;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
 }
 
 @media (min-width: 769px) {
@@ -6952,6 +7037,10 @@ html {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .order-complit .container {
+    padding: 0 300px;
   }
 }
 
