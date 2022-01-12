@@ -1,0 +1,107 @@
+{% extends "layouts/layout.twig" %}
+{% block page %}
+	<div class="order-complit">
+		<div class="container">
+			<div class="order-complit__title">
+				<h2>Ваш заказ успешно оформлен!</h2>
+				<p>Мы позвоним вам или отправим СМС, чтобы подтвердить заказ.</p>
+			</div>
+			<div class="order-complit__list">
+				<h3>Заказ № 9418-34819</h3>
+				<div class="order-complit__item">
+					<img src="./img/order-complit-1.png" alt="product-image">
+					<div class="order-complit__flex">
+						<div class="order-complit__price">
+							<span>251 ₽</span>
+							<span>2 шт.</span>
+						</div>
+						<span class="order-complit__product">Кальцемин адванс таб. п.о № 120</span>
+					</div>
+				</div>
+				<div class="order-complit__item">
+					<img src="./img/order-complit-1.png" alt="product-image">
+					<div class="order-complit__flex">
+						<div class="order-complit__price">
+							<span>251 ₽</span>
+							<span>2 шт.</span>
+						</div>
+						<span class="order-complit__product">Кальцемин адванс таб. п.о № 120</span>
+					</div>
+				</div>
+				<ul class="order-complit__total">
+					<li class="order-complit__total-item">
+						<span>3 товара на сумму</span>
+						<span>319,88 ₽</span>
+					</li>
+					<li class="order-complit__total-item">
+						<span>Скидка по промокоду</span>
+						<span>-200 ₽</span>
+					</li>
+					<li class="order-complit__total-item">
+						<span>Самовызоз</span>
+						<span>Бесплатно</span>
+					</li>
+					<li class="order-complit__total-item">
+						<span>Итоговая стоимость</span>
+						<span>119,88 ₽</span>
+					</li>
+				</ul>
+				<div class="order-complit__recipient">
+					<h3>Получатель</h3>
+					<ul class="order-complit__recipient-list">
+						<li class="order-complit__recipient-item">
+							{% include "./assets/svg/order-complit-1.svg" %}
+							<span>Евгений Петров</span>
+						</li>
+						<li class="order-complit__recipient-item">
+							{% include "./assets/svg/order-complit-2.svg" %}
+							<span>+7 (999) 123-23-34</span>
+						</li>
+						<li class="order-complit__recipient-item">
+							{% include "./assets/svg/order-complit-3.svg" %}
+							<span>eugene-petrov@mail.com</span>
+						</li>
+					</ul>
+				</div>
+				<div class="order-complit__point">
+					<h3>Пункт выдачи</h3>
+					<div class="order-complit__point-flex">
+						<div class="order-complit__svg">
+							{% include "./assets/svg/order-complit-4.svg" %}
+						</div>
+						<div>
+							<ul class="order-complit__point-list">
+								<li class="order-complit__point-item">Аптека Гелиос</li>
+								<li class="order-complit__point-item">Москва, Лубянский пр. 15 стр 2</li>
+								<li class="order-complit__point-item">Забрать можно будет через 5 минут</li>
+							</ul>
+							<ul class="order-complit__point-chart">
+								<li class="order-complit__point-item">Будни: 09:00 — 19:00</li>
+								<li class="order-complit__point-item">Суббота: 10:00 — 19:00</li>
+								<li class="order-complit__point-item">Воскресенье: 10:00 — 19:00</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="order-complit__delivery" style="display: none">
+					<h3>Адрес доставки</h3>
+					<ul class="order-complit__delivery-list">
+						<li>
+							{% include "./assets/svg/order-complit-delivery-1.svg" %}
+							<span>Москва, Лубянский пр. 15 стр 2</span>
+						</li>
+						<li>
+							{% include "./assets/svg/order-complit-delivery-2.svg" %}
+							<span>День доставки: Воскресенье, 23 февраля</span>
+						</li>
+						<li>
+							{% include "./assets/svg/order-complit-delivery-3.svg" %}
+							<span>Время доставки: с 09:00 до 12:00</span>
+						</li>
+					</ul>
+				</div>
+				<div class="g-button g-button--white">Перейти на главную</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
