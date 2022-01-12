@@ -1,0 +1,48 @@
+{% extends "layouts/layout.twig" %}
+{% block page %}
+	<div class="account-details">
+		<div class="container">
+			{% include "./blocks/breadcrumbs/breadcrumbs.twig" with {items:['Назад'], breadClass:'breadcrumbs breadcrumbs--account-details'} %}
+			<h1>Личный кабинет</h1>
+			<h2>Контактные данные</h2>
+			<form class="accoutn-details__form">
+				<label class="g-input">
+					<span>Имя *</span>
+					<input name="name" type="text" class="g-input__input" data-call="empty" data-msg="Заполните это поле">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+				<label class="g-input">
+					<span>Фамилия *</span>
+					<input name="name" type="text" class="g-input__input" data-call="empty" data-msg="Заполните это поле">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+				<label class="g-input">
+					<span>Email *</span>
+					<input name="name" type="text" class="g-input__input" data-call="empty" data-msg="Заполните это поле">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+				<label class="g-input">
+					<span>Номер телефона *</span>
+					<input name="name" type="text" class="g-input__input" data-call="empty" data-msg="Заполните это поле">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+			</form>
+			<h2>Дата рождения</h2>
+			<div class="account-details__gift">
+				{% include "./assets/svg/account-details-1.svg" %}
+				<p>Получайте поздравления и дополнительные скидки</p>
+			</div>
+			<div class="account-details__data">
+				<div class="g-input g-date-picker">
+					<input class="g-input__input" type="text" name="birthday" placeholder="Select date" value=""/>
+				</div>
+				<div class="g-input g-date-picker">
+					<input class="g-input__input" type="text" name="birthday" placeholder="Select date" value=""/>
+				</div>
+				<div class="g-input g-date-picker">
+					<input class="g-input__input" type="text" name="birthday" placeholder="Select date" value=""/>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+.account-details
+{
+	.breadcrumbs--account-details
+	{
+		display: inline-block;
+		margin-bottom: 8px;
+	}
+	h1,h2
+	{
+		margin-bottom: 24px;
+		color: #263238;
+	}
+	h1
+	{
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	h2
+	{
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.g-input{width: 100%;}
+	.g-input__input{height: 40px;}
+}
+.accoutn-details__form
+{
+	label
+	{
+		margin-bottom: 16px;
+		&:last-child{margin-bottom: 24px;}
+	}
+	span
+	{
+		font-size: 12px;
+		line-height: 14px;
+		color: #7B8E98;
+	}
+}
+.account-details__gift
+{
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 24px;
+	svg{margin-right: 8px;}
+	p
+	{
+		margin: 0;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B8E98;
+	}
+}

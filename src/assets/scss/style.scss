@@ -37,6 +37,7 @@
 @import 'blocks/g-range-slider/g-range-slider';
 @import 'blocks/g-pagination/g-pagination';
 @import 'blocks/detail-card-tabs/detail-card-tabs';
+@import 'blocks/g-date-picker/g-date-picker';
 /* Пример подключения*/
 /* @import 'blocks/component/component'; */
 /* pages */
@@ -47,6 +48,7 @@
 @import 'src/pages/basket/basket';
 @import 'src/pages/checkout/checkout';
 @import 'src/pages/order-complit/order-complit';
+@import 'src/pages/account-details/account-details';
 
 * {
 	-webkit-box-sizing: border-box;
