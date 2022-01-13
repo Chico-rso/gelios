@@ -6194,6 +6194,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   vertical-align: middle;
 }
 
+.account-details {
+  margin-bottom: 40px;
+}
+
 .account-details .breadcrumbs--account-details {
   display: inline-block;
   margin-bottom: 8px;
@@ -6353,6 +6357,27 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   background-position: center;
+}
+
+.account-details__gender {
+  margin-bottom: 24px;
+}
+
+.account-details__gender .g-radio {
+  display: block;
+}
+
+.account-details__gender .g-radio:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.g-button--gray {
+  width: 100%;
+  text-align: center;
+  background: #CFD8DC;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 40px;
 }
 
 * {
