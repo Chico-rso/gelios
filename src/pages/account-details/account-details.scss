@@ -1,0 +1,129 @@
+.account-details
+{
+	.breadcrumbs--account-details
+	{
+		display: inline-block;
+		margin-bottom: 8px;
+	}
+	h1,h2
+	{
+		margin-bottom: 24px;
+		color: #263238;
+	}
+	h1
+	{
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	h2
+	{
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.g-input{width: 100%;}
+	.g-input__input{height: 40px;}
+}
+.accoutn-details__form
+{
+	label
+	{
+		margin-bottom: 16px;
+		&:last-child{margin-bottom: 24px;}
+	}
+	span
+	{
+		font-size: 12px;
+		line-height: 14px;
+		color: #7B8E98;
+	}
+}
+.account-details__gift
+{
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 24px;
+	svg{margin-right: 8px;}
+	p
+	{
+		margin: 0;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B8E98;
+	}
+}
+.account-details__data
+{
+	display: flex;
+	margin-bottom: 24px;
+
+	.g-select
+	{
+		span
+		{
+			font-size: 12px;
+			line-height: 14px;
+			color: #7B8E98;
+		}
+	}
+	.g-select:not(:last-child){margin-right: 8px;}
+	.g-select__selected
+	{
+		position: relative;
+		height: 40px;
+		max-width: 91px;
+		padding: 0 12px;
+		border-radius: 6px;
+		border: 1px solid #CFD8DC;
+	}
+	.g-select__arrow
+	{
+		position: absolute;
+		height: 25px;
+		width: 25px;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		svg{transform: rotate(180deg);}
+	}
+	.g-select--opened
+	{
+		.g-select__arrow {transform: rotate(180deg); }
+	}
+	.g-select__list
+	{
+		max-height: fit-content;
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 0px 0px 6px 6px;
+		border: none;
+	}
+	.g-select__item
+	{
+		padding: 4px 0 4px 11px;
+		border-bottom: 1px solid #ECEFF1;
+	}
+	.g-select__item--active
+	{
+		position: relative;
+		padding-left: 12px;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 18px;
+		color: #01A54E;
+		&:after
+		{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			width: 20px;
+			height: 20px;
+			background-image: url('svg/account-details-3.svg');
+			background-size: 100% 100%;
+			background-position: center;
+		}
+	}
+}

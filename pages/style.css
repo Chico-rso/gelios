@@ -6194,6 +6194,167 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   vertical-align: middle;
 }
 
+.account-details .breadcrumbs--account-details {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.account-details h1,
+.account-details h2 {
+  margin-bottom: 24px;
+  color: #263238;
+}
+
+.account-details h1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.account-details h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.account-details .g-input {
+  width: 100%;
+}
+
+.account-details .g-input__input {
+  height: 40px;
+}
+
+.accoutn-details__form label {
+  margin-bottom: 16px;
+}
+
+.accoutn-details__form label:last-child {
+  margin-bottom: 24px;
+}
+
+.accoutn-details__form span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #7B8E98;
+}
+
+.account-details__gift {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.account-details__gift svg {
+  margin-right: 8px;
+}
+
+.account-details__gift p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #7B8E98;
+}
+
+.account-details__data {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.account-details__data .g-select span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #7B8E98;
+}
+
+.account-details__data .g-select:not(:last-child) {
+  margin-right: 8px;
+}
+
+.account-details__data .g-select__selected {
+  position: relative;
+  height: 40px;
+  max-width: 91px;
+  padding: 0 12px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #CFD8DC;
+}
+
+.account-details__data .g-select__arrow {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.account-details__data .g-select__arrow svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.account-details__data .g-select--opened .g-select__arrow {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.account-details__data .g-select__list {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0px 0px 6px 6px;
+  border-radius: 0px 0px 6px 6px;
+  border: none;
+}
+
+.account-details__data .g-select__item {
+  padding: 4px 0 4px 11px;
+  border-bottom: 1px solid #ECEFF1;
+}
+
+.account-details__data .g-select__item--active {
+  position: relative;
+  padding-left: 12px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #01A54E;
+}
+
+.account-details__data .g-select__item--active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("svg/account-details-3.svg");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
