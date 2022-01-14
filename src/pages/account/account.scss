@@ -23,8 +23,22 @@
 		font-size: 18px;
 		line-height: 21px;
 	}
-	.g-input{width: 100%;}
+	.g-input
+	{
+		max-width: 100%;
+		flex: 0 1 100%;
+	}
 	.g-input__input{height: 40px;}
+	.g-tabs
+	{
+		display: flex;
+	}
+	.g-tabs__item:not(:last-child){margin-right: 0;}
+	.g-tabs__menu
+	{
+		display: block;
+		background: none;
+	}
 }
 .accoutn__details-form
 {
@@ -146,11 +160,27 @@
 	font-size: 14px;
 	line-height: 40px;
 }
+.account__menu.g-tabs__menu{display: none;}
 @media (min-width: 768px)
 {
+	.account
+	{
+		.g-input
+		{
+			flex: 0 1 49%;
+			max-width: 100%;
+			&:not(:nth-child(2n)) { margin-right: 8px;}
+		}
+	}
 	.g-button--gray
 	{
 		max-width: fit-content;
 		padding: 0 18px;
 	}
+	.account__menu.g-tabs__menu
+	{
+		display: block;
+		margin-right: 45px;
+	}
+	.accoutn__details-form{display: flex;}
 }
