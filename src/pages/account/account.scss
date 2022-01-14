@@ -1,4 +1,4 @@
-.account-details
+.account
 {
 	margin-bottom: 40px;
 	.breadcrumbs--account-details
@@ -26,7 +26,7 @@
 	.g-input{width: 100%;}
 	.g-input__input{height: 40px;}
 }
-.accoutn-details__form
+.accoutn__details-form
 {
 	label
 	{
@@ -40,7 +40,7 @@
 		color: #7B8E98;
 	}
 }
-.account-details__gift
+.account__details-gift
 {
 	display: flex;
 	align-items: flex-start;
@@ -54,7 +54,7 @@
 		color: #7B8E98;
 	}
 }
-.account-details__data
+.account__details-data
 {
 	display: flex;
 	margin-bottom: 24px;
@@ -128,7 +128,7 @@
 		}
 	}
 }
-.account-details__gender
+.account__details-gender
 {
 	margin-bottom: 24px;
 	.g-radio
@@ -145,4 +145,12 @@
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 40px;
+}
+@media (min-width: 768px)
+{
+	.g-button--gray
+	{
+		max-width: fit-content;
+		padding: 0 18px;
+	}
 }

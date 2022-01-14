@@ -1,0 +1,134 @@
+{% extends "layouts/layout.twig" %}
+{% block page %}
+	<div class="account">
+		<div class="container">
+			{% include "./blocks/breadcrumbs/breadcrumbs.twig" with {items:['Назад'], breadClass:'breadcrumbs breadcrumbs--account-details'} %}
+			<h1>Личный кабинет</h1>
+			<div class="g-tabs _tabs-container">
+				<ul class="account__menu g-tabs__menu">
+					<li class="g-tabs__item _tab active" onclick="o2.gTabs.open(this, 1)">
+						<a class="g-tabs__link" href="#">Мои данные</a>
+					</li>
+					<li class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 2)">
+						<a class="g-tabs__link" href="#">Мои заказы</a>
+					</li>
+					<li class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 3)">
+						<a class="g-tabs__link" href="#">Безопасность</a>
+					</li>
+				</ul>
+				<div class="account__details g-tabs__content open" data-tab="1">
+					<h2>Контактные данные</h2>
+					<form class="accoutn__details-form">
+						<label class="g-input">
+							<span>Имя *</span>
+							<input name="name" type="text" class="g-input__input" data-call="empty" data-msg="Заполните это поле">
+							<div class="g-input__sub">Error: invalid name</div>
+						</label>
+						<label class="g-input">
+							<span>Фамилия *</span>
+							<input name="name" type="text" class="g-input__input" data-call="empty" data-msg="Заполните это поле">
+							<div class="g-input__sub">Error: invalid name</div>
+						</label>
+						<label class="g-input">
+							<span>Email *</span>
+							<input name="name" type="text" class="g-input__input" data-call="empty" data-msg="Заполните это поле">
+							<div class="g-input__sub">Error: invalid name</div>
+						</label>
+						<label class="g-input">
+							<span>Номер телефона *</span>
+							<input name="name" type="text" class="g-input__input" data-call="empty" data-msg="Заполните это поле">
+							<div class="g-input__sub">Error: invalid name</div>
+						</label>
+					</form>
+					<h2>Дата рождения</h2>
+					<div class="account__details-gift">
+						{% include "./assets/svg/account-details-1.svg" %}
+						<p>Получайте поздравления и дополнительные скидки</p>
+					</div>
+					<div class="account__details-data">
+						<div class="g-select _select">
+							<span>День *</span>
+							<input type="hidden" class="_selected-value"/>
+							<div class="g-select__selected" onclick="o2.gSelect.toggle(this)">
+								<div class="g-select__selected-name _selected-text">День</div>
+								<div class="g-select__arrow">
+									{% include "/assets/svg/account-details-2.svg" %}
+								</div>
+							</div>
+							<div class="g-select__error">Error: обязательное поле</div>
+							<div class="g-select__list _options">
+								<ul class="g-select__items">
+									<li data-value="code-1" class="g-select__item _option g-select__item--active" onclick="o2.gSelect.selecttItem(this)">1</li>
+									<li data-value="code-2" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">2</li>
+									<li data-value="code-3" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">3</li>
+									<li data-value="code-4" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">4</li>
+									<li data-value="code-5" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">5</li>
+									<li data-value="code-6" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">6</li>
+								</ul>
+							</div>
+						</div>
+						<div class="g-select _select">
+							<span>Месяц *</span>
+							<input type="hidden" class="_selected-value"/>
+							<div class="g-select__selected" onclick="o2.gSelect.toggle(this)">
+								<div class="g-select__selected-name _selected-text">Месяц</div>
+								<div class="g-select__arrow">
+									{% include "/assets/svg/account-details-2.svg" %}
+								</div>
+							</div>
+							<div class="g-select__error">Error: обязательное поле</div>
+							<div class="g-select__list _options">
+								<ul class="g-select__items">
+									<li data-value="code-Январь" class="g-select__item _option g-select__item--active" onclick="o2.gSelect.selecttItem(this)">Январь</li>
+									<li data-value="code-Февраль" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">Февраль</li>
+									<li data-value="code-Март" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">Март</li>
+									<li data-value="code-Апрель" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">Апрель</li>
+									<li data-value="code-Май" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">Май</li>
+									<li data-value="code-Июнь" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">Июнь</li>
+								</ul>
+							</div>
+						</div>
+						<div class="g-select _select">
+							<span>Год *</span>
+							<input type="hidden" class="_selected-value"/>
+							<div class="g-select__selected" onclick="o2.gSelect.toggle(this)">
+								<div class="g-select__selected-name _selected-text">Год</div>
+								<div class="g-select__arrow">
+									{% include "/assets/svg/account-details-2.svg" %}
+								</div>
+							</div>
+							<div class="g-select__error">Error: обязательное поле</div>
+							<div class="g-select__list _options">
+								<ul class="g-select__items">
+									<li data-value="code-2022" class="g-select__item _option g-select__item--active" onclick="o2.gSelect.selecttItem(this)">2022</li>
+									<li data-value="code-2021" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">2021</li>
+									<li data-value="code-2020" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">2020</li>
+									<li data-value="code-2019" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">2019</li>
+									<li data-value="code-2018" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">2018</li>
+									<li data-value="code-2017" class="g-select__item _option" onclick="o2.gSelect.selecttItem(this)">2017</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="account__details-gender">
+						<label class="g-radio">
+							<input type="radio" name="gender" class="g-radio__input">
+							<div class="g-radio__body">
+								<span class="g-radio__box"></span>
+								<span class="g-radio__text">Мужской</span>
+							</div>
+						</label>
+						<label class="g-radio">
+							<input type="radio" name="gender" class="g-radio__input">
+							<div class="g-radio__body">
+								<span class="g-radio__box"></span>
+								<span class="g-radio__text">Женский</span>
+							</div>
+						</label>
+					</div>
+					<div class="g-button g-button--gray">Сохранить</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
