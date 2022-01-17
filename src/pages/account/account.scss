@@ -1,4 +1,4 @@
-.account-details
+.account
 {
 	margin-bottom: 40px;
 	.breadcrumbs--account-details
@@ -23,13 +23,30 @@
 		font-size: 18px;
 		line-height: 21px;
 	}
-	.g-input{width: 100%;}
+	.g-input
+	{
+		max-width: 100%;
+		flex: 0 1 100%;
+	}
 	.g-input__input{height: 40px;}
+	.g-tabs
+	{
+		display: flex;
+	}
+	.g-tabs__item:not(:last-child){margin-right: 0;}
+	.g-tabs__menu
+	{
+		display: block;
+		background: none;
+	}
 }
-.accoutn-details__form
+.accoutn__details-form
 {
+	display: flex;
+	flex-wrap: wrap;
 	label
 	{
+		flex: 0 1 100%;
 		margin-bottom: 16px;
 		&:last-child{margin-bottom: 24px;}
 	}
@@ -40,7 +57,7 @@
 		color: #7B8E98;
 	}
 }
-.account-details__gift
+.account__details-gift
 {
 	display: flex;
 	align-items: flex-start;
@@ -54,7 +71,7 @@
 		color: #7B8E98;
 	}
 }
-.account-details__data
+.account__details-data
 {
 	display: flex;
 	margin-bottom: 24px;
@@ -128,7 +145,7 @@
 		}
 	}
 }
-.account-details__gender
+.account__details-gender
 {
 	margin-bottom: 24px;
 	.g-radio
@@ -145,4 +162,82 @@
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 40px;
+}
+.account__menu.g-tabs__menu{display: none;}
+.account__orders-list
+{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+}
+.accout__orders-item
+{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 17px;
+	padding-bottom: 19px;
+	border-bottom: 1px solid #ECEFF1;
+	border-top: 1px solid #ECEFF1;
+	svg
+	{
+		order: -1;
+		margin-bottom: 12px;
+	}
+	span:first-of-type
+	{
+		margin-right: auto;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7B8E98;
+	}
+}
+.account__orders-number
+{
+	order: -1;
+	flex: 1 1 90%;
+	margin-bottom: 12px;
+	span:first-child
+	{
+		margin-right: 8px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+.account__orders-status
+{
+	order: -3;
+	padding: 3px 6px;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 12px;
+	color: #FFFFFF;
+	&--gray{background: #7B8E98;}
+	&--blue{background: #03A9F4;}
+	&--green{background: #01A54E;}
+	&--red{background: #F44336;}
+}
+@media (min-width: 768px)
+{
+	.account
+	{
+		.g-input
+		{
+			flex: 0 1 49%;
+			max-width: 100%;
+			&:not(:nth-child(2n)) { margin-right: 8px;}
+		}
+	}
+	.g-button--gray
+	{
+		max-width: fit-content;
+		padding: 0 18px;
+	}
+	.account__menu.g-tabs__menu
+	{
+		display: block;
+		margin-right: 45px;
+	}
+	.accoutn__details-form{display: flex;}
 }
