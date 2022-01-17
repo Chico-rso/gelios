@@ -6455,6 +6455,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .accout__orders-item span:first-of-type {
   margin-right: auto;
+  font-size: 14px;
+  line-height: 18px;
+  color: #7B8E98;
 }
 
 .account__orders-number {
