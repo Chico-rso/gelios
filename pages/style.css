@@ -6244,12 +6244,32 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-right: 0;
 }
 
+.account .g-tabs__item {
+  border-bottom: 1px solid #ECEFF1;
+}
+
+.account .g-tabs__item.active::after {
+  display: none;
+}
+
+.account .g-tabs__item.active .g-tabs__link {
+  color: #01A54E;
+}
+
+.account .g-tabs__item.active svg path {
+  fill: #01A54E;
+}
+
 .account .g-tabs__menu {
   display: block;
   background: none;
 }
 
-.accoutn__details-form {
+.account .g-tabs__menu svg {
+  vertical-align: middle;
+}
+
+.account__details-form {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6259,7 +6279,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   flex-wrap: wrap;
 }
 
-.accoutn__details-form label {
+.account__details-form label {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
@@ -6267,11 +6287,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: 16px;
 }
 
-.accoutn__details-form label:last-child {
+.account__details-form label:last-child {
   margin-bottom: 24px;
 }
 
-.accoutn__details-form span {
+.account__details-form span {
   font-size: 12px;
   line-height: 14px;
   color: #7B8E98;
@@ -6507,6 +6527,22 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .account__orders-status--red {
   background: #F44336;
+}
+
+.account__security-form .g-input--security {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 16px;
+}
+
+.account__security-form .g-input--security:last-child {
+  margin-bottom: 24px;
+}
+
+.account__security-form .g-input--security span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #7B8E98;
 }
 
 * {
@@ -6972,8 +7008,8 @@ html {
     max-width: 100%;
   }
 
-  .account .g-input:not(:nth-child(2n)) {
-    margin-right: 8px;
+  .account__security-form .g-input--security {
+    max-width: 342px;
   }
 
   .g-button--gray {
@@ -6986,13 +7022,18 @@ html {
   .account__menu.g-tabs__menu {
     display: block;
     margin-right: 45px;
+    min-width: 240px;
   }
 
-  .accoutn__details-form {
+  .account__details-form {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .account__details-form label:nth-child(odd) {
+    margin-right: 8px;
   }
 }
 

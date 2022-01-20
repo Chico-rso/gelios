@@ -7,18 +7,21 @@
 			<div class="g-tabs _tabs-container">
 				<ul class="account__menu g-tabs__menu">
 					<li class="g-tabs__item _tab active" onclick="o2.gTabs.open(this, 1)">
+						{% include "./assets/svg/account-menu-1.svg" %}
 						<a class="g-tabs__link" href="#">Мои данные</a>
 					</li>
 					<li class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 2)">
+						{% include "./assets/svg/account-menu-2.svg" %}
 						<a class="g-tabs__link" href="#">Мои заказы</a>
 					</li>
 					<li class="g-tabs__item _tab" onclick="o2.gTabs.open(this, 3)">
+						{% include "./assets/svg/account-menu-3.svg" %}
 						<a class="g-tabs__link" href="#">Безопасность</a>
 					</li>
 				</ul>
 				<div class="account__details g-tabs__content open" data-tab="1">
 					<h2>Контактные данные</h2>
-					<form class="accoutn__details-form">
+					<form class="account__details-form">
 						<label class="g-input">
 							<span>Имя *</span>
 							<input name="name" type="text" class="g-input__input" data-call="empty" data-msg="Заполните это поле">
@@ -168,7 +171,29 @@
 							{% include "./assets/svg/account-orders-1.svg" %}
 						</li>
 					</ul>
-					<div class="g-button g-button--more">Смотреть всё {% include "./assets/svg/g-button-arrow-down.svg" %}</div>
+					<div class="g-button g-button--more">Смотреть всё
+						{% include "./assets/svg/g-button-arrow-down.svg" %}</div>
+				</div>
+				<div class="account__security g-tabs__content" data-tab="3">
+					<h2>Смена пароля</h2>
+					<form class="account__security-form">
+						<label class="g-input g-input--security">
+							<span>Действующий пароль *</span>
+							<input name="name" type="password" class="g-input__input" placeholder="Действующий пароль *" data-call="emty" data-msg="Заполните это поле">
+							<div class="g-input__sub">Error: invalid name</div>
+						</label>
+						<label class="g-input g-input--security">
+							<span>Новый пароль *</span>
+							<input name="name" type="password" class="g-input__input" placeholder="Новый пароль *" data-call="emty" data-msg="Заполните это поле">
+							<div class="g-input__sub">Error: invalid name</div>
+						</label>
+						<label class="g-input g-input--security">
+							<span>Подтверждение пароля *</span>
+							<input name="name" type="password" class="g-input__input" placeholder="Подтверждение пароля *" data-call="emty" data-msg="Заполните это поле">
+							<div class="g-input__sub">Error: invalid name</div>
+						</label>
+					</form>
+					<div class="g-button g-button--gray">Сохранить</div>
 				</div>
 			</div>
 		</div>
