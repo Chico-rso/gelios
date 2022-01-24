@@ -20,7 +20,12 @@
 				<img src="{{ imgUrl }}" alt="product image">
 			</picture>
 		</a>
-		<div class="product-card__favorit" onclick="o2.productCard.addFavorit(event)">{% include "../../assets/svg/popular-goods-favorit.svg" %}</div>
+		{% if inFavorit is defined%}
+			<div class="product-card__favorit" onclick="o2.productCard.addFavorit(event)">{% include "../../assets/svg/popular-goods-favorit.svg" %}</div>
+		{% endif %}
+		{% if delete is defined%}
+			<div class="product-card__favorit" onclick="o2.productCard.addFavorit(event)">{% include "../../assets/svg/favorit-delete.svg" %}</div>
+		{% endif %}
 	</div>
 	<div class="product-card__title">
 		<a href="#">{{ cardTitle }}</a>
