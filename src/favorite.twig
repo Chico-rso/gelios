@@ -1,0 +1,14 @@
+{% extends "layouts/layout.twig" %}
+{% block page %}
+<div class="favorite">
+	<div class="container">
+		{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {breadClass:'breadcrumbs breadcrumbs--mob', items:['Назад']} %}
+		<h2>Избранное</h2>
+		<div class="favorite__list">
+			{% include 'blocks/product-card/product-card.twig' with {} %}
+			{% include 'blocks/product-card/product-card.twig' with {} %}
+			{% include 'blocks/product-card/product-card.twig' with {} %}
+		</div>
+	</div>
+</div>
+{% endblock %}
