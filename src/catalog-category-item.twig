@@ -1,64 +1,65 @@
 {% extends "layouts/layout.twig" %}
 {% block page %}
-<div class="catalog-category-item _catalog-category-item">
-	<div class="container">
-		<div class="catalog-category-item__wr">
-			<div class="catalog-category-item__left">
-				{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Лекарственные средства'], 'addres': 'catalog-category.html'} %}
-				<h2>Простуда, грипп</h2>
-				{% include 'blocks/sidebar/sidebar.twig' with {'sidebarSort': ['sidebarSort'], }%}
-			</div>
-			<div class="catalog-category-item__right">
-				<div class="breadcrumbs__mob">{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Главная'], 'addres': 'index.html'} %}
-				</div>
-				<div class="catalog__right-title">
+	<div class="catalog-category-item _catalog-category-item">
+		<div class="container">
+			<div class="catalog-category-item__wr">
+				<div class="catalog-category-item__left">
+					{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Лекарственные средства'], 'addres': 'catalog-category.html'} %}
 					<h2>Простуда, грипп</h2>
+					{% include 'blocks/sidebar/sidebar.twig' with {'sidebarSort': ['sidebarSort'], }%}
 				</div>
-				<div class="catalog-category-item__mob">
-					{% include 'assets/svg/catalog-mob.svg' %}
-					<a href="#" onclick='o2.catalogCategoryItem.openSort()'>Сортировка и фильтры</a>
-					<div class="sidebar__sort-item _sidebar__sort-item">{% include "blocks/sidebar/sidebar.twig" with {'sidebarSort': ['sidebar']} %}</div>
-				</div>
-				<ul class="catalog-category-item__list">
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30
-					", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
-					{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
-				</ul>
-				<div class="g-pagination g-pagination--mob">
-					<div class="g-pagination__arrow g-pagination__arrow--left">{% include 'assets/svg/catalog-category-item-arrow-left.svg' %}<span>Назад</span></div>
-					<div class="g-pagination__numbers">
-						<div class="g-pagination__number">1</div>
-						<div class="g-pagination__number">2</div>
-						<div class="g-pagination__number">...</div>
-						<div class="g-pagination__number">60</div>
+				<div class="catalog-category-item__right">
+					<div class="breadcrumbs__mob">{% include 'blocks/breadcrumbs/breadcrumbs.twig' with {'items': ['Главная'], 'addres': 'index.html'} %}
 					</div>
-					<div class="g-pagination__arrow g-pagination__arrow--right">
-						<span>Вперёд</span>
-						{% include 'assets/svg/catalog-category-arrow-right.svg' %}
+					<div class="catalog__right-title">
+						<h2>Простуда, грипп</h2>
 					</div>
-				</div>
-				<div class="g-pagination g-pagination--desktop">
-					<div class="g-pagination__arrow g-pagination__arrow--left">{% include 'assets/svg/catalog-category-item-arrow-left.svg' %}<span>Назад</span></div>
-					<div class="g-pagination__numbers">
-						<div class="g-pagination__number g-pagination__number--current">1</div>
-						<div class="g-pagination__number">2</div>
-						<div class="g-pagination__number">3</div>
-						<div class="g-pagination__number">...</div>
-						<div class="g-pagination__number">60</div>
+					<div class="catalog-category-item__mob">
+						{% include 'assets/svg/catalog-mob.svg' %}
+						<a href="#" onclick='o2.catalogCategoryItem.openSort()'>Сортировка и фильтры</a>
+						<div class="sidebar__sort-item _sidebar__sort-item">{% include "blocks/sidebar/sidebar.twig" with {'sidebarSort': ['sidebar']} %}</div>
 					</div>
-					<div class="g-pagination__arrow g-pagination__arrow--right">
-						<span>Вперёд</span>
-						{% include 'assets/svg/catalog-category-arrow-right.svg' %}
+					<ul class="catalog-category-item__list">
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],inFavorit: true,'sale':[sale], cardTitle: "Вимакс Супер Форте капс. № 30", 'salePrice':[salePrice],'review':[review], imgUrl: "./img/popular-goods-desktop.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],inFavorit: true,'usualPrice':[usualPrice], cardTitle: "Альфазокс р-р д/вн прим. саше 10 мл № 20",'review': 13, imgUrl: "./img/popular-goods-2.png" } %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],inFavorit: true,'end':[end],cardTitle: "Аденурик таб. п/о плён. 80 мг", 'usualPrice':[usualPrice], imgUrl: "./img/popular-goods-3.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],inFavorit: true,'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],inFavorit: true,'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],inFavorit: true,'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],inFavorit: true,'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
+						{% include 'blocks/product-card/product-card.twig' with {'btn':[btn],inFavorit: true,'usualPrice':[usualPrice],cardTitle: "Тексаред лиоф. д/приг. р-ра д/ин.", imgUrl: "./img/popular-goods-4.png"} %}
+					</ul>
+					<div class="g-pagination g-pagination--mob">
+						<div class="g-pagination__arrow g-pagination__arrow--left">{% include 'assets/svg/catalog-category-item-arrow-left.svg' %}<span>Назад</span>
+						</div>
+						<div class="g-pagination__numbers">
+							<div class="g-pagination__number">1</div>
+							<div class="g-pagination__number">2</div>
+							<div class="g-pagination__number">...</div>
+							<div class="g-pagination__number">60</div>
+						</div>
+						<div class="g-pagination__arrow g-pagination__arrow--right">
+							<span>Вперёд</span>
+							{% include 'assets/svg/catalog-category-arrow-right.svg' %}
+						</div>
+					</div>
+					<div class="g-pagination g-pagination--desktop">
+						<div class="g-pagination__arrow g-pagination__arrow--left">{% include 'assets/svg/catalog-category-item-arrow-left.svg' %}<span>Назад</span>
+						</div>
+						<div class="g-pagination__numbers">
+							<div class="g-pagination__number g-pagination__number--current">1</div>
+							<div class="g-pagination__number">2</div>
+							<div class="g-pagination__number">3</div>
+							<div class="g-pagination__number">...</div>
+							<div class="g-pagination__number">60</div>
+						</div>
+						<div class="g-pagination__arrow g-pagination__arrow--right">
+							<span>Вперёд</span>
+							{% include 'assets/svg/catalog-category-arrow-right.svg' %}
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 {% endblock %}

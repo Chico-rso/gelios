@@ -1,0 +1,19 @@
+.favorite
+{
+	margin-bottom: 24px;
+	h2{margin-bottom: 24px;}
+	.g-pagination--desktop{display: none;}
+}
+.favorite__list
+{
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	margin-bottom: 24px;
+	.product-card
+	{
+		display: flex;
+		flex-direction: column;
+		flex: 0 1 43%;
+	}
+}
