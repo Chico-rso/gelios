@@ -1,0 +1,26 @@
+.favorite-empty
+{
+    h2{margin-bottom: 60px;}
+}
+.favorite-empty__content
+{
+    text-align: center;
+    margin-bottom: 60px;
+    svg:not(:last-child){margin-bottom: 22px;}
+    svg:last-child{vertical-align: middle;}
+    p:first-of-type
+    {
+        margin-bottom: 16px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    p:last-of-type{margin-bottom: 24px;}
+    p
+    {
+        max-width: 380px;
+        width: 100%;
+        margin: 0 auto;
+        color: #7B8E98;
+    }
+}
