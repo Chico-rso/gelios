@@ -6645,6 +6645,45 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: none;
 }
 
+.search-empty {
+  margin-bottom: 62px;
+}
+
+.search-empty p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #7B8E98;
+}
+
+.search-empty span {
+  display: block;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #263238;
+}
+
+.search-empty__content {
+  text-align: center;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.search-empty__content p:first-of-type {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.search-empty__content p:last-of-type {
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #7B8E98;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -7151,6 +7190,12 @@ html {
 
   .search .g-pagination__arrow--right {
     padding: 0 8px 0 18px;
+  }
+
+  .search-empty span {
+    margin-bottom: 60px;
+    font-size: 28px;
+    line-height: 34px;
   }
 }
 

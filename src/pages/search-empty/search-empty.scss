@@ -1,0 +1,51 @@
+.search-empty
+{
+    margin-bottom: 62px;
+    p
+    {
+        font-size: 14px;
+        line-height: 17px;
+        color: #7B8E98;
+    }
+    span
+    {
+        display: block;
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #263238;
+    }
+}
+.search-empty__content
+{
+    text-align: center;
+    max-width: 380px;
+    margin: 0 auto;
+    p:first-of-type
+    {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    p:last-of-type
+    {
+        margin-bottom: 24px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #7B8E98;
+    }
+}
+@media (min-width: 768px)
+{
+    .search-empty
+    {
+        span
+        {
+            margin-bottom: 60px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+}
