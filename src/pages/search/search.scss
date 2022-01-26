@@ -1,0 +1,33 @@
+.search
+{
+    margin-bottom: 62px;
+    p
+    {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #263238;
+    }
+    p:first-child
+    {
+        font-size: 14px;
+        line-height: 17px;
+        color: #7B8E98;
+    }
+    p:last-of-type{margin-bottom: 24px;}
+    .g-pagination--desktop{display: none;}
+}
+@media (min-width: 768px)
+{
+    .search
+    {
+        p
+        {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        .g-pagination__arrow{span{display: block;}}
+        .g-pagination__arrow--left{padding: 0 18px 0 8px;}
+        .g-pagination__arrow--right{padding: 0 8px 0 18px;}
+    }
+}

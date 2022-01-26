@@ -6620,6 +6620,31 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: #7B8E98;
 }
 
+.search {
+  margin-bottom: 62px;
+}
+
+.search p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #263238;
+}
+
+.search p:first-child {
+  font-size: 14px;
+  line-height: 17px;
+  color: #7B8E98;
+}
+
+.search p:last-of-type {
+  margin-bottom: 24px;
+}
+
+.search .g-pagination--desktop {
+  display: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -7109,6 +7134,23 @@ html {
 
   .account__details-form label:nth-child(odd) {
     margin-right: 8px;
+  }
+
+  .search p {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .search .g-pagination__arrow span {
+    display: block;
+  }
+
+  .search .g-pagination__arrow--left {
+    padding: 0 18px 0 8px;
+  }
+
+  .search .g-pagination__arrow--right {
+    padding: 0 8px 0 18px;
   }
 }
 
