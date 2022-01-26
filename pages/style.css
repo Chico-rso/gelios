@@ -6585,6 +6585,41 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   flex: 0 1 43%;
 }
 
+.favorite-empty h2 {
+  margin-bottom: 60px;
+}
+
+.favorite-empty__content {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.favorite-empty__content svg:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.favorite-empty__content svg:last-child {
+  vertical-align: middle;
+}
+
+.favorite-empty__content p:first-of-type {
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.favorite-empty__content p:last-of-type {
+  margin-bottom: 24px;
+}
+
+.favorite-empty__content p {
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+  color: #7B8E98;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
